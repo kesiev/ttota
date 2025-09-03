@@ -1,0 +1,200 @@
+0|0|Pierre Auguste Renoir|Still Life|Impressionism
+1|0|Gustave Dore|Religious Painting|Romanticism
+2|0|John Singer Sargent|Portrait|Realism
+3|0|Camille Pissarro|Landscape|Pointillism
+4|0|Rembrandt|Genre Painting|Baroque
+5|0|Paul Cezanne|Cityscape|Cubism
+6|0|Boris Kustodiev|Genre Painting|Naive Art Primitivism
+7|0|Albrecht Durer|Religious Painting|Northern Renaissance
+8|0|Ivan Shishkin|Landscape|Realism
+9|0|Edgar Degas|Portrait|Impressionism
+0|1|Ivan Aivazovsky|Cityscape|Romanticism
+1|1|Childe Hassam|Still Life|Impressionism
+2|1|Boris Kustodiev|Genre Painting|Art Nouveau
+3|1|Paul Cezanne|Portrait|Post Impressionism
+4|1|Ilya Repin|Religious Painting|Realism
+5|1|Rembrandt|Landscape|Baroque
+6|1|Camille Pissarro|Cityscape|Pointillism
+7|1|Vincent Van Gogh|Still Life|Realism
+8|1|Eugene Boudin|Genre Painting|Impressionism
+9|1|Paul Cezanne|Landscape|Cubism
+0|2|Gustave Dore|Religious Painting|Romanticism
+1|2|Rembrandt|Portrait|Baroque
+2|2|Claude Monet|Cityscape|Realism
+3|2|Ivan Aivazovsky|Landscape|Romanticism
+4|2|John Singer Sargent|Still Life|Impressionism
+5|2|Camille Pissarro|Portrait|Pointillism
+6|2|Paul Cezanne|Genre Painting|Cubism
+7|2|Vincent Van Gogh|Cityscape|Realism
+8|2|Gustave Dore|Religious Painting|Romanticism
+9|2|Pierre Auguste Renoir|Still Life|Impressionism
+0|3|Rembrandt|Religious Painting|Baroque
+1|3|Camille Pissarro|Portrait|Pointillism
+2|3|Ivan Shishkin|Landscape|Realism
+3|3|Childe Hassam|Cityscape|Impressionism
+4|3|Ivan Aivazovsky|Genre Painting|Romanticism
+5|3|Paul Cezanne|Still Life|Cubism
+6|3|Edgar Degas|Genre Painting|Impressionism
+7|3|Ilya Repin|Portrait|Realism
+8|3|Rembrandt|Religious Painting|Baroque
+9|3|Camille Pissarro|Cityscape|Pointillism
+0|4|Claude Monet|Landscape|Impressionism
+1|4|Paul Cezanne|Still Life|Cubism
+2|4|Gustave Dore|Religious Painting|Romanticism
+3|4|Eugene Boudin|Landscape|Realism
+4|4|Rembrandt|Genre Painting|Baroque
+5|4|Ivan Aivazovsky|Cityscape|Romanticism
+6|4|Camille Pissarro|Portrait|Pointillism
+7|4|Claude Monet|Still Life|Realism
+8|4|Edgar Degas|Genre Painting|Impressionism
+9|4|Paul Cezanne|Landscape|Cubism
+0|5|Gustave Dore|Religious Painting|Romanticism
+1|5|Pierre Auguste Renoir|Portrait|Impressionism
+2|5|Boris Kustodiev|Cityscape|Realism
+3|5|Rembrandt|Religious Painting|Baroque
+4|5|Eugene Boudin|Still Life|Realism
+5|5|Camille Pissarro|Landscape|Pointillism
+6|5|Childe Hassam|Genre Painting|Impressionism
+7|5|Ivan Aivazovsky|Portrait|Romanticism
+8|5|Vincent Van Gogh|Still Life|Realism
+9|5|John Singer Sargent|Cityscape|Impressionism
+0|6|Paul Cezanne|Landscape|Cubism
+1|6|Rembrandt|Portrait|Baroque
+2|6|Camille Pissarro|Genre Painting|Pointillism
+3|6|Gustave Dore|Religious Painting|Romanticism
+4|6|Ilya Repin|Cityscape|Impressionism
+5|6|Boris Kustodiev|Still Life|Realism
+6|6|Paul Cezanne|Landscape|Cubism
+7|6|Rembrandt|Religious Painting|Baroque
+8|6|Ivan Aivazovsky|Cityscape|Romanticism
+9|6|Camille Pissarro|Genre Painting|Pointillism
+0|7|Ivan Shishkin|Portrait|Realism
+1|7|Pierre Auguste Renoir|Still Life|Impressionism
+2|7|Paul Cezanne|Landscape|Cubism
+3|7|John Singer Sargent|Genre Painting|Impressionism
+4|7|Ilya Repin|Religious Painting|Realism
+5|7|Rembrandt|Portrait|Baroque
+6|7|Ivan Aivazovsky|Cityscape|Romanticism
+7|7|Camille Pissarro|Genre Painting|Pointillism
+8|7|Claude Monet|Still Life|Impressionism
+9|7|Ivan Shishkin|Landscape|Realism
+0|8|Gustave Dore|Religious Painting|Romanticism
+1|8|Paul Cezanne|Portrait|Cubism
+2|8|Childe Hassam|Cityscape|Impressionism
+3|8|Vincent Van Gogh|Still Life|Realism
+4|8|Rembrandt|Genre Painting|Baroque
+5|8|Camille Pissarro|Landscape|Pointillism
+6|8|Gustave Dore|Religious Painting|Romanticism
+7|8|Edgar Degas|Portrait|Impressionism
+8|8|Eugene Boudin|Cityscape|Realism
+9|8|Paul Cezanne|Landscape|Cubism
+0|9|Rembrandt|Genre Painting|Baroque
+1|9|Childe Hassam|Still Life|Impressionism
+2|9|Ivan Aivazovsky|Cityscape|Romanticism
+3|9|John Singer Sargent|Portrait|Realism
+4|9|Camille Pissarro|Genre Painting|Pointillism
+5|9|Gustave Dore|Religious Painting|Romanticism
+6|9|Pierre Auguste Renoir|Still Life|Impressionism
+7|9|Paul Cezanne|Landscape|Cubism
+8|9|Rembrandt|Portrait|Baroque
+9|9|Vincent Van Gogh|Cityscape|Realism
+0|10|Ilya Repin|Religious Painting|Realism
+1|10|Camille Pissarro|Genre Painting|Pointillism
+2|10|Claude Monet|Still Life|Impressionism
+3|10|Ivan Aivazovsky|Landscape|Romanticism
+4|10|Boris Kustodiev|Portrait|Realism
+5|10|Rembrandt|Religious Painting|Baroque
+6|10|Eugene Boudin|Cityscape|Impressionism
+7|10|Paul Cezanne|Landscape|Cubism
+8|10|Camille Pissarro|Genre Painting|Pointillism
+9|10|Edgar Degas|Still Life|Realism
+0|11|Gustave Dore|Religious Painting|Romanticism
+1|11|Edgar Degas|Portrait|Impressionism
+2|11|Ivan Shishkin|Cityscape|Realism
+3|11|Paul Cezanne|Landscape|Cubism
+4|11|Rembrandt|Religious Painting|Baroque
+5|11|Claude Monet|Still Life|Impressionism
+6|11|Ivan Aivazovsky|Cityscape|Romanticism
+7|11|Camille Pissarro|Genre Painting|Pointillism
+8|11|John Singer Sargent|Portrait|Realism
+9|11|Pierre Auguste Renoir|Still Life|Impressionism
+0|12|Paul Cezanne|Landscape|Cubism
+1|12|Rembrandt|Portrait|Baroque
+2|12|Gustave Dore|Religious Painting|Romanticism
+3|12|Camille Pissarro|Genre Painting|Pointillism
+4|12|Childe Hassam|Cityscape|Impressionism
+5|12|Boris Kustodiev|Still Life|Realism
+6|12|Paul Cezanne|Landscape|Cubism
+7|12|Ivan Aivazovsky|Religious Painting|Romanticism
+8|12|Vincent Van Gogh|Genre Painting|Realism
+9|12|Rembrandt|Portrait|Baroque
+0|13|Eugene Boudin|Cityscape|Impressionism
+1|13|Camille Pissarro|Genre Painting|Pointillism
+2|13|Ilya Repin|Still Life|Realism
+3|13|Gustave Dore|Religious Painting|Romanticism
+4|13|Paul Cezanne|Landscape|Cubism
+5|13|Eugene Boudin|Cityscape|Impressionism
+6|13|Rembrandt|Portrait|Baroque
+7|13|Ivan Aivazovsky|Religious Painting|Romanticism
+8|13|Ivan Shishkin|Landscape|Realism
+9|13|Camille Pissarro|Genre Painting|Pointillism
+0|14|Pierre Auguste Renoir|Still Life|Impressionism
+1|14|Boris Kustodiev|Portrait|Realism
+2|14|Claude Monet|Cityscape|Impressionism
+3|14|Paul Cezanne|Landscape|Cubism
+4|14|Gustave Dore|Religious Painting|Romanticism
+5|14|Rembrandt|Genre Painting|Baroque
+6|14|Vincent Van Gogh|Still Life|Realism
+7|14|Camille Pissarro|Cityscape|Pointillism
+8|14|Edgar Degas|Portrait|Impressionism
+9|14|Ivan Aivazovsky|Cityscape|Romanticism
+0|15|Paul Cezanne|Landscape|Cubism
+1|15|Childe Hassam|Still Life|Impressionism
+2|15|Rembrandt|Genre Painting|Baroque
+3|15|John Singer Sargent|Portrait|Realism
+4|15|Gustave Dore|Religious Painting|Romanticism
+5|15|Camille Pissarro|Landscape|Pointillism
+6|15|Ilya Repin|Portrait|Realism
+7|15|Pierre Auguste Renoir|Still Life|Impressionism
+8|15|Paul Cezanne|Genre Painting|Cubism
+9|15|Rembrandt|Religious Painting|Baroque
+0|16|Ivan Shishkin|Cityscape|Realism
+1|16|Claude Monet|Still Life|Impressionism
+2|16|Ivan Aivazovsky|Landscape|Romanticism
+3|16|Camille Pissarro|Genre Painting|Pointillism
+4|16|Gustave Dore|Religious Painting|Romanticism
+5|16|Edgar Degas|Portrait|Impressionism
+6|16|John Singer Sargent|Cityscape|Realism
+7|16|Paul Cezanne|Landscape|Cubism
+8|16|Rembrandt|Genre Painting|Baroque
+9|16|Vincent Van Gogh|Still Life|Realism
+0|17|Eugene Boudin|Cityscape|Impressionism
+1|17|Ivan Aivazovsky|Portrait|Romanticism
+2|17|Camille Pissarro|Landscape|Pointillism
+3|17|Rembrandt|Religious Painting|Baroque
+4|17|Childe Hassam|Still Life|Impressionism
+5|17|Boris Kustodiev|Genre Painting|Realism
+6|17|Paul Cezanne|Landscape|Cubism
+7|17|Ilya Repin|Portrait|Realism
+8|17|Gustave Dore|Religious Painting|Romanticism
+9|17|Camille Pissarro|Genre Painting|Pointillism
+0|18|John Singer Sargent|Cityscape|Impressionism
+1|18|Rembrandt|Portrait|Baroque
+2|18|Pierre Auguste Renoir|Still Life|Impressionism
+3|18|Paul Cezanne|Landscape|Cubism
+4|18|Ivan Aivazovsky|Cityscape|Romanticism
+5|18|Ilya Repin|Religious Painting|Realism
+6|18|Camille Pissarro|Landscape|Pointillism
+7|18|Claude Monet|Still Life|Realism
+8|18|Rembrandt|Religious Painting|Baroque
+9|18|Childe Hassam|Genre Painting|Impressionism
+0|19|Ivan Aivazovsky|Cityscape|Romanticism
+1|19|Edgar Degas|Portrait|Realism
+2|19|Paul Cezanne|Landscape|Cubism
+3|19|Eugene Boudin|Still Life|Impressionism
+4|19|Gustave Dore|Religious Painting|Romanticism
+5|19|Ivan Shishkin|Genre Painting|Realism
+6|19|Boris Kustodiev|Cityscape|Impressionism
+7|19|Rembrandt|Portrait|Baroque
+8|19|Camille Pissarro|Landscape|Pointillism
+9|19|Vincent Van Gogh|Still Life|Realism

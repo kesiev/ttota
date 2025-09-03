@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            @font-face {
+                font-family: ibmvga8;
+                src: url(../../css/fonts/ibm_vga8.eot);
+                src: url(../../css/fonts/ibm_vga8.eot?#iefix) format('embedded-opentype'),url(../css/../fonts/ibm_vga8.woff2) format('woff2'),url(../../css/fonts/ibm_vga8.woff) format('woff'),url(../../css/fonts/ibm_vga8.ttf) format('truetype');
+                font-weight: 400;
+                font-style: normal
+            }
+        </style>
+    </head>
+    <body onload="onl()">
+        <span style="font-family:ibmvga8">Font loaded!</span>
+        <hr>
+    </body>
+</html>
+<script>
+function onl() {
+
+    const
+        FONT = [
+            [
+                {
+                    letter:"0"
+                },{
+                    letter:"1"
+                },{
+                    letter:"2"
+                },{
+                    letter:"3"
+                },{
+                    letter:"4"
+                },{
+                    letter:"5"
+                },{
+                    letter:"6"
+                },{
+                    letter:"7"
+                },{
+                    letter:"8"
+                },{
+                    letter:"9"
+                }
+            ],
+            [
+                {
+                    letter:"A"
+                },{
+                    letter:"B"
+                },{
+                    letter:"C"
+                },{
+                    letter:"D"
+                },{
+                    letter:"E"
+                },{
+                    letter:"F"
+                },{
+                    letter:"G"
+                },{
+                    letter:"H"
+                },{
+                    letter:"I"
+                },{
+                    letter:"J"
+                }
+            ],
+            [
+                {
+                    letter:"K"
+                },{
+                    letter:"L"
+                },{
+                    letter:"M"
+                },{
+                    letter:"N"
+                },{
+                    letter:"O"
+                },{
+                    letter:"P"
+                },{
+                    letter:"Q"
+                },{
+                    letter:"R"
+                },{
+                    letter:"S"
+                },{
+                    letter:"T"
+                }
+            ],
+            [
+                {
+                    letter:"U"
+                },{
+                    letter:"V"
+                },{
+                    letter:"W"
+                },{
+                    letter:"X"
+                },{
+                    letter:"Y"
+                },{
+                    letter:"Z"
+                },{
+                    letter:"+"
+                },{
+                    letter:"-"
+                },{
+                    letter:"*"
+                },{
+                    letter:"/"
+                },
+            ],[
+                {
+                    letter:"↑"
+                },{
+                    letter:"→"
+                },{
+                    letter:"↓"
+                },{
+                    letter:"←"
+                },{
+                    letter:"?"
+                },{
+                    letter:"!"
+                },{
+                    letter:"♠"
+                },{
+                    letter:"♣"
+                },{
+                    letter:"♥",
+                    color:[ 255, 0, 0 ]
+                },{
+                    letter:"♦",
+                    color:[ 255, 0, 0 ]
+                }
+            ],[
+                {
+                    letter:"▲"
+                },{
+                    letter:"►"
+                },{
+                    letter:"▼"
+                },{
+                    letter:"◄"
+                },{
+                    letter:"="
+                },{
+                    letter:":"
+                }
+            ]
+        ];
+
+    [
+        {
+            title:"item-text.png",
+            textureSizeWidth:59,
+            textureSizeHeight:84,
+            textureGap:1,
+            gapY:3,
+            gapX:1,
+            font:"30px ibmvga8"
+        },{
+            title:"text.png",
+            textureSizeWidth:100,
+            textureSizeHeight:100,
+            textureGap:1,
+            gapY:7,
+            gapX:3,
+            font:"90px ibmvga8",
+            dealias:true,
+            dealiasTollerance:250
+        }
+    ].forEach(mode=>{
+
+        let
+            title = document.createElement("h1"),
+            canvas = document.createElement("canvas"),
+            ctx;
+
+        title.innerHTML = mode.title;
+
+        canvas.style.border = "2px solid #000";
+        canvas.style.fontSmooth="never";
+        canvas.style.fontSmoothing="none";
+        canvas.style.imageRendering="pixelated";
+        canvas.style.textRendering="optimizeSpeed";
+
+        canvas.width=((mode.textureSizeWidth+mode.textureGap)*FONT[0].length);
+        canvas.height=((mode.textureSizeHeight+mode.textureGap)*FONT.length);
+        canvas.border = "1px solid red";
+        
+        ctx = canvas.getContext("2d");
+        ctx.mozImageSmoothingEnabled = false;
+        ctx.webkitImageSmoothingEnabled = false;
+        ctx.msImageSmoothingEnabled = false;
+        ctx.imageSmoothingEnabled = false;
+
+        document.body.appendChild(title);
+        document.body.appendChild(canvas);
+
+        for (let y=0;y<FONT.length;y++) {
+            for (let x=0;x<FONT[0].length;x++) {
+                let
+                    entry = FONT[y][x],
+                    ox = (mode.textureSizeWidth+mode.textureGap)*x,
+                    oy = (mode.textureSizeHeight+mode.textureGap)*y,
+                    cx = Math.floor(ox+(mode.textureSizeWidth/2)),
+                    cy = Math.floor(oy+(mode.textureSizeHeight/2));
+
+
+                if (entry) {
+                    /*
+                    ctx.fillStyle = "#f00";
+                    ctx.fillRect(ox,oy,TEXTURESIZE,TEXTURESIZE);
+                    ctx.fillStyle = "#ff0";
+                    ctx.fillRect(ox,oy,TEXTURESIZE/2,TEXTURESIZE/2);
+                    */
+                    ctx.fillStyle = entry.color ? "rgb("+entry.color.join(",")+")" : "#000";
+                    ctx.font = mode.font;
+                    ctx.textBaseline = "middle";
+                    ctx.textAlign = "center";
+                    ctx.fillText(entry.letter,cx+mode.gapX,cy+mode.gapY,mode.textureSizeWidth);
+                }
+            }
+        }
+
+        if (mode.dealias) {
+
+            let
+                data = ctx.getImageData(0,0,canvas.width,canvas.height);
+
+            for (let x=0;x<canvas.width;x++)
+                for (let y=0;y<canvas.height;y++) {
+                    let
+                        lx = Math.floor(x/(mode.textureSizeWidth+mode.textureGap)),
+                        ly = Math.floor(y/(mode.textureSizeHeight+mode.textureGap)),
+                        entry = FONT[ly][lx],
+                        pos = (x+y*canvas.width)*4,
+                        alpha = data.data[pos+3];
+
+                    if ((alpha>0)&&(alpha<255)) {
+                        data.data[pos] = entry.color ? entry.color[0] : 0;
+                        data.data[pos+1] = entry.color ? entry.color[1] : 0;
+                        data.data[pos+2] = entry.color ? entry.color[2] : 0;
+                        data.data[pos+3] = alpha > mode.dealiasTollerance ? 255 :0;
+                    }
+                }
+            ctx.putImageData(data,0,0);
+
+        }
+
+    })
+
+}
+</script>

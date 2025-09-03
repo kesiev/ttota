@@ -1,0 +1,711 @@
+0|0|In the Assassin&#039;s Creed series,what was the name of Desmond Miles given by Abstergo?|Subject 17|Subject 16|Subject 18|Alta&iuml;r Ibn-La&#039;Ahad
+0|0|How many differently shaped Tetris pieces are there?|7|5|6|8
+0|0|What is the first weapon you acquire in Half-Life?|A crowbar|A pistol|The H.E.V suit|Your fists
+0|0|What does Solid Snake use to hide himself with?|Cardboard Box|Cloaking Device|Metal Crate|Cardboard cut-out
+0|0|What war is Call Of Duty: Black Ops based on?|Cold War|WW3|Vietnam|WW1
+0|0|Who is the protagonist in Dead Rising (2006)?|Frank West|Chuck Greene|John North|Jason Grey
+0|0|Which of these levels does NOT appear in the console/PC versions of the game &quot;Sonic Generations&quot;?|Mushroom Hill|City Escape|Planet Wisp|Sky Sanctuary
+0|0|What ingredient is NOT used to craft a cake in Minecraft?|Bread|Wheat|Milk|Egg
+0|0|In what city in the dystopia alternate future of Half-Life 2 do you first start in?|City 17|City 18|City 6|City 45
+0|0|Tony Hawk&#039;s extreme sports videogames revolve around performing professional BMX tricks.|False|True
+0|1|What is the world&#039;s first video game console?|Magnavox Odyssey|Coleco Telstar|Nintendo Color TV Game|Atari 2600
+0|1|In the Half-Life universe, the Black Mesa Research Facility is located in which US state?|New Mexico|Nevada|Arizona|Wyoming
+0|1|Which of the following colors does the Zombie eyes glow in the &quot;Nuketown&quot; map in &quot;Call of Duty: Black Ops II&quot; Zombies mode?|Yellow and Blue|Yellow and Red|Red and Blue|Blue and White
+0|1|What was the name of the Secret Organization in the Hotline Miami series? |50 Blessings|American Blessings|50 Saints|USSR&#039;s Blessings
+0|1|Which of the following games has the most playable characters?|Timesplitters: Future Perfect|Mortal Kombat: Armageddon|Marvel Vs. Capcom 2|Dragon Ball Z: Budokai Tenkaichi 3
+0|1|Which pop singer was brought in by SEGA to produce the music for &quot;Sonic the Hedgehog 3&quot;?|Michael Jackson |Prince|George Michael|Vanilla Ice 
+0|1|In the video game &quot;Transistor&quot;, &quot;Red&quot; is the name of the main character.|True|False
+0|1|How old is Chloe Price in Life is Strange: Before the Storm?|16|24|19|15
+0|1|In the ARPG &quot;Path of Exile,&quot; what is the highest amount of sockets that an item can have?|6|5|4|8
+0|1|In Pokemon Diamond, Pearl and Platinum, where can a Munchlax be found?|Honey Trees|Trading with an NPC|Grass on Route 209|Wayward Cave
+0|2|The creation of the  Entertainment Software Ratings Board (ESRB) is often associated with Mortal Kombat and what FMV video game?|Night Trap|Sewer Shark|The Daedalus Encounter|Corpse Killer
+0|2|Which character, in the game &quot;Morenatsu&quot;, has the most possible endings to their route, at a total of four different endings?|Shin Kuroi|Kouya Aotsuki|Soutarou Touno|Torahiko Ooshima
+0|2|In Counter Strike: Global Offensive, what is the code implanted onto the C4 as the Terrorists plant the bomb?|7355608|7890728|7256380|7726354
+0|2|In the &quot;Devil May Cry&quot; franchise, which game is chronologically first?|Devil May Cry 3: Dante&#039;s Awakening |Devil May Cry 4|Devil May Cry|Devil May Cry 2
+0|2|How many copies of the notorious E.T. game for the Atari 2600 did Atari end up selling?|1.5 Million|1 Million|250 Thousand|Less than 250 Thousand
+0|2|In the Kingdom Hearts series, which is not an optional boss you can fight?|Master Yen Sid|Sephiroth|Julius|Kurt Zisa
+0|2|In World of Warcraft, which raid instance features a chess event?|Karazhan|Zul&#039;Aman|Blackwing Lair|Temple of Ahn&#039;Qiraj
+0|2|The creeper in Minecraft was the result of a bug while implementing which creature?|Pig|Zombie|Chicken|Cow
+0|2|Which of these characters in &quot;Undertale&quot; can the player NOT go on a date with?|Toriel|Papyrus|Undyne|Alphys
+0|2|Which of these games was NOT developed by Markus Persson?|Dwarf Fortress|Minecraft|Wurm Online|0x10c
+1|0|Which candy is NOT made by Mars?|Almond Joy|M&amp;M&#039;s|Twix|Snickers
+1|0|The color orange is named after the fruit.|True|False
+1|0|What is the Zodiac symbol for Gemini?|Twins|Fish|Scales|Maiden
+1|0|What is the nickname of the US state of California?|Golden State|Sunshine State|Bay State|Treasure State
+1|0|The mitochondria is the powerhouse of the cell.|True|False
+1|0|What is the name of the company in Lethal Company?|The Company|Planet Scrap Co.|Lethal Robotics|Gordian Shipping Co.
+1|0|Which sign of the zodiac is represented by the Crab?|Cancer|Libra|Virgo|Sagittarius
+1|0|What is the largest organ of the human body?|Skin|Heart|large Intestine|Liver
+1|0|When was the Playstation 3 released?|November 11, 2006|January 8, 2007|December 25, 2007|July 16, 2006
+1|0|What is Tasmania?|An Australian State|A flavor of Ben and Jerry&#039;s ice-cream|A Psychological Disorder|The Name of a Warner Brothers Cartoon Character
+1|1|What does a milliner make and sell?|Hats|Shoes|Belts|Shirts
+1|1|When was the Declaration of Independence approved by the Second Continental Congress?|July 4, 1776|May 4, 1776|June 4, 1776|July 2, 1776
+1|1|Which language is NOT Indo-European?|Hungarian|Russian|Greek|Latvian
+1|1|According to the United States&#039; CDC, one in how many Americans die annually due to smoking?|Five|Twenty|Ten|One hundred
+1|1|The new One World Trade Center in Manhattan, New York City was designed by which architect? |David Childs|Bjarke Ingels|Michael Arad|Fumihiko Maki
+1|1|What does the &quot;G&quot; mean in &quot;G-Man&quot;?|Government|Going|Ghost|Geronimo
+1|1|What is the German word for &quot;spoon&quot;?|L&ouml;ffel|Gabel|Messer|Essst&auml;bchen
+1|1|Which logical fallacy means to attack the character of your opponent rather than their arguments?|Ad hominem|Post hoc ergo propter hoc|Tu quoque|Argumentum ad populum
+1|1|What is the name of the popular animatronic singing fish prop, singing such hits such as &quot;Don&#039;t Worry, Be Happy&quot;?|Big Mouth Billy Bass|Big Billy Bass|Singing Fish|Sardeen
+1|1|The commercial UK channel ITV stands for &quot;International Television&quot;.|False|True
+1|2|Which of the following  British Monarchs never appeared on a circulated pound sterling coin?|Edward VIII|Victoria|George VI|Charles II
+1|2|In &quot;Battle Cats&quot;, what is Moneko / MISS Moneko&#039;s critical percentage rate?|15%|20%|10%|25%
+1|2|What is the airspeed velocity of an unladen swallow?|24 MPH|15 MPH|20 MPH|200 MPH
+1|2|According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?|28%|13%|20%|7%
+1|2|Where is Apple Inc. headquartered?|Cupertino, California|Redwood City, California|Redmond, Washington|Santa Monica, CA
+1|2|The word &quot;aprosexia&quot; means which of the following?|The inability to concentrate on anything|The inability to make decisions|A feverish desire to rip one&#039;s clothes off|The inability to stand up
+1|2|What year was Queen Elizabeth II born?|1926|1923|1929|1930
+1|2|According to Fair Works Australia, how long do you have to work to get Long Service Leave?|7 years|2 years|8 years|6 months
+1|2|The word &quot;abulia&quot; means which of the following?|The inability to make decisions|The inability to stand up|The inability to concentrate on anything|A feverish desire to rip one&#039;s clothes off
+1|2|Named after the mallow flower, mauve is a shade of what?|Purple|Red|Brown|Pink
+2|0|What album did The Lumineers release in 2016?|Cleopatra|Winter|The Lumineers|Tracks From The Attic
+2|0|Who is the lead singer of the band Coldplay?|Chris Martin|Chris Isaak|Chris Wallace|Chris Connelly
+2|0|The song &quot;Stronger Than You&quot; is a single by Estelle, who played Garnet in Steven Universe.|True|False
+2|0|Which punk rock band released hit songs such as &quot;Californication&quot;, &quot;Can&#039;t Stop&quot; and &quot;Under the Bridge&quot;?|Red Hot Chilli Peppers|Green Day|Linkin Park|Foo Fighters
+2|0|Which 80s band is fronted by singer/guitarist Robert Smith?|The Cure|The Smiths|Echo &amp; the Bunnymen|New Order
+2|0|Who was featured in the song &quot;Words&quot; by Feint? |Laura Brehm|Anna Yvette |Danyka Nadeau|Veela
+2|0|How many studio albums have the duo Daft Punk released?|4|1|5|2
+2|0|In 2006, which band released their debut album &quot;A Fever You Can&#039;t Sweat Out&quot;?|Panic! At the Disco|Twenty One Pilots|My Chemical Romance|Fall Out Boy
+2|0|Who performed &quot;I Took A Pill In Ibiza&quot;?|Mike Posner|Avicii|Robbie Williams|Harry Styles
+2|0|The &quot;British Invasion&quot; was a cultural phenomenon in music where British boy bands became popular in the USA in what decade?|60&#039;s|50&#039;s|40&#039;s|30&#039;s
+2|1|What was the name of Pink Floyd&#039;s first studio album?|The Piper at the Gates of Dawn|Ummagumma|More|Atom Heart Mother
+2|1|Which of these songs did Jimi Hendrix cover?|All of these songs|Sgt. Pepper&#039;s Lonely Hearts Club Band|All Along the Watchtower|House of the Rising Sun
+2|1|According to their 1974 hit, what were Brownsville Station doing &quot;In The Boys&#039; Room&quot;?|Smokin&#039;|Hangin&#039;|Lovin&#039;|Peein&#039;
+2|1|&quot;Lift Your Spirit&quot; is an album by which artist?|Aloe Blacc|Lena Meyer-Landrut|Stevie Wonder|Taylor Swift
+2|1|Who is the vocalist and frontman of rock band &quot;Guns N&#039; Roses&quot;?|Axl Rose|Kurt Cobain|Slash|Bono
+2|1|Which one of these Rammstein songs has two official music videos?|Du Riechst So Gut|Du Hast|Benzin|Mein Teil
+2|1|Who had a 1976 hit with the song &#039;You Make Me Feel Like Dancing&#039;?|Leo Sayer|Elton John|Billy Joel|Andy Gibb
+2|1|What was David Bowie&#039;s real surname?|Jones|Johnson|Edwards|Carter
+2|1|Which of these languages was NOT included in the 2016 song &quot;Don&#039;t Mind&quot; by Kent Jones?|Portuguese|Japanese|French|Spanish
+2|1|The song &quot;Feel Good Inc.&quot; by British band Gorillaz features which hip hop group?|De La Soul|Public Enemy|OutKast|Cypress Hill
+2|2|Which M83 album is the song &quot;Midnight City&quot; featured in?|Hurry Up, We&#039;re Dreaming|Saturdays = Youth|Before the Dawn Heals Us|Junk
+2|2|What was the last Aphex Twin album released before his decade-long hiatus?|Drukqs|Windowlicker|Syro|Collected Ambient Works 85-92
+2|2|A Caixa Malacacheta is what kind of musical instrument which is commonly used in Latin American music?|Snare Drum|Cow Bell|Bass Drum|Maraca
+2|2|What is the first track on the Dave Matthews Band album &quot;Before These Crowded Streets&quot;?|Pantala Naga Pampa|Stay (Wasting Time)|Rapunzel|Don&#039;t Drink The Water
+2|2|What is the stage name of New Zealand singer Phillipa &quot;Pip&quot; Brown?|Ladyhawke|Lorde|Kesha|Anika Moa
+2|2|Which of these aliases has NOT been used by electronic musician Aphex Twin?|Burial|Caustic Window|Bradley Strider|GAK
+2|2|Pete Townshend collaborated with which famous guitarist for an event at Brixton Academy in 1985?|David Gilmour|Jimmy Page|Mark Knopfler|Eric Clapton
+2|2|Chino Moreno is the lead singer of which alternative metal band?|Deftones|Tool|Korn|Type O Negative
+2|2|What is the name of the song by Beyonc&eacute; and Alejandro Fern&aacute;ndez released in 2007?|Amor Gitano|La ultima vez|Rocket|Hasta Dondes Estes
+2|2|What year was Min Yoongi from South Korea boy band &quot;BTS&quot; born in?|1993|1992|1995|1994
+3|0|According to the United States Constitution, how old must a person be to be elected President of the United States?|35|30|40|45
+3|0|Who was the 45th President of the United States?|Donald Trump|Barack Obama|Bill Clinton|George Bush
+3|0|Which of the following Pacific Islander countries is ruled by a constitutional monarchy?|Tonga|Palau|Fiji|Kiribati
+3|0|Russia passed a law in 2013 which outlaws telling children that homosexuals exist.|True|False
+3|0|Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?|Donald Trump|Ted Cruz|Marco Rubio|Bernie Sanders
+3|0|How many people are in the U.S. House of Representatives?|435|260|415|50
+3|0|Denmark has a monarch.|True|False
+3|0|Which former US president was nicknamed &quot;Teddy&quot; after he refused to shoot a defenseless black bear?|Theodore Roosevelt|Woodrow Wilson|James F. Fielder|Andrew Jackson
+3|0|One of Barack Obama&#039;s United States presidential campaign slogan&#039;s was &quot;Yes We Can&quot;.|True|False
+3|0|The largest consumer market in 2015 was...|The United States of America|Germany|Japan|United Kingdom
+3|1|In United States history, how many vice presidents did Franklin D. Roosevelt have during his time in office as president?|3|1|2|0
+3|1|What is former United States President Bill Clinton&#039;s full name?|William Jefferson Clinton|William Roosevelt Clinton|William Truman Clinton|William Lincoln Clinton
+3|1|Who was the 40th President of the USA?|Ronald Reagan|Jimmy Carter|Bill Clinton|Richard Nixon
+3|1|Which president erased the national debt of the United States?|Andrew Jackson|Ronald Reagan|John F. Kennedy|Franklin Roosevelt
+3|1|Jeb Bush was elected as Governor of Florida in 2002, starting his political career.|False|True
+3|1|Helen Clark was the 37th Prime Minister of Australia.|False|True
+3|1|Before 2011, &quot;True Capitalist Radio&quot; was known by a different name. What was that name?|True Conservative Radio|True Republican Radio|Texan Capitalist Radio|United Capitalists
+3|1|What are the first names of the first father and son pair that were both Prime Ministers of Canada?|Justin and Pierre|John and Louis|Brian and Justin|Brian and Pierre
+3|1|What year did Gerald Ford Become President?|1974|1977|1973|1969
+3|1|What was the personal nickname of the 40th Governor of the US State Louisiana, Huey Long?|The Kingfish|The Champ|The Hoot Owl|The Oracle
+3|2|What is centralism?| Concentration of power and authority in a central organization.|Conforming to one single common political agenda.|Remaining politically neutral.|The grey area in the spectrum of political left and right.
+3|2|Who is the only US president to serve two non-consecutive terms in office?|Grover Cleveland|James K. Polk|Franklin D. Roosevelt|Thomas Jefferson
+3|2|Which of the following United States senators is known for performing a 24-hour long filibuster?|Strom Thurmond|Roy Blunt|John Barrasso|Chuck Schumer
+3|2|Which of these was an official candidate in the 2017 British General Election?|Lord Buckethead|James Francis|Robert Wimbledon|Sir Crumpetsby
+3|2|George Clinton, Vice President of the United States (1805-1812), is an ancestor of President Bill Clinton.|False|True
+3|2|In June 2017, Saudi Arabia and Egypt broke off ties with which country over its supposed support for terrorism?|Qatar|Bahrain|United States of America|Russia
+3|2|What year did the effort to deploy the Common Core State Standards (CCSS) in the US begin?|2009|2012|2006|1997
+3|2|Joko Widodo has appeared in the cover of a TIME magazine.|True|False
+3|2|&quot;Yes, America Can!&quot; was this United States politician&#039;s de facto campaign slogan in 2004.|George W. Bush|John Kerry|Barack Obama|Al Gore
+3|2|Which Native American tribe/nation requires at least one half blood quantum (equivalent to one parent) to be eligible for membership?|Yomba Shoshone Tribe|Standing Rock Sioux Tribe|Kiowa Tribe of Oklahoma|Pawnee Nation of Oklahoma
+4|0|Psychology is the science of behavior and mind.|True|False
+4|0|What is the largest animal currently on Earth?|Blue Whale|Orca|Colossal Squid|Giraffe
+4|0|Rhinoplasty is a surgical procedure on what part of the human body?|Nose|Ears|Chin|Neck
+4|0|Which gas forms about 78% of the Earth&rsquo;s atmosphere?|Nitrogen|Oxygen|Argon|Carbon Dioxide
+4|0|Alzheimer&#039;s disease primarily affects which part of the human body?|Brain|Lungs|Skin|Heart
+4|0|What is the elemental symbol for mercury?|Hg|Me|Mc|Hy
+4|0|How many planets make up our Solar System?|8|7|9|6
+4|0|What is the unit of electrical resistance?|Ohm|Mho|Tesla|Joule
+4|0|What animal takes part in Schr&ouml;dinger&#039;s most famous thought experiment?|Cat|Dog|Bat|Butterfly
+4|0|The human heart has how many chambers?|4|2|6|3
+4|1|The humerus, paired radius, and ulna come together to form what joint?|Elbow|Knee|Sholder|Ankle
+4|1|What is an alternative name for multiple personality disorder?|Dissociative identity disorder|Body integrity identity disorder|Identity crisis|Schizophrenia
+4|1|Who made the discovery of X-rays?|Wilhelm Conrad R&ouml;ntgen|Thomas Alva Edison|James Watt|Albert Einstein
+4|1|The Axiom of Preventive Medicine states that people with ___ risk for a disease should be screened and we should treat ___ of those people.|low, all|low, some|high, all|high, some
+4|1|Which of these is NOT a part of the structure of a typical neuron?|Islets of Langerhans|Node of Ranvier|Schwann cell|Myelin sheath
+4|1|Along with Oxygen, which element is primarily responsible for the sky appearing blue?|Nitrogen|Helium|Carbon|Hydrogen
+4|1|A person can get sunburned on a cloudy day.|True|False
+4|1|The Doppler effect applies to light.|True|False
+4|1|What do you study if you are studying entomology?|Insects|Humans|the Brain|Fish
+4|1|What mineral has the lowest number on the Mohs scale?|Talc|Quartz|Diamond|Gypsum
+4|2|Which of the following is NOT a real element?|Vitrainium|Praseodymium|Hassium|Lutetium
+4|2|In quantum physics, which of these theorised sub-atomic particles has yet to be observed?|Graviton|Z boson|Tau neutrino|Gluon
+4|2|Which of the following elements is typically used in the doping of the semiconductor silicon?|Boron|Oxygen|Carbon|Iron
+4|2|What was the first organic compound to be synthesized from inorganic compounds?|Urea|Propane|Ethanol|Formaldehyde
+4|2|How many legs is it biologically impossible for a centipede to have?|100|26|50|74
+4|2|What is the molecular formula of Ozone?|O3|C6H2O6|N2O|SO4
+4|2|Botanically speaking, which of these fruits is NOT a berry?|Strawberry|Blueberry|Banana|Concord Grape
+4|2|How many objects are equivalent to one mole?|6.022 x 10^23|6.002 x 10^22|6.022 x 10^22|6.002 x 10^23
+4|2|What causes the sound of a heartbeat?|Closure of the heart valves|Contraction of the heart chambers|Blood exiting the heart|Relaxation of the heart chambers
+4|2|Which of the following are cells of the adaptive immune system?|Cytotoxic T cells|Dendritic cells|Natural killer cells|White blood cells
+5|0|In &quot;To Love-Ru&quot;, Ren and Run are from what planet?|Memorze|Deviluke|Mistletoe|Okiwana
+5|0|How many &quot;JoJos&quot; that are protagonists are there in the series &quot;Jojo&#039;s Bizarre Adventure&quot;?|8+|6+|4+|5+
+5|0|No Game No Life first aired in 2014.|True|False
+5|0|Which part from the JoJo&#039;s Bizarre Adventure manga is about a horse race across America?|Part 7: Steel Ball Run|Part 6: Stone Ocean|Part 3: Stardust Crusaders|Part 5: Golden Wind
+5|0|What was Ash Ketchum&#039;s second Pokemon?|Caterpie|Charmander|Pikachu|Pidgey
+5|0|On what medium was &quot;Clannad&quot; first created?|Visual novel|Anime|Manga|Light novel
+5|0|In 2013, virtual pop-star Hatsune Miku had a sponsorship with which pizza chain?|Domino&#039;s|Papa John&#039;s|Pizza Hut|Sabarro&#039;s
+5|0|In Kill La Kill, the weapon of the main protagonist is a katana. |False|True
+5|0|Which of the following originated as a manga?|Akira|Cowboy Bebop|High School DxD|Gurren Lagann
+5|0|Who is the main character with yellow hair in the anime Naruto?|Naruto|Ten Ten|Sasuke|Kakashi
+5|1|In the anime Assassination Classroom what is the class that Korosensei teaches?|Class 3-E|Class 3-A|Class 3-B|Class 3-D
+5|1|In &quot;To Love-Ru: Darkness&quot;, Yami reveals her real name is Eve.|True|False
+5|1|In &quot;Highschool DxD&quot;, what is the name of the item some humans are born with?|Sacred Gear|Imperial Arm|Hallowed Relic|Blessed Artifact
+5|1|The anime Attack on Titan was directed by Tetsurō Araki, the same person who directed the anime Highschool of the Dead.|True|False
+5|1|What studio animated Ouran High School Host Club?|Bones|Production I.G|Kyoto Animation|xebec
+5|1|In the anime, &quot;Super Sonico&quot;, what is Super Sonico&#039;s favorite food?|Macroons|Ice Cream|Pizza|Chips
+5|1|In the series JoJo&#039;s Bizarre Adventure, which main character makes the greatest number of recurring appearances?|Jotaro Kujo|Giorno Giovanna|Joseph Joestar|Josuke Higashikata
+5|1|Which anime did Seiji Kishi NOT direct?|Another|Humanity Has Declined|Assassination Classroom|Danganronpa: The Animation
+5|1|Aoi Miyamori is the production manager of what anime in &quot;Shirobako&quot;?|The Third Aerial Girls Squad|Exodus!|Andes Chucky|Angel Beats!
+5|1|What was the reason for the banning of episode 35 of the &quot;Pok&eacute;mon Original Series&quot; Anime?|Gun Usage|Flashing Images|Jynx|Strong Violence
+5|2|Which song was the callsign for Stefan Verdemann&#039;s KWFM radio station in Urasawa Naoki&#039;s &quot;Monster&quot;?|Over the Rainbow|What a Wonderful World|When You Wish Upon A Star|Singing In The Rain
+5|2|Winch of these names are not a character of JoJo&#039;s Bizarre Adventure?|JoJo Kikasu|Jean-Pierre Polnareff|George Joestar|Risotto Nero
+5|2|In &quot;One Piece&quot;, who confirms the existence of the legendary treasure, One Piece?|Edward &quot;Whitebeard&quot; Newgate|Former Marine Fleet Admiral Sengoku|Pirate King Gol D Roger|Silvers Rayleigh
+5|2|Which of the following countries does &quot;JoJo&#039;s Bizarre Adventure: Stardust Crusaders&quot; not take place in?|Philippines|India|Pakistan|Egypt
+5|2|In &quot;One Piece&quot;, who is the girl who overcame her enslaved past and became an agent of an army to fight the corrupt government?|Koala|Boa Hancock|Nico Robin|Emporio Ivankov 
+5|2|Akatsuki&#039;s subclass in &quot;Log Horizon&quot; is what?| Tracker|Assassin|Scribe|Apprentice
+5|2|In the Overlord Anime who was Cocytus made by?|Warrior Takemikazuchi|Peroroncino|Ulbert Alain Odle|Bukubukuchagama
+5|2|The character Plum from &quot;No Game No Life&quot; is a girl.|False|True
+5|2|Which one of these characters is from &quot;Legendz : Tale of the Dragon Kings&quot;?|Shiron|Jack|Axia|Drum
+5|2|Which of these anime have over 7,500 episodes?|Sazae-san|Naruto|One Piece|Chibi Maruko-chan
+6|0|What name did Tom Hanks give to his volleyball companion in the film `Cast Away`?|Wilson|Friday|Jones|Billy
+6|0|George Lucas directed the entire original Star Wars trilogy.|False|True
+6|0|What is the name of the island that &quot;Jurassic Park&quot; is built on?|Isla Nublar|Isla Sorna|Isla Muerta|Isla Pena
+6|0|Who starred in the film 1973 movie &quot;Enter The Dragon&quot;?|Bruce Lee|Jackie Chan|Jet Li| Yun-Fat Chow
+6|0|What is the orange and white bot&#039;s name in &quot;Star Wars: The Force Awakens&quot;?|BB-8|BB-3|AA-A|R2-D2
+6|0|The 2010 film &quot;The Social Network&quot; is a biographical drama film about MySpace founder Tom Anderson.|False|True
+6|0|In the movie &quot;Cast Away&quot; the main protagonist&#039;s best friend while on the island is named|Wilson|Carson|Jackson|Willy
+6|0|Which movie released in 2016 features Superman and Batman fighting?|Batman v Superman: Dawn of Justice|Batman v Superman: Superapocalypse|Batman v Superman: Black of Knight|Batman v Superman: Knightfall
+6|0|In Big Hero 6, what fictional city is the Big Hero 6 from?|San Fransokyo|San Tokyo|Tokysisco|Sankyo
+6|0|Ewan McGregor did not know the name of the second prequel film of Star Wars during and after filming.|True|False
+6|1|Which one of these films are shot entirely in one-take?|Russian Ark|Good Will Hunting|Birdman|Schindler&#039;s List
+6|1|In the 2014 film &quot;Birdman&quot;, what is the primary instrument in the score?|Drums|Saxophone|Violin|Actual Live Birds Singing
+6|1|Which Marvel superhero did Chris Evans play prior to his role as Captain America?|Human Torch|Cyclops|Iceman|Daredevil
+6|1|What was Marilyn Monroe`s character&#039;s first name in the film &quot;Some Like It Hot&quot;?|Sugar|Honey|Caramel|Candy
+6|1|Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?|Sean Connery|Dennis Quaid|Pete Postlethwaite|Brian Thompson
+6|1|Which of the following actors does not play a role in the movie &quot;The Usual Suspects?&quot;|Steve Buscemi|Kevin Spacey|Benicio Del Toro|Gabriel Byrne
+6|1|What is Lilo&#039;s last name from Lilo and Stitch?|Pelekai|Anoaʻi|Kealoha|Kuʻulei
+6|1|Which town is the setting for the Disney movie The Love Bug (1968)?|San Francisco|Los Angeles|Sacramento|San Jose
+6|1|Who was the director of &quot;Scott Pilgrim vs. the World (2010)&quot;?|Edgar Wright|Phil Lord|Chris Miller|Seth Rogan
+6|1|In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing	spree?|Westworld|Runaway|Android|The Terminators
+6|2|In the 1964 film &quot;Zulu&quot;, what song does the British Army company sing before the final battle?|Men of Harlech|Scotland the Brave|Colonel Bogey March|The British Grenadiers
+6|2|What three movies, in order from release date, make up the &quot;Dollars Trilogy&quot;?|&quot;A Fistful of Dollars&quot;, &quot;For a Few Dollars More&quot;, &quot;The Good, the Bad, and the Ugly&quot;|&quot;The Good, the Bad, and the Ugly&quot;, &quot;For A Few Dollars More&quot;, &quot;A Fistful of Dollars&quot;|&quot;For a Few Dollars More&quot;, &quot;The Good, the Bad, and the Ugly&quot;, &quot;A Fistful of Dollars&quot;|&quot;For a Few Dollars More&quot;, &quot;A Fistful of Dollars&quot;, &quot;The Good, the Bad, and the Ugly&quot;
+6|2|In what year did Clint Eastwood star as Inspector Harry Callahan in the film &quot;Dirty Harry&quot;?|1971|1975|1983|1969
+6|2|In the movie &quot;Scream&quot; who is Ghost Face?|Billy Loomis and Stu Macher|Dewey Riley|Sidney Prescott|Archie Prescott and Philip Marv
+6|2|&quot;Cube&quot;, &quot;Cube 2: Hypercube&quot; and &quot;Cube Zero&quot; were directed by the same person.|False|True
+6|2|Which was the first of Alfred Hitchcock&#039;s movies to be filmed in colour?|Rope|Psycho|Vertigo|Rebecca
+6|2|Which sci-fi cult films plot concerns aliens attempting to prevent humans from creating a doomsday weapon?|Plan 9 from Outer Space|The Man from Planet X|It Came from Outer Space|The Day The Earth Stood Still
+6|2|Which boxer was famous for striking the gong in the introduction to J. Arthur Rank films?|Bombardier Billy Wells|Freddie Mills|Terry Spinks|Don Cockell
+6|2|Which actress portrayed Dr. Grace Augustine in the James Cameron movie &quot;Avatar&quot;?|Sigourney Weaver|Jessica Chastain|Melissa Beckett|Alyssa Monroe 
+6|2|Which of the following films was directed by Ivan Reitman, written by Gary Ross, featured Kevin Kline, and was released in 1993?|Dave|John|Will|Carl
+7|0|The song &#039;Little April Shower&#039; features in which Disney cartoon film?|Bambi|Cinderella|Pinocchio|The Jungle Book
+7|0|Who created the Cartoon Network series &quot;Regular Show&quot;?|J. G. Quintel|Ben Bocquelet|Pendleton Ward|Rebecca Sugar
+7|0|Which of these is NOT a Disney cartoon character?|Daffy Duck|Donald Duck|Daisy Duck|Scrooge McDuck
+7|0|Bill Cipher in the show &quot;Gravity Falls&quot; is the good guy.|False|True
+7|0|In The Simpsons, which war did Seymour Skinner serve in the USA Army as a Green Beret?|Vietnam War|World War 2|World War 1|Cold War
+7|0|Who voices for Ruby in the animated series RWBY?|Lindsay Jones|Tara Strong|Jessica Nigri|Hayden Panettiere
+7|0|Which &#039;Family Guy&#039; character got his own spin-off show in 2009?|Cleveland Brown|Glenn Quagmire|Joe Swanson|The Greased-up Deaf Guy
+7|0|Which of these characters live in a pineapple under the sea in the cartoon &quot;SpongeBob SquarePants&quot;.|SpongeBob SquarePants |Patrick Star|Squidward Tentacles|Mr. Krabs
+7|0|What was the first Disney movie to use CGI?|The Black Cauldron|Tron|Toy Story|Fantasia
+7|0|Wendy O. Koopa appeared in the Super Mario DIC Cartoons, but what was she known as?|Kootie Pie|Sweetie Pie|Wendy Pie|Honey Pie
+7|1|What animated internet character is known to answer emails with his boxing gloves?|Strong Bad|Strong Sad|Strong Mad|Strong Glad
+7|1|Which of these is not a real character in the cartoon series My Little Pony: Friendship is Magic?|Rose Marene|Pinkie Pie|Maud Pie|Rainbow Dash
+7|1|Blue Danube was one of the musical pieces featured in Disney&#039;s 1940&#039;s film Fantasia.|False|True
+7|1|Who created &quot;RWBY&quot;?|Monty Oum|Miles Luna|Kerry Shawcross|Shane Newville
+7|1|Which &quot;Toy Story&quot; character was voiced by Don Rickles?|Mr. Potato Head|Slinky Dog|Hamm|Rex
+7|1|In &quot;SpongeBob SquarePants&quot;, what is the name of Sandy Cheek&#039;s place of residence?|Sandy&#039;s Treedome|&quot;The Dome&quot;|Sandy&#039;s Bubble|Auquatic Reseach Centre
+7|1|Who is the &quot;dumb blonde&quot; character in Nickelodeon&#039;s &quot;The Loud House&quot;?|Leni|Luan|Luna|Lincoln
+7|1|In the animated series RWBY, what is the name of the weapon used by Weiss Schnee?|Myrtenaster|Gambol Shroud|Crescent Rose|Ember Celica
+7|1|In the show &quot;Fat Albert and the Cosby Kids&quot;, what is the name of the characters&#039; fictional gang?|The Junkyard Gang|The Trash Troupe|The Scrapyard Seven|The Rotten Posse
+7|1|The stop motion comedy show &quot;Robot Chicken&quot; was created by which of the following?|Seth Green|Seth MacFarlane|Seth Rogen|Seth Rollins
+7|2|In &quot;Gravity Falls&quot;, what does Quentin Trembley do when he is driven out from the White House?|Eat a salamander and jump out the window.|Leave in peace.|Jump out the window.|Release 1,000 captive salamanders into the white house.
+7|2|In the web-comic Homestuck, what is the name of the game the 4 kids play?|Sburb|Homesick|Husslie|Hiveswap
+7|2|What town was &quot;Springfield&quot; from &quot;The Simpsons&quot; originally named after?|Springfield, Oregon|Springfield, Missouri|Springfield, Illinois|Springfield, Massachusetts
+7|2|In the 1968 Cartoon Show &quot;Wacky Races&quot; what was the name of cavemen duo who rode in The Boulder Mobile?|The Slag Brothers|The Slate Brothers|The Rock Brothers|The Stone Brothers
+7|2|Who voice acted the character Hiccup in the movie &quot;How to Train Your Dragon&quot;?|Jay Baruchel|Jack Brauchel|John Powell|Gerard Butler
+7|2|In &quot;Gravity Falls&quot;, the character Bill Cipher remarks that &quot;the universe is what?&quot;|A hologram |An illusion |A simulation|Corrupting
+7|2|Who played Stan&#039;s dog in the South Park episode &quot;Big Gay Al&#039;s Big Gay Boat Ride&quot;?|George Clooney|Jay Leno|Matt Stone|Robert Smith
+7|2|Townsend Coleman provided the voice for which turtle in the original 1987 series of &quot;Teenage Mutant Ninja Turtles&quot;?|Michelangelo|Leonardo|Donatello|Raphael
+7|2|In the 1969 Cartoon show &quot;Dastardly and Muttley in Their Flying Machines&quot;, which were NOT one of the lyrics in the opening theme?|Stab him|Nab him|Jab him|Tab him
+7|2|What was Maggie Simpson&#039;s first canonical word, not including the Tracey Ullman shorts?|Daddy.|Sequel?|Ja!|Rusty!
+8|0|Who is Batman?|Bruce Wayne|Clark Kent|Barry Allen|Tony Stark
+8|0|The &quot;Pepe&quot; meme originated from a comic drawn by Matt Furie called &quot;Boy&#039;s Club&quot;?|True|False
+8|0|This Marvel superhero is often called &quot;The man without fear&quot;.|Daredevil|Thor|Wolverine|Hulk
+8|0|In &quot;Homestuck&quot; what is Dave Strider&#039;s guardian?|Bro|Becquerel|Doc Scratch|Halley
+8|0|Which universe crossover was introduced in the &quot;Sonic the Hedgehog&quot; comic issue #247?|Mega Man|Super Mario Brothers|Alex Kidd|Super Monkey Ball
+8|0|What is the full first name of the babysitter in Calvin and Hobbes?|Rosalyn|Rose|Ruby|Rachel
+8|0|What is the alter-ego of the DC comics character &quot;Superman&quot;?|Clark Kent|Bruce Wayne|Arthur Curry|John Jones
+8|0|When was Marvel Comics founded?|1939|1932|1951|1936
+8|0|Who is the creator of the comic series &quot;The Walking Dead&quot;?|Robert Kirkman|Stan Lee|Malcolm Wheeler-Nicholson|Robert Crumb
+8|0|Which one of these superhero teams appears in the Invincible comics?|Guardians of the Globe|Avengers|Justice League|Teenage Mutant Ninja Turtles
+8|1|What is the name of the main character in the webcomic Gunnerkrigg Court by Tom Siddell?|Antimony|Bismuth|Mercury|Cobalt
+8|1|What is the designation given to the Marvel Cinematic Universe?|Earth-199999|Earth-616|Earth-10005|Earth-2008
+8|1|In Calvin and Hobbes, what is the name of the babysitter&#039;s boyfriend?|Charlie|Dave|Charles|Nathaniel
+8|1|In Bionicle, who was formerly a Av-Matoran and is now the Toa of Light?|Takua|Jaller|Vakama|Tahu
+8|1|Who is the second person to take up the mantle of Night Owl in the Watchmen graphic novel?|Daniel Dreiberg|Nelson Gardner|Hollis Mason|Adrian Veidt
+8|1|Which issue of the &quot;Sonic the Hedgehog&quot; comic did Scourge the Hedgehog make his first appearance?|Sonic the Hedgehog #11|Sonic Universe #32|Sonic the Hedgehog #161|Sonic the Hedgehog #47
+8|1|Who wrote the Batman comic series &quot;The Killing Joke&quot;?|Alan Moore|Bill Finger|Frank Miller|Jerry Siegel
+8|1|The stuffed tiger in Calvin and Hobbes is named after what philosopher?|Thomas Hobbes|David Hobbes|John Hobbes|Nathaniel Hobbes
+8|1|In Calvin and Hobbes, what is the name of the principal at Calvin&#039;s school?|Mr. Spittle|Mr. Boreman|Mr. Spitling|Mr. Moe
+8|1|What is Homestuck character Gamzee&#039;s last name?|Makara|Makera|Makare|Makrea
+8|2|In the Hellboy universe, what was Abe Sapien&#039;s birth name?|Langdon Everett Caul|Lord Baltimore|Sir Edward Grey|Landis Pope
+8|2|What is the real hair colour of the mainstream comic book version (Earth-616) of Daredevil?|Blonde|Auburn|Brown|Black
+8|2|When was the Garfield comic first published?|1978|1982|1973|1988
+8|2|In the Batman comics, by what other name is the villain Dr. Jonathan Crane known?|Scarecrow|Bane|Calendar Man|Clayface
+8|2|In what year did the first &quot;The Walking Dead&quot; comic come out?|2003|2001|2006|1999
+8|2|What are the Three Virtues of Bionicle?|Unity, Duty, Destiny|Build, Play, Change|Work, Play, Live|Forge, Build, Fight
+8|2|When Batman trolls the online chat rooms, what alias does he use?|JonDoe297|iAmBatman|BWayne13|BW1129
+8|2|In the Homestuck Series, what is the alternate name for the Kingdom of Lights?|Prospit|No Name|Golden City|Yellow Moon
+8|2|What year was the first San Diego Comic-Con?|1970|2000|1990|1985
+8|2|Which of the following rings from the DC Comics&#039; &quot;Lantern Corps&quot; are classified as Parasitic?|Indigo (Compassion)|Green (Willpower)|White (Life)|Yellow (Fear)
+9|0|Linux was first created as an alternative to Windows XP.|False|True
+9|0|Time on Computers is measured via the EPOX System.|False|True
+9|0|Which programming language shares its name with an island in Indonesia?|Java|Python|C|Jakarta
+9|0|What does the Prt Sc button do?|Captures what&#039;s on the screen and copies it to your clipboard|Nothing|Saves a .png file of what&#039;s on the screen in your screenshots folder in photos|Closes all windows
+9|0|The C programming language was created by this American computer scientist. |Dennis Ritchie|Tim Berners Lee|al-Khwārizmī|Willis Ware
+9|0|What does LTS stand for in the software market?|Long Term Support|Long Taco Service|Ludicrous Transfer Speed|Ludicrous Turbo Speed
+9|0|What is the domain name for the country Tuvalu?|.tv|.tu|.tt|.tl
+9|0|The series of the Intel HD graphics generation succeeding that of the 5000 and 6000 series (Broadwell) is called:|HD Graphics 500|HD Graphics 700 |HD Graphics 600|HD Graphics 7000
+9|0|The programming language &quot;Python&quot; is based off a modified version of &quot;JavaScript&quot;.|False|True
+9|0|Linus Torvalds created Linux and Git.|True|False
+9|1|On which day did the World Wide Web go online?|December 20, 1990|December 17, 1996|November 12, 1990|November 24, 1995
+9|1|How fast is USB 3.1 Gen 2 theoretically?|10 Gb/s|5 Gb/s|8 Gb/s|1 Gb/s
+9|1|Which of these is the name for the failed key escrow device introduced by the National Security Agency in 1993?|Clipper Chip|Enigma Machine|Skipjack|Nautilus
+9|1|What was the first commerically available computer processor?|Intel 4004|Intel 486SX|TMS 1000|AMD AM386
+9|1|Which programming language was developed by Sun Microsystems in 1995?|Java|Python|Solaris OS|C++
+9|1|What does RAID stand for?|Redundant Array of Independent Disks|Rapid Access for Indexed Devices|Range of Applications with Identical Designs|Randomized Abstract Identification Description
+9|1|How many bits make up the significand portion of a single precision floating point number?|23|8|53|15
+9|1|What does the term MIME stand for, in regards to computing?|Multipurpose Internet Mail Extensions|Mail Internet Mail Exchange|Multipurpose Interleave Mail Exchange|Mail Interleave Method Exchange
+9|1|In computing terms, typically what does CLI stand for?|Command Line Interface|Common Language Input|Control Line Interface|Common Language Interface
+9|1|The HTML5 standard was published in 2014.|True|False
+9|2|Which of these was the name of a bug found in April 2014 in the publicly available OpenSSL cryptography library?|Heartbleed|Shellshock|Corrupted Blood|Shellscript
+9|2|What was the name of the security vulnerability found in Bash in 2014?|Shellshock|Heartbleed|Bashbug|Stagefright
+9|2|Dutch computer scientist Mark Overmars is known for creating which game development engine?|Game Maker|Stencyl|Construct|Torque 2D
+9|2|The T-Mobile Sidekick smartphone is a re-branded version of the Danger Hiptop.|True|False
+9|2|Who is the founder of Palantir?|Peter Thiel|Mark Zuckerberg|Marc Benioff|Jack Dorsey
+9|2|The Harvard architecture for micro-controllers added which additional bus?|Instruction|Address|Data|Control
+9|2|What is the name of the process that sends one qubit of information using two bits of classical information?|Quantum Teleportation|Super Dense Coding|Quantum Entanglement|Quantum Programming
+9|2|Which of the following computer components can be built using only NAND gates?|ALU|CPU|RAM|Register
+9|2|Which of these is not a layer in the OSI model for data communications?|Connection Layer|Application Layer|Transport Layer|Physical Layer
+9|2|What is the name given to layer 4 of the Open Systems Interconnection (ISO) model?|Transport|Session|Data link|Network
+10|0|A universal set, or a set that contains all sets, exists.|False|True
+10|0|The metric prefix &quot;atto-&quot; makes a measurement how much smaller than the base unit?|One Quintillionth|One Billionth|One Quadrillionth|One Septillionth
+10|0|In Roman Numerals, what does XL equate to?|40|60|15|90
+10|0|What&#039;s the square root of 49?|7|4|12|9
+10|0|How many sides does a trapezium have?|4|3|5|6
+10|0|The &#039;Squaring the Circle&#039; problem is solvable.|False|True
+10|0|An isosceles triangle has two sides of equal length as opposed to three.|True|False
+10|0|What is the symbol for Displacement?|&Delta;r|dr|Dp|r
+10|0|An equilateral triangle always has every angle measuring 60&deg;.|True|False
+10|0|The sum of any two odd integers is odd.|False|True
+10|1|Zero factorial is equal to zero. |False|True
+10|1|In the complex plane, multiplying a given function by i rotates it anti-clockwise by how many degrees?|90|180|270|0
+10|1|The proof for the Chinese Remainder Theorem used in Number Theory was NOT developed by its first publisher, Sun Tzu.|True|False
+10|1|What are the first 6 digits of the number &quot;Pi&quot;?|3.14159|3.14169|3.12423|3.25812
+10|1|What shape does sin(x) or cos(x) make on a graph?|Waves|A Parabola|A Straight Line|Zig-Zags
+10|1|Which of the following dice is not a platonic solid?|10-sided die|12-sided die|20-sided die|8-sided die
+10|1|The Pythagorean theorem states that the square of the hypotenuse is equal to the product of the squares of the other two sides.|False|True
+10|1|How many zeros are there in a googol?|100|10|1,000|1,000,000
+10|1|What is the first Mersenne prime exponent over 1000?|1279|2203|1009|1069
+10|1|What is the alphanumeric representation of the imaginary number?|i|e|n|x
+10|2|The binary number &quot;101001101&quot; is equivalent to the Decimal number &quot;334&quot;|False|True
+10|2|Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?|1.58 x 10^20|1.58 x 10^22|1.58 x  10^18|1.58 x 10^24
+10|2|What is the approximate value of mathematical constant e?|2.72|3.14|1.62|1.41
+10|2|In Topology, the complement of an open set is a closed set.|True|False
+10|2|How many zeptometres are inside one femtometre?|1,000,000|10|1,000,000,000|1000
+10|2|The notion of a &quot;set that contains all sets which do not contain themselves&quot; is a paradoxical idea attributed to which English philospher?|Bertrand Russel|Francis Bacon|John Locke|Alfred North Whitehead
+10|2|How many Millibars (mbar) to 1 Inch of Mercury (inHg)|33.9|30.0|27.4|10.6
+10|2|Which of the following mathematicians made major contributions to game theory?|John Von Neumann|Carl Friedrich Gauss|Leonhard Euler|Stefan Banach
+10|2|The decimal number 31 in hexadecimal would be what?|1F|3D|2E|1B
+10|2|What is the plane curve proposed by Descartes to challenge Fermat&#039;s extremum-finding techniques called?|Folium of Descartes|Elliptic Paraboloid of Descartes|Cartesian Coordinates|Descarte&#039;s Helicoid
+11|0|Under what pseudonym did Stephen King publish five novels between 1977 and 1984?|Richard Bachman|J. D. Robb|Mark Twain|Lewis Carroll
+11|0|&quot;Elementary, my dear Watson&quot; is a phrase that is never truly said within the Conan Doyle books of Sherlock Holmes.|True|False
+11|0|How many Harry Potter books are there?|7|8|5|6
+11|0|Which famous book is sub-titled &#039;The Modern Prometheus&#039;?|Frankenstein|Dracula|The Strange Case of Dr. Jekyll and Mr. Hyde |The Legend of Sleepy Hollow
+11|0|Which of the following is the world&#039;s best-selling book?|The Lord of the Rings|The Little Prince|Harry Potter and the Philosopher&#039;s Stone|The Da Vinci Code
+11|0|What was Sir Handel&#039;s original name in &quot;The Railway Series&quot; and it&#039;s animated counterpart &quot;Thomas and Friends?&quot;|Falcon|Eagle|Kyte|Swallow
+11|0|The book 1984 was published in 1949.|True|False
+11|0|Who wrote &quot;A Tale of Two Cities&quot;?|Charles Dickens|Charles Darwin|Mark Twain|Roald Dahl
+11|0|Which is NOT a book in the Harry Potter Series?|The House Elf|The Chamber of Secrets|The Prisoner of Azkaban|The Deathly Hallows
+11|0|What was the first ever entry written for the SCP Foundation collaborative writing project?|SCP-173|SCP-001|SCP-999|SCP-1459
+11|1|In the novel &quot;Lord of the Rings&quot;, how many rings of power were given to the race of man?|9|5|11|13
+11|1|In &quot;Little Women&quot;, which of the March sisters married Laurie?|Amy|Beth|Jo|Meg
+11|1|J.K. Rowling completed &quot;Harry Potter and the Deathly Hallows&quot; in which hotel in Edinburgh, Scotland?|The Balmoral|The Dunstane Hotel|Hotel Novotel|Sheraton Grand Hotel &amp; Spa
+11|1|Who wrote the children&#039;s story &quot;The Little Match Girl&quot;?|Hans Christian Andersen|Charles Dickens|Lewis Carroll|Oscar Wilde
+11|1|Who wrote the &quot;A Song of Ice And Fire&quot; fantasy novel series?|George R. R. Martin|George Lucas|George Orwell|George Eliot
+11|1|Which of the following is not a work authored by Fyodor Dostoevsky?|Anna Karenina|Notes from the Underground|Crime and Punishment|The Brothers Karamazov
+11|1|What was the name of the Mysterious Island, in Jules Verne&#039;s &quot;The Mysterious Island&quot;?|Lincoln Island|Vulcania Island|Prometheus Island|Neptune Island
+11|1|Originally, the character Charlie from Charlie and the Chocolate Factory was going to be black.|True|False
+11|1|Which of the following was the author of &quot;Username Evie&quot;?|Joe Sugg|Zoe Sugg|Joe Weller|Alfie Deyes
+11|1|In Michael Crichton&#039;s novel &quot;Jurassic Park&quot;, John Hammond meets his demise at the claws of which dinosaur?|Procompsognathus|Dilophosaurus|Tyrannosaurus Rex|Velociraptor
+11|2|In the Magic: The Gathering universe,  the Antiquities, Ice Age, and Alliances expansions take place on which continent?|Terisiare|Aerona|Shiv|Jamuraa
+11|2|In the Beatrix Potter books, what type of animal is Tommy Brock?|Badger|Fox|Frog|Rabbit
+11|2|In which classic novel by Mark Twain did a beggar and Prince of Wales switch clothes, and learn about social class inequality?|The Prince and the Pauper|Hamlet|Wealthy Boy and the Schmuck|A Modern Twain Story
+11|2|In the book series &quot;Odd Thomas&quot;, Danny Jessup has what genetic disease? | Osteogenesis Imperfecta|Spinocerebellar ataxia|Adrenoleukodystrophy|Cystic Fibrosis
+11|2|In the &quot;Harry Potter&quot; series, what is Headmaster Dumbledore&#039;s full name?|Albus Percival Wulfric Brian Dumbledore|Albus Valum Jetta Mobius Dumbledore|Albus James Lunae Otto Dumbledore|Albus Valencium Horatio Kul Dumbledore
+11|2|Which of these does Charlie NOT read in The Perks of Being a Wallflower?|The Grapes of Wrath|Hamlet|The Great Gatsby|Peter Pan
+11|2|Who wrote the novel &quot;Moby-Dick&quot;?|Herman Melville|William Golding|William Shakespeare|J. R. R. Tolkien
+11|2|In the Harry Potter universe, what is Cornelius Fudge&#039;s middle name?|Oswald|James|Harold|Christopher
+11|2|The novel &quot;Jane Eyre&quot; was written by what author? |Charlotte Bront&euml;|Emily Bront&euml;|Jane Austen|Louisa May Alcott
+11|2|In The Lies Of Locke Lamora, what does &quot;Lamora&quot; mean in Throne Therin?|Shadow|Thievery|Justice|Chaos
+12|0|Which year did Jenson Button won his first ever Formula One World Drivers&#039; Championship?|2009|2010|2007|2006
+12|0|Who won the UEFA Champions League in 2017?|Real Madrid C.F.|Atletico Madrid|AS Monaco FC|Juventus F.C.
+12|0|Roger Federer is a famous soccer player.|False|True
+12|0|What was the final score of the Germany vs. Brazil 2014 FIFA World Cup match?|7 - 1|0 - 1|3 - 4|16 - 0
+12|0|Which English football club has the nickname &#039;The Foxes&#039;?|Leicester City|Northampton Town|Bradford City|West Bromwich Albion
+12|0|Who won the UEFA Champions League in 2016?|Real Madrid C.F.|FC Bayern Munich|Atletico Madrid|Manchester City F.C.
+12|0|In what sport is a &quot;shuttlecock&quot; used?|Badminton|Table Tennis|Rugby|Cricket
+12|0|Which city did the former NHL team &quot;The Nordiques&quot; originiate from?|Quebec City|Houston|Montreal|New York
+12|0|There are a total of 20 races in Formula One 2016 season.|False|True
+12|0|In association football, or soccer, a corner kick is when the game restarts after someone scores a goal.|False|True
+12|1|The Olympics tennis court is a giant green screen.|True|False
+12|1|Which Formula 1 driver switched teams in the middle of the 2017 season?|Carlos Sainz Jr.|Daniil Kvyat|Jolyon Palmer|Rio Haryanto
+12|1|Which of the following Grand Slam tennis tournaments occurs LAST?|US Open|French Open|Wimbledon|Australian Open
+12|1|Which team was the 2015-2016 NBA Champions?|Cleveland Cavaliers|Golden State Warriors|Toronto Raptors|Oklahoma City Thunders
+12|1|What cricketing term denotes a batsman being dismissed with a score of zero?|Duck|Bye|Beamer|Carry
+12|1|Who won the 2018 Monaco Grand Prix?|Daniel Ricciardo|Sebastian Vettel|Kimi Raikkonen|Lewis Hamilton
+12|1|What is the exact length of one non-curved part in Lane 1 of an Olympic Track?|84.39m|100m|100yd|109.36yd
+12|1|Who won the 2011 Stanley Cup?|Boston Bruins|Montreal Canadiens|New York Rangers|Toronto Maple Leafs
+12|1|Which soccer team won the Copa Am&eacute;rica Centenario 2016?|Chile|Argentina|Brazil|Colombia
+12|1|What is the highest belt you can get in Taekwondo?|Black|White|Red|Green
+12|2|The AHL affiliate team of the Boston Bruins is named what?|Providence Bruins|New Haven Bruins|Cambridge Bruins|Hartford Bruins
+12|2|The Mazda 787B won the 24 Hours of Le Mans in what year?|1991|1990|2000|1987
+12|2|Which city features all of their professional sports teams&#039; jersey&#039;s with the same color scheme?|Pittsburgh|New York|Seattle|Tampa Bay
+12|2|How many times did Martina Navratilova win the Wimbledon Singles Championship?|Nine|Ten|Seven|Eight
+12|2|Which Italian footballer told Neuer where he&#039;s putting his shot and dragging it wide, during the match Italy-Germany, UEFA EURO 2016?|Pelle|Insigne|Barzagli|Giaccherini
+12|2|Where was the Games of the XXII Olympiad held?|Moscow|Barcelona|Tokyo|Los Angeles
+12|2|What is &ldquo;The Sport of Kings&rdquo;?|Horse Racing|Chess|Jousting|Fencing
+12|2|In Canadian football, scoring a rouge is worth how many points?|1|2|3|4
+12|2|Which year was the third Super Bowl held?|1969|1968|1971|1970
+12|2|What is the full name of the footballer &quot;Cristiano Ronaldo&quot;?|Cristiano Ronaldo dos Santos Aveiro|Cristiano Ronaldo los Santos Diego|Cristiano Armando Diego Ronaldo|Cristiano Luis Armando Ronaldo
+13|0|In the television show Breaking Bad, what is the street name of Walter and Jesse&#039;s notorious product?|Blue Sky|Baby Blue|Rock Candy|Pure Glass
+13|0|In Battlestar Galactica (2004), Cylons were created by man as cybernetic workers and soldiers.|True|False
+13|0|How many seasons did &quot;Stargate SG-1&quot; have?|10|3|7|12
+13|0|In &quot;Star Trek&quot;, Klaang is a typical Klingon male.|True|False
+13|0|In the show &quot;Dragonball Z&quot;, what is the name of Cell&#039;s most powerful attack?|Solar Kamehameha|Super Kamehameha|Cell Kamehameha|Android Kamehameha
+13|0|In &quot;Star Trek&quot;, Klingons are aliens.|True|False
+13|0|What was the name of the teenage witch played by Melisa Joan Hart who lives with her witch aunts Hilda and Zelda?|Sabrina|Hermione|Dorothy|Dahlia
+13|0|The HBO series &quot;Game of Thrones&quot; is based on which series of books?|A Song of Ice and Fire|The Wheel of Time|Harry Potter|The Notebook
+13|0|On the NBC show Community, whose catch-phrase was &quot;Pop! Pop!&quot;?|Magnitude|Star Burns|Leonard|Senoir Chang
+13|0|In &quot;Rick And Morty&quot;, who shot &quot;Mr. Poopybutthole&quot; in the episode &quot;Total Rickall&quot;?|Beth|Rick|Jerry|Morty
+13|1|The first half-hour CGI cartoon, ReBoot, aired on which year?|1994|1993|1998|1999
+13|1|Dee from &quot;It&#039;s Always Sunny in Philadelphia&quot; has dated all of the following guys EXCEPT|Matthew &quot;Rickety Cricket&quot; Mara|Colin the Thief|Ben the Soldier|Kevin Gallagher aka Lil&#039; Kevin
+13|1|What actor portrays Hogan &quot;Wash&quot; Washburne in the TV Show Firefly?|Alan Tudyk|Adam Baldwin|Nathan Fillion|Sean Maher
+13|1|In the Netflix show, Stranger Things, what song would Will sing to himself as he was missing?|Should I Stay or Should I Go?|Love Will Tear Us Apart|This Charming Man|Africa
+13|1|What is the setting of the show &quot;Parks and Recreation&quot;?|Pawnee, Indiana|Eagleton, Indiana|Pasadena, California|London, England
+13|1|In Naruto: Shippuden, which of the following elements is a &quot;Kekkei Tōta?&quot;|Particle Style|Any Doujutsu|Shadow Style|Ice Style
+13|1|Who was the star of the TV series &quot;24&quot;?|Kiefer Sutherland|Kevin Bacon|Hugh Laurie|Rob Lowe
+13|1|Which actor was not a major character in TV Show Freaks and Geeks?|Jonah Hill|Jason Segel|Seth Rogen|James Franco
+13|1|In the TV series Red Dwarf, Kryten&#039;s full name is Kryten 2X4B-523P.|True|False
+13|1|In &quot;Star Trek&quot;, what is the Klingon death ritual?|Look into sky and yell loudly in mourning.|Kiss the jagged forehead before burial.|Shoot into space in a torpedo casing.|Split the deceased&#039;s earnings between bloodkin.
+13|2|Which of these voices wasn&#039;t a choice for the House AI in &quot;The Simpsons Treehouse of Horror&quot; short, House of Whacks?|George Clooney|Matthew Perry|Dennis Miller|Pierce Brosnan
+13|2|What was the UK &quot;Who Wants to be a Millionaire?&quot; cheating scandal known as?|Major Fraud|Ingram Cheater|Coughing Major|Millionaire Crime
+13|2|In Star Trek, what is the name of Spock&#039;s father?|Sarek|Tuvok|T&#039;Pal|Surak
+13|2|In &quot;It&#039;s Always Sunny in Philadelphia&quot; what was the name of Frank&#039;s wrestling persona?|The Trash Man|Bird of War|Day Man|The Maniac
+13|2|Who played the sun baby in the original run of Teletubbies?|Jessica Smith|Pui Fan Lee|Sue Monroe|Lisa Brockwell
+13|2|The theme for the popular science fiction series &quot;Doctor Who&quot; was composed by who?|Ron Grainer|Murray Gold|Delia Derbyshire|Peter Howell
+13|2|Which of the following actors portrayed the Ninth Doctor in the British television show &quot;Doctor Who&quot;?|Christopher Eccleston|David Tennant|Matt Smith|Tom Baker
+13|2|Which country does the YouTuber &quot;SinowBeats&quot; originate from?|Scotland|England|Sweden|Germany
+13|2|Prior to working at Wizards of the Coast, &quot;Mark Rosewater&quot; was a writer for which show?|Roseanne|Boy Meets World|The X-Files|NYPD Blue
+13|2|Who was the winner of &quot;Big Brother&quot; Season 10?|Dan Gheesling|Bryce Kranyik|Ryan Sutfin|Chris Mundorf
+14|0|The Tiananmen Square protests of 1989 were held in Hong Kong.|False|True
+14|0|How long did World War II last?|6 years|4 years|5 years|7 years
+14|0|Which famous military commander marched an army, which included war elephants, over the Alps during the Second Punic War?|Hannibal|Garmanicus|Alexander the Great|Tiberius
+14|0|In World War ll, Great Britian used inflatable tanks on the ports of Great Britain to divert Hitler away from Normandy/D-day landing.|True|False
+14|0|The idea of Socialism was articulated and advanced by whom?|Karl Marx|Vladimir Lenin|Joseph Stalin|Vladimir Putin
+14|0|Kublai Khan is the grandchild of Genghis Khan?|True|False
+14|0|Which modern day country is the region that was known as Phrygia in ancient times?|Turkey|Syria|Greece|Egypt
+14|0|The Cold War ended with Joseph Stalin&#039;s death.|False|True
+14|0|What country joined the EU in 2013?|Croatia|Bulgaria|Slovenia|Turkey
+14|0|In which year did the Invasion of Kuwait by Iraq occur?|1990|1992|1988|1986
+14|1|Which of these countries was sea charted in 1500 by the Portuguese maritime explorations?|Brazil|India|Mozambique|Madagascar
+14|1|One of the deadliest pandemics, the &quot;Spanish Flu&quot;, killed off what percentage of the human world population at the time?|3 to 6 percent|6 to 10 percent|1 to 3 percent|less than 1 percent
+14|1|The Panama Canal was finished under the administration of which U.S. president?|Woodrow Wilson|Franklin Delano Roosevelt|Herbert Hoover|Theodore Roosevelt
+14|1| What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?|AK-47|RPK|M16|MG 42
+14|1|What year did Skoal, a smokeless Tobacco company, release their first line of Pouches, known as &quot;Skoal Bandits&quot;?|1983|1934|1984|1822
+14|1|What was the unofficial name for Germany between 1919 and 1933?|Weimar Republic|German Democratic Republic|Federal Republic of Germany|Oesterreich 
+14|1|Which of the following countries was the first to send an object into space?|Germany|USA|Russia|China
+14|1|The Battle of the Somme in World War I took place in which country?|France|Germany|Italy|Austria
+14|1|In which year did the First World War begin?|1914|1930|1917|1939
+14|1|How many times was Albert Einstein married in his lifetime?|Twice|Five|Thrice|Once
+14|2|What is the name of the Boeing B-29 that dropped the &#039;Little Boy&#039; atomic bomb on Hiroshima?|Enola Gay|Necessary Evil|The Great Artiste|Full House
+14|2|Japan was part of the Allied Powers during World War I.|True|False
+14|2|Who invented the &quot;Flying Shuttle&quot; in 1738; one of the key developments in the industrialization of weaving?|John Kay|James Hargreaves|Richard Arkwright|John Deere
+14|2|How long did the Warsaw Uprising during World War II last?|63 Days|20 Days|55 Days|224 Days
+14|2|What year was the United States Declaration of Independence signed?|1776|1775|1774|1777
+14|2|During the Wars of the Roses (1455 - 1487) which Englishman was dubbed &quot;the Kingmaker&quot;?|Richard Neville|Richard III|Henry V|Thomas Warwick
+14|2|When did the French Revolution begin?|1789|1823|1756|1799
+14|2|Spain was formed in 1469 with the marriage of Isabella I of Castile and Ferdinand II of what other Iberian kingdom?|Aragon|Galicia|Le&oacute;n|Navarre
+14|2|Which naval battle was considered the turning point of the Pacific Ocean Theater during World War 2?|Battle of Midway|Attack on Truk Island|Attack on Pearl Harbor|Battle of the Coral Sea
+14|2|The fourth funnel of the RMS Titanic was fake designed to make the ship look more powerful and symmetrical.|True|False
+15|0|What is Laos?|Country|Region|River|City
+15|0|What is the capital of Scotland?|Edinburgh|Glasgow|Dundee|London
+15|0|How many countries does Mexico border?|3|2|4|1
+15|0|What is the only state in the United States that does not have a flag in a shape with 4 edges?|Ohio|Florida|Idaho|New Mexico
+15|0|What is the 15th letter of the Greek alphabet?|Omicron (&Omicron;)|Sigma (&Sigma;)|Pi (&Pi;)|Nu (&Nu;)
+15|0|What colour is the circle on the Japanese flag?|Red|White|Yellow|Black
+15|0|Which US state has the highest population?|California|New York|Texas|Florida
+15|0|What is the largest country in the world ?|Russian Federation|China|Canada|Brazil
+15|0|The Republic of Malta is the smallest microstate worldwide.|False|True
+15|0|The Alps are a mountain range on which continent?|Europe|North America|Asia|Africa
+15|1|What&#039;s the first National Park designated in the United States?|Yellowstone|Sequoia |Yosemite|Rocky Mountain
+15|1|Where is Hadrian&#039;s Wall located?|Carlisle, England|Rome, Italy|Alexandria, Egypt|Dublin, Ireland
+15|1|What continent is the country Lesotho in?|Africa|Asia|South America|Europe
+15|1|What city  has the busiest airport in the world?|Atlanta, Georgia USA|London, England|Chicago,Illinois ISA|Tokyo,Japan
+15|1|Where is the world&#039;s oldest still operational space launch facility located?|Kazakhstan|Russia|Iran|United States
+15|1|The historical city Timbuktu is located in which West African country?|Mali|Senegal|Niger|Burkina Faso
+15|1|Which Canadian province has Charlottetown as its capital?|Prince Edward Island|Saskachewan|Northwest Terrirories|Ontario
+15|1|Kuala Lumpur is the capital of which country?|Malaysia|Indonesia|Singapore|Thailand
+15|1|In which English county is Stonehenge?|Wiltshire|Somerset|Cumbria|Herefordshire
+15|1|Which of these countries is located the FURTHEST away from the South China Sea?|Bangladesh|Malaysia|Vietnam|Philippines
+15|2|What is the capital of Wisconsin, USA?|Madison|Milwaukee|Wisconsin Dells|Green Bay
+15|2|What is the name of one of the Neo-Aramaic languages spoken by the Jewish population from Northwestern Iraq?|Lishana Deni|Hulaul&aacute;|Lishan Didan|Chaldean Neo-Aramaic
+15|2|What year is on the flag of the US state Wisconsin?|1848|1634|1783|1901
+15|2|What is the Finnish word for &quot;Finland&quot;?|Suomi|Eesti|Magyarorsz&aacute;g|Sverige
+15|2|Only one country in the world starts with the letter Q.|True|False
+15|2|What is Canada&#039;s largest island?|Baffin Island|Prince Edward Island|Vancouver Island|Newfoundland
+15|2|What is the capital of Mauritius?|Port Louis|Port Moresby|Port Vila|Port-au-Prince
+15|2|What North American tourist attraction is served by the &quot;Maid of the Mist&quot; tour company?|Niagara Falls|Whistler, British Columbia|Disney World|Yosemite National Park
+15|2|The Hunua Ranges is located in...|New Zealand|Nepal|China|Mexico
+15|2|What is the capital city of Bermuda?|Hamilton|Santo Dominigo|San Juan|Havana
+16|0|Which of these mythological creatures is said to be half-man and half-horse?|Centaur|Minotaur|Pegasus|Gorgon
+16|0|Who in Greek mythology, who led the Argonauts in search of the Golden Fleece?|Jason|Castor|Daedalus|Odysseus
+16|0|The greek god Poseidon was the god of what?|The Sea|War|Sun|Fire
+16|0|The ancient Roman god of war was commonly known as which of the following?|Mars|Jupiter|Juno|Ares
+16|0|Which figure from Greek mythology traveled to the underworld to return his wife Eurydice to the land of the living?|Orpheus|Hercules|Perseus|Daedalus
+16|0|According to Greek Mythology, Atlas was an Olympian God.|False|True
+16|0|Who was the King of Gods in Ancient Greek mythology?|Zeus|Apollo|Hermes|Poseidon
+16|0|Who was the only god from Greece who did not get a name change in Rome?|Apollo|Demeter|Zeus|Athena
+16|0|In most traditions, who was the wife of Zeus?|Hera|Aphrodite|Athena|Hestia
+16|0|A wyvern is the same as a dragon.|False|True
+16|1|Hera is god of...|Marriage|Agriculture|Sea|War
+16|1|In Greek Mythology, who killed Achilles?|Paris|Hector|Helen|Pericles
+16|1|What animal did Queen Pasipahe sleep with before she gave birth to the Minotaur in Greek Mythology?|Bull|Pig|Ox|Horse
+16|1|In African mythology, Anansi is a trickster and storyteller who takes the shape of which animal?|Spider|Wild dog|Monkey|Crocodile
+16|1|What is the name of the Greek god of peaceful deaths?|Thanatos|Tartarus|Hades|Moros
+16|1|A minotaur is half human half what?|Bull|Cow|Horse|Eagle
+16|1|Hel was the daughter of which Norse Mythological figure?|Loki|Thor|Odin|Balder
+16|1|According to Norse mythology, Loki is a mother.|True|False
+16|1|In Greek mythology, Hera is the goddess of harvest.|False|True
+16|1|What is the name of the first human being in Norse mythology?|Ask|Asmund|Ake|Asger
+16|2|Janus was the Roman god of doorways and passageways.|True|False
+16|2|Which of the following is NOT a god in Norse Mythology.|Jens|Loki|Tyr|Snotra
+16|2|Who is a minor god that is protector and creator of various arts, such as cheese making and bee keeping.|Aristaeus|Autonoe|Carme|Cephisso
+16|2|In Norse mythology, what is the name of the serpent which eats the roots of the ash tree Yggdrasil?|Nidhogg|Bragi|Odin|Ymir
+16|2|Rannamaari was a sea demon that haunted the people of the Maldives and had to be appeased monthly with the sacrifice of a virgin girl.|True|False
+16|2|Nidhogg is a mythical creature from what mythology?|Norse|Egyptian|Greek|Hindu
+16|2|What was the punishment for Sysiphus&#039;s craftiness?|Cursed to roll a boulder up a hill for eternity.|Tied to a boulder for eternity, being pecked by birds.|Standing in a lake filled with water he could not drink.|To fell a tree that regenerated after every axe swing.
+16|2|Talos, the mythical giant bronze man, was the protector of which island?|Crete|Sardinia|Sicily|Cyprus
+16|2|What immense structure is referred to in Norse Mythology as the Yggdrasil.|Tree|Mountain|Temple|Castle
+16|2|Which Norse God has a horse named Sleipnir?|Odin|Thor|Frigg|Balder
+17|0|Cats have whiskers under their legs.|True|False
+17|0|What colour is the female blackbird?|Brown|Black|White|Yellow
+17|0|The freshwater amphibian, the Axolotl, can regrow it&#039;s limbs.|True|False
+17|0|Which class of animals are newts members of?|Amphibian|Fish|Reptiles|Mammals
+17|0|What is the name of a rabbit&#039;s abode?|Burrow|Nest|Den|Dray
+17|0|What is the collective noun for a group of crows?|Murder|Pack|Gaggle|Herd
+17|0|A bear does NOT defecate during hibernation. |True|False
+17|0|Kangaroos keep food in their pouches next to their children.|False|True
+17|0|What is Grumpy Cat&#039;s real name?|Tardar Sauce|Sauce|Minnie|Broccoli
+17|0|By definition, where does an abyssopelagic animal live?|At the bottom of the ocean|In the desert|On top of a mountain|Inside a tree
+17|1|Which animal was part of an Russian domestication experiment in 1959?|Foxes|Pigeons|Bears|Alligators
+17|1|The average lifespan of a wildcat is only around 5-6 years. |False|True
+17|1|Cashmere is the wool from which kind of animal?|Goat|Sheep|Camel|Llama
+17|1|You can tell the age of a ladybird by counting the spots on his back.|False|True
+17|1|Tigers have one colour of skin despite the stripey fur.|False|True
+17|1|The now extinct species &quot;Thylacine&quot; was native to where?|Tasmania, Australia|Baluchistan, Pakistan|Wallachia, Romania|Oregon, United States
+17|1|What is the world&#039;s longest venomous snake?|King Cobra|Green Anaconda|Inland Taipan|Yellow Bellied Sea Snake
+17|1|What dog breed is one of the oldest breeds of dog and has flourished since before 400 BCE.|Pugs|Bulldogs|Boxers|Chihuahua
+17|1|A carnivorous animal eats flesh, what does a nucivorous animal eat?|Nuts|Nothing|Fruit|Seaweed
+17|1|What is the scientific name of the Common Chimpanzee?|Pan troglodytes|Gorilla gorilla|Pan paniscus|Panthera leo
+17|2|What is the name of the copper-rich protein that creates the blue blood in the Antarctic octopus?|Hemocyanin|Cytochrome|Iron|Methionine
+17|2|What was the name of the Ethiopian Wolf before they knew it was related to wolves?|Simien Jackel|Ethiopian Coyote|Amharic Fox|Canis Simiensis
+17|2|Which species is a &quot;mountain chicken&quot;?|Frog|Chicken|Horse|Fly
+17|2|What is the Gray Wolf&#039;s scientific name?|Canis Lupus|Canis Aureus|Canis Latrans|Canis Lupus Lycaon
+17|2|Which of the following is another name for the &quot;Poecilotheria Metallica Tarantula&quot;?|Gooty|Hopper|Silver Stripe|Woebegone
+17|2|What bird is born with claws on its wing digits?|Hoatzin|Cormorant|Cassowary|Secretary bird
+17|2|Unlike on most salamanders, this part of a newt is flat?|Tail|Head|Teeth|Feet
+17|2|Which species of Brown Bear is not extinct?|Syrian Brown Bear|California Grizzly Bear|Atlas Bear|Mexican Grizzly Bear
+17|2|Which of these is a colony of polyps and not a jellyfish?|Portuguese Man-of-War|Sea Wasp|Irukandji|Sea Nettle
+17|2|What is the scientific name of the cheetah?|Acinonyx jubatus|Panthera onca|Lynx rufus|Felis catus
+18|0|The communication protocol NFC stands for Near-Field Control.|False|True
+18|0|Which gaming console is developed by Sony?|PlayStation|Xbox|Atari|Nintendo Switch
+18|0|What does GPS stand for?|Global Positioning System|Global Personal System|General Positioning System|General Personal Satellite
+18|0|Which virtual assistant is developed by Amazon?|Alexa|Google Assistant|Siri|Cortana
+18|0|Microphones can be used not only to pick up sound, but also to project sound similar to a speaker.|True|False
+18|0|What round is a classic AK-47 chambered in?|7.62x39mm|7.62x51mm|5.56x45mm|5.45x39mm
+18|0|When was the DVD invented?|1995|2000|1990|1980
+18|0|The term &quot;battery&quot; to describe an electrical storage device was coined by?|Benjamin Franklin|Nikola Tesla|Luigi Galvani| Alessandro Volta
+18|0|When did the CD begin to appear on the consumer market?|1982|1992|1972|1962
+18|0|Which buzzword did Apple Inc. use to describe their removal of the headphone jack?|Courage|Innovation|Revolution|Bravery
+18|1|What is the most significant side venture the popular firearms company, Remington, has pursued?|Typewriters|Blenders|Ceiling Fans|Door Knobs
+18|1|Out of all of the NASA Space Shuttles, which 2 have been destroyed in disasters?|Challenger and Columbia|Enterprise and Atlantis|Discovery and Endeavour|None of the Above
+18|1|Who patented a steam engine that produced continuous rotary motion?|James Watt|Nikola Tesla|Albert Einstein|Alessandro Volta
+18|1|Which company designed the &quot;Betamax&quot; video cassette format?|Sony|Panasonic|LG|Fujitsu
+18|1|In what year was the Oculus Rift revealed to the public through a Kickstarter campaign?|2012|2010|2011|2013
+18|1|What are the base station trackers used for the HTC Vive called?|Lighthouse|Motion|Constellation |Trackers
+18|1|What is the &quot;Mitsubishi Wakamaru&quot;?|A robot|A pickup truck|An motorcycle|A motorboat
+18|1|The Western Electric Model 500 telephone uses tone dialing to dial phone numbers.|False|True
+18|1|Which company developed the Hololens?|Microsoft|HTC|Oculus|Tobii
+18|1|Mobile hardware and software company &quot;Blackberry Limited&quot; was founded in which country?|Canada|Norway|United States of America|United Kingdom
+18|2|Who built the first laser?|Theodore Harold Maiman|Nikola Tesla|Jack Kilby|Edith Clarke
+18|2|Which of the following cellular device companies is NOT headquartered in Asia?|Nokia|LG Electronics|Samsung|HTC
+18|2|Which round does a WW2 M1 Garand fire?|.30-06|.308|7.62|7.62x51mm
+18|2|Which of the following is used to measure blood pressure?|Sphygmomanometer|Barometer|Ruler|Haemoerythrometer
+18|2|Which of the following is the standard THX subwoofer crossover frequency?|80 Hz|70 Hz|90 Hz|100 Hz
+19|0|Jaguar Cars was previously owned by which car manfacturer?|Ford|Chrysler|General Motors|Fiat
+19|0|Which Italian city is home of the car manufacturer &#039;Fiat&#039;?|Turin|Maranello|Modena|Rome
+19|0|The full English name of the car manufacturer BMW is Bavarian Motor Works|True|False
+19|0|What is the name of Nissan&#039;s most popular electric car?|Leaf|Tree|Deer|Roots
+19|0|Which car tire manufacturer is famous for its &quot;P Zero&quot; line?|Pirelli|Goodyear|Bridgestone|Michelin
+19|0|The LS2 engine is how many cubic inches?|364|346|376|402
+19|0|Which of the following collision avoidance systems helps airplanes avoid colliding with each other?|TCAS|GPWS|OCAS|TAWS
+19|0|The Italian automaker Lamborghini uses what animal as its logo?|Bull|Bat|Horse|Snake
+19|0|The LS7 engine is how many cubic inches?|427|346|364|376
+19|0|The LS1 engine is how many cubic inches?|346|350|355|360
+19|1|When BMW was established in 1916, it was producing automobiles.|False|True
+19|1|When was Cadillac founded?|1902|1964|1898|1985
+19|1|Which Japanese company is the world&#039;s largest manufacturer of motorcycles?|Honda|Yamaha|Suzuki|Kawasaki
+19|1|The snowmobile was invented by Canadian Joseph-Armand Bombardier in 1937.|True|False
+19|1|Ferrari has never made a V10 engine for any of its cars.|False|True
+19|1|The General Motors EV1 was the first street-legal production electric vehicle.|False|True
+19|1|What part of an automobile engine uses lobes to open and close intake and exhaust valves, and allows an air/fuel mixture into the engine?|Camshaft|Piston|Drive shaft|Crankshaft
+19|1|The Chevrolet Corvette has always been made exclusively with V8 engines only.|False|True
+19|1|When was Tesla founded?|2003|2008|2005|2007
+19|1|Bugatti was an Italian car manufacturer.|False|True
+19|2|What kind of train was Stepney, a train on the Bluebell Railway notable for his appearance in &quot;The Railway Series&quot;?|LB&amp;SCR A1X|LB&amp;SCR E2|LB&amp;SCR J1|LB&amp;SCR D1
+19|2|What model was the sports car gifted to Yuri Gagarin by the French government in 1965?|Matra Djet|Porsche 911|Alpine A110|AC Cobra
+19|2|What engine is in the Lexus SC400?|1UZ-FE|2JZ-GTE|7M-GTE|5M-GE
+19|2|In 1993 Swedish car manufacturer Saab experimented with replacing the steering wheel with a joystick in a Saab 9000.|True|False
+19|2|Which of these is NOT a car model produced by Malaysian car manufacturer Proton?|Kelisa|Saga|Perdana|Inspira
+19|2|What was the name of the first front-wheel-drive car produced by Datsun (now Nissan)?|Cherry|Sunny|Bluebird|Skyline
+19|2|What car manufacturer gave away their patent for the seat-belt in the interest of saving lives?|Volvo|Ferrari|Ford|Renault
+19|2|What year did the Chevrolet LUV mini truck make its debut?|1972|1982|1975|1973
+19|2|Which one of the following is NOT a sub-company of the Volkswagen Group?|Opel|Porsche|Bugatti|Bentley
+19|2|Which Audi does not use Haldex based all wheel drive system?|Audi A8|Audi TT|Audi S3|Audi A3
+20|0|Who painted The Starry Night?|Vincent van Gogh|Pablo Picasso|Leonardo da Vinci|Michelangelo
+20|0|Which painting was not made by Vincent Van Gogh?|The Ninth Wave|Caf&eacute; Terrace at Night|Bedroom In Arles|Starry Night
+20|0|Who sculpted the statue of David?|Michelangelo|Gian Lorenzo Bernini|Auguste Rodin|Donatello
+20|0|Who painted the Sistine Chapel?|Michelangelo|Leonardo da Vinci|Pablo Picasso|Raphael
+20|0|Leonardo da Vinci&#039;s Mona Lisa does not have eyebrows.|True|False
+20|0|Who painted the Mona Lisa?|Leonardo da Vinci|Pablo Picasso|Claude Monet|Vincent van Gogh
+20|0|Who painted the biblical fresco The Creation of Adam?|Michelangelo|Leonardo da Vinci|Caravaggio|Rembrandt
+20|0|Who painted &quot;Swans Reflecting Elephants&quot;, &quot;Sleep&quot;, and &quot;The Persistence of Memory&quot;?|Salvador Dali|Jackson Pollock|Vincent van Gogh|Edgar Degas
+20|0|Leonardo da Vinci was not the creator of the Mona Lisa.|False|True
+20|0|What is the name of the Japanese art of folding paper into decorative shapes and figures?|Origami|Sumi-e|Ukiyo-e|Haiku
+20|1|Who painted the epic mural Guernica?|Pablo Picasso|Francisco Goya|Leonardo da Vinci|Henri Matisse
+20|1|Vincent van Gogh cut off one of his ears.|True|False
+20|1|Pablo Picasso is one of the founding fathers of &quot;Cubism.&quot;|True|False
+20|1|Which time signature is commonly known as &ldquo;Cut Time?&rdquo;|2/2|4/4|6/8|3/4
+20|1|Who designed the Chupa Chups logo?|Salvador Dali|Pablo Picasso|Andy Warhol|Vincent van Gogh
+20|1|What nationality was the surrealist painter Salvador Dali?|Spanish|Italian|French|Portuguese
+20|1|Which of these are the name of a famous marker brand?|Copic|Dopix|Cofix|Marx
+20|1|Venus of Willendorf is one of the earliest works of art, depicting the planets Mars and Venus embrace in the heavens at night.|False|True
+20|1|Which one of these paintings is not by Caspar David Friedrich?|The Black Sea|The Sea of Ice|Wanderer above the Sea of Fog|The Monk by the Sea
+20|1|Which artist&#039;s style was to use small different colored dots to create a picture?|Georges Seurat|Paul C&eacute;zanne|Vincent Van Gogh|Henri Rousseau
+20|2|Albrecht D&uuml;rer&#039;s birthplace and place of death were in...|N&uuml;rnberg|Augsburg|Bamberg|Berlin
+20|2|What French sculptor designed the Statue of Liberty? |Fr&eacute;d&eacute;ric Auguste Bartholdi|Jean-L&eacute;on G&eacute;r&ocirc;me|Auguste Rodin|Henri Matisse
+20|2|What year did Albrecht D&uuml;rer create the painting &quot;The Young Hare&quot;?|1502|1702|1402|1602
+20|2|The Statue of Liberty&#039;s official name is &ldquo;Liberty Enlightening the World&rdquo;.|True|False
+20|2|Painter Piet Mondrian (1872 - 1944) was a part of what movement?|Neoplasticism|Precisionism|Cubism|Impressionism
+20|2|The painting &quot;The Starry Night&quot; by Vincent van Gogh was part of which art movement?|Post-Impressionism|Romanticism|Neoclassical|Impressionism
+20|2|How many paint and pastel versions of &quot;The Scream&quot; is Norwegian painter Edvard Munch believed to have produced?|4|1|3|2
+20|2|Which of these is not an additional variation of the color purple?|Kobicha|Byzantium|Pomp and Power|Palatinate
+20|2|What year was the Mona Lisa finished?|1504|1487|1523|1511
+21|0|What was James Coburn&#039;s last film role before his death?|American Gun|Monsters Inc|Texas Rangers|Snow Dogs
+21|0|Which celebrity announced his presidency in 2015?|Kanye West|Donald Trump|Leonardo DiCaprio|Miley Cyrus
+21|0|Which actress married Michael Douglas in 2000?|Catherine Zeta-Jones|Ruth Jones|Pam Ferris|Sara Sugarman
+21|0|Tupac Shakur died due to complications from being stabbed in 1996.|False|True
+21|0|What was the cause of Marilyn Monroes suicide?|Drug Overdose|Knife Attack|House Fire|Gunshot
+21|0|Aubrey Graham is better known as|Drake|Travis Scott|Lil Wayne|2 Chainz
+21|0|By what name is Carlos Estevez better known? |Charlie Sheen|Ricky Martin|Bruno Mars|Joaquin Phoenix
+21|0|What does film maker Dan Bell typically focus his films on?|Abandoned Buildings and Dead Malls|Historic Landmarks|Action Films|Documentaries 
+21|0|By which name is Ramon Estevez better known as?|Martin Sheen|Charlie Sheen|Ramon Sheen|Emilio Estevez
+21|0|Marilyn Monroe was born on July 1, 1926.|False|True
+21|1|Who out of these actresses is the youngest?|Kiernan Shipka|Ariel Winter|Emma Watson|Bonnie Wright
+21|1|Which television show has Dan Gheesling been on?|Big Brother|Jeopardy|Survivor|The Bachelor
+21|1|When was Elvis Presley born?|January 8, 1935|December 13, 1931|July 18, 1940|April 17, 1938
+21|1|What year was O.J. Simpson aquitted of his murder charges?|1995|1992|1996|1991
+21|1|What was the cause of death for Freddie Mercury?|Pneumonia|Stomach Cancer|HIV|Brain Hemorrhage
+21|1|In which of these TV shows did the chef Gordon Ramsay not appear?|Auction Hunters|Ramsay&#039;s Kitchen Nightmares|Hotel Hell|Hell&#039;s Kitchen
+21|1|What caused Jake Lloyd who played Anakin Skywalker in The Phantom Menace to quit acting?|Bullying|Criminal Record|Nomination for Worst Actor|Racism
+21|1|In what year did &quot;Bob Ross&quot; die?|1995|1986|1989|1997
+21|1|Which of these celebrities was not a member of the Jackson 5?|Bo Jackson|Tito Jackson|Jermaine Jackson|Marlon Jackson
+21|1|Before voicing Pearl in Steven Universe, Deedee Magno Hall was part of which American band?|The Party|The Weather Girls|The Pussycat Dolls|The Cheetah Girls
+21|2|Lady Gaga&#039;s real name is Stefani Joanne Angelina Germanotta.|True|False
+21|2|Gabe Newell was born in which year?|1962 |1970|1960|1972
+21|2|How tall is Tom Cruise?|5&prime; 7&Prime;|5&prime; 9&Prime;|5&prime; 4&Prime;|5&prime; 5&Prime;
+21|2|Which school in Surrey, England did Steve Backshall attend?|Collingwood College|Tomlinscote School|Kings International College|Lyndhurst School
+21|2|Billy Herrington is from which US state?|New York|Arizona|California|Georgia
+21|2|The eccentric natural philosopher Tycho Brahe kept what as a pet?|Moose|Dog|Bear|Goat
+21|2|Who was Donald Trump&#039;s first wife?|Ivana Zeln&iacute;čkov&aacute;|Melania Knauss|Marla Maples|Nancy Davis
+21|2|What was the religion of famous singer &quot;Freddie Mercury&quot;?|Zoroastrianism|Paganism|Ashurism|Judaism
+22|0|Carcassonne is based on which French town?|Carcassonne|Paris|Marseille|Clermont-Ferrand
+22|0|The card game &quot;Munchkin&quot; won the 2001 Origins Award for Best Traditional Card Game.|True|False
+22|0|In a standard game of Monopoly, what colour are the two cheapest properties?|Brown|Green|Yellow|Blue
+22|0|How many dots are on a single die?|21|24|15|18
+22|0|The Angry Video Game Nerd&#039;s alter ego is &quot;Board James&quot;.|True|False
+22|0|There is a Donald Trump Board Game, which was made in 1989.|True|False
+22|0|How many pieces are there on the board at the start of a game of chess?|32|16|20|36
+22|0|On a standard Monopoly board, which square is diagonally opposite &#039;Go&#039;? |Free Parking|Go to Jail|Jail|The Electric Company
+22|0|What is the maximum level you can have in a single class in Dungeons and Dragons (5e)?|20|30|15|25
+22|0|In which year was the pen and paper RPG &quot;Deadlands&quot; released?|1996|2003|1999|1993
+22|1|The board game, Nightmare was released in what year?|1991|1992|1989|1995
+22|1|In Chess, the Queen has the combined movement of which two pieces?|Bishop and Rook|Rook and King|Knight and Bishop|King and Knight
+22|1|Which of the following tabletop games is the oldest?|Go|Chess|Mahjong|Shogi
+22|1|In the Board Game, Settlers of Catan, a die roll of what number causes the Robber to attack? |7|3|10|1
+22|1|At the start of a standard game of the Monopoly, if you throw a double six, which square would you land on?|Electric Company|Water Works|Chance|Community Chest
+22|1|In &quot;Magic: The Gathering&quot;, what instant card has the highest converted mana cost?|Blinkmoth Infusion|Vitalizing Wind| Chant of Vitu-Ghazi|Assert Authority
+22|1|What special item did the creators of Cards Against Humanity ship for their Black Friday pack?|Bull Feces|A Card Expansion|A Racist Toy|Cat Urine
+22|1|In Yu-Gi-Oh, how does a player perform an Xyz Summon?|Overlay at least 2 Monsters of the Same Level|Activate a Spell and Send Monsters to the Graveyard|Add the Monsters&#039; Levels Together to Match the Xyz Monster|Banish A Number of Monsters From Your Hand And Deck
+22|1|How many points is the Z tile worth in Scrabble?|10|8|5|6
+22|1|Europa Universalis is a strategy video game based on which French board game?|Europa Universalis|Europe and the Universe|Europa!|Power in Europe
+22|2|When Magic: The Gathering was first solicited, which of the following was it originally titled?|Mana Clash|Magic|Magic Clash|Mana Duels
+22|2|What is the sum of all the tiles in a standard box of Scrabble?|187|207|197|177
+22|2|Which character class in Dungeons and Dragons 5th edition gains it&#039;s powers from making a pact with a being of higher power?|Warlock|Wizard|Sorceror|Cleric
+22|2|Some of the &quot;Fallen Empires&quot; cards from &quot;Magic: The Gathering&quot; were misprinted on the backs of which other card game?|Wyvern|Pokemon|Dominion|Yu-Gi-Oh
+22|2|The Dice Tower network of board game podcasts and videos is run by which individual?|Tom Vasel|Jason LeVine|Borth Sampson|Uncle Pennybags
+22|2|The board game Go has more possible legal positions than the number of atoms in the visible universe.|True|False
+22|2|The board game &quot;Monopoly&quot; is a variation of what board game?|The Landlord&#039;s Game|Territorial Dispute|Property Feud|The Monopolist&#039;s Game
+22|2|Which card is on the cover of the Beta rulebook of &quot;Magic: The Gathering&quot;?|Bog Wraith|Island|Rock Hydra|Elvish Archers
+22|2|In Magic: The Gathering, what card&#039;s flavor text is &quot;Catch!&quot;?|Lava Axe|Stone-Throwing Devils|Ember Shot|Throwing Knife
+22|2|Which of these cards from &quot;Magic: The Gathering&quot; has a flavor text that begins with &quot;Oi oi oi&quot;?|Uthden Troll|Lotleth Troll|Albino Troll|Harvester Troll
+23|0|What is Jean ValJean&#039;s first prisoner number?|24601|9430|1729|32769
+23|0|&quot;Doctor Who&quot; star David Tennant performed in a rendition of which Shakespearean play?|Hamlet|The Tempest|Othello|The Taming of the Shrew
+23|0|Who wrote the award winning musical &quot;In The Heights&quot;?|Lin-Manuel Miranda|Steven Sondheim|Francis Scott Key|John Phillips Sousa
+23|0|Which Shakespeare play inspired the musical &#039;West Side Story&#039;?|Romeo &amp; Juliet|Hamlet|Macbeth|Othello
+23|0|In the play Oedipus Rex, Oedipus kills his father due to jealousy in loving his mother.|False|True
+23|0|In Shakespeare&#039;s play Julius Caesar, Caesar&#039;s last words were...|Et tu, Brute? |Iacta alea est!|Vidi, vini, vici.|Aegri somnia vana.
+23|0|Who wrote the play &#039;Angels in America&#039;?|Tony Kusher|Tom Stoppard|Matthew Lopez|Anthony Neilson
+23|0|IMAX stands for Image Maximum.|True|False
+23|0|How many plays is Shakespeare generally considered to have written?|37|18|54|25
+23|1|When was the play &quot;Macbeth&quot; written?|1606|1605|1723|1628
+23|1|In which Shakespearean play will you find the suicide of Ophelia?|Hamlet|Macbeth|Othello|King Lear
+23|1|The musical &quot;Dirty Rotten Scoundrels&quot; is set in what country?|France|USA|Germany|Sweden
+23|1|The Andrew Lloyd Webber musical &quot;Cats&quot; is based off a book of poems written by which author?|T.S. Elliot|Andrew Lloyd Webber|Emily Dickenson|Robert Frost
+23|1|What was George Bizet&#039;s last opera?|Carmen|Don Rodrigue|Gris&eacute;lidis|Les p&ecirc;cheurs de perles
+23|1|Who played Marquis de Lafayette and Thomas Jefferson in the original Broadway run of Hamilton?|Daveed Diggs|Lin-Manuel Miranda|Javier Mu&ntilde;oz|Wayne Brady
+23|1|Who is the musical director for the award winning musical &quot;Hamilton&quot;?|Alex Lacamoire|Lin-Manuel Miranda|Renee Elise-Goldberry|Leslie Odom Jr.
+23|1|In which Shakespeare play does the character Marcellus say, &quot;Something is rotten in the state of Denmark&quot;?|Hamlet|Macbeth|King Lear|Twelfth Night
+23|1|Which of these musicals won the Tony Award for Best Musical?|Rent|The Color Purple|American Idiot|Newsies
+23|1|Which of the following is not a piece from the 1950&#039;s musical West Side Story?|The Back Alley|Maria|Tonight|Mambo
+23|2|Who played &quot;Charlie Price&quot; in the musical &quot;Kinky Boots&quot; on Broadway in New York from May 26th - Aug 6th 2017?|Brendon Urie|Ed Sheeren|Tom Cruise|Dallon Weekes
+23|2|After England, more Shakespeare plays are set in this present day country than in any other.|Italy|United States|Greece|France
+23|2|Which Shakespeare play features the stage direction &quot;Enter a messenger, with two heads and a hand&quot;?|Titus Andronicus|Othello|Macbeth|King Lear
+23|2|In Macbeth, the eyes of what animals were used in the Witches&#039; cauldron?|Newts|Humans|Sharks|Squids
+23|2|Which of these plays was famously first performed posthumously after the playwright committed suicide?|4.48 Psychosis|Hamilton|Much Ado About Nothing|The Birthday Party
+23|2|In Les Mis&eacute;rables, who is Prison Code 24601?|Jean Valjean|Marius Pontmercy|Javert|Jean Claude Van Damme
+23|2|Who serves as the speaker of the prologue in Shakespeare&#039;s Romeo and Juliet?|Chorus|Montague|Refrain|Capulet
+23|2|What is the name of Broadway&#039;s first &quot;long-run&quot; musical?|The Elves|Wicked|Hamilton|The Book of Mormon
+23|2|The protagonist&#039;s names in &#039;Who&#039;s Afraid of Virginia Woolf&#039;, George and Martha, were derived from George Washington and his wife.|True|False
+23|2|Who wrote the lyrics for Leonard Bernstein&#039;s 1957 Brodway musical West Side Story?|Stephen Sondheim|Himself|Oscar Hammerstein|Richard Rodgers

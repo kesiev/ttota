@@ -1,0 +1,1063 @@
+@font-face {
+    font-family: ibmvga8;
+    src: url(fonts/ibm_vga8.eot);
+    src: url(fonts/ibm_vga8.eot?#iefix) format('embedded-opentype'),url(fonts/ibm_vga8.woff2) format('woff2'),url(fonts/ibm_vga8.woff) format('woff'),url(fonts/ibm_vga8.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Seshat";
+    src: url('fonts/seshat-webfont.woff2') format('woff2'),
+         url('fonts/seshat-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes blink {
+    0% { }
+    50% { color: transparent; }
+}
+
+@keyframes menu-enter {
+    0% { transform: translateX(10px); opacity: 0; }
+    100% { transform: translateX(0px); opacity: 1; }
+}
+
+@keyframes menu-leave {
+    0% { transform: translateX(0); opacity: 1; }
+    100% { transform: translateX(-10px); opacity: 0; }
+}
+
+@keyframes gameover {
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(0px); }
+}
+
+@keyframes rolling-cursor {
+    0% { content: '|' }
+    12.5% { content: '/' }
+    25% { content: '-' }
+    37.5% { content: '\\' }
+    50% { content: '|' }
+    62.5% { content: '/' }
+    75% { content: '-' }
+    87.5% { content: '\\' }
+}
+
+@keyframes logo-upper {
+    0%, 20% { transform: translateY(0); }
+    50%, 100% { transform: translateY(-30%); }
+}
+
+@keyframes logo-lower {
+    0%, 20% { transform: translateY(0); }
+    50%, 100% { transform: translateY(30%); }
+}
+
+@keyframes logo-center {
+    0%, 20% { top:50%; bottom:50%; opacity: 0;  }
+    50%, 70%, 100% { top:42%; bottom:47%; opacity: 1; transform: scale(1) rotate(0); filter: grayscale(0%) sepia(0%) hue-rotate(0deg); }
+    70.1% { top:42%; bottom:47%; opacity: 1; transform: scale(1.4) rotate(3deg); filter: grayscale(100%) sepia(100%) hue-rotate(60deg); }
+}
+
+@keyframes fadein {
+    0% { opacity:0 }
+    100% { opacity:1 }
+}
+
+@keyframes fadeout {
+    0% { opacity:1 }
+    100% { opacity:0 }
+}
+
+@keyframes option-starting {
+    20% { transform:translate(0,-10px); background-color:#fff; color:#000; }
+    100% { transfor:translate(0,0); background:#000; color:#fff; }
+}
+
+@keyframes bounce {
+    0% { transform: scale(1) translate(0,0) }
+    50% { transform: scale(0.9,1.1) translate(0,-10px) }
+    100% { transform: scale(1) translate(0,0) }
+}
+
+@keyframes glow-red {
+    0% { background-color: #400; color:#f00; box-shadow: 0px 0px 0px #000; transform: translateX(0px) rotate(-1deg); }
+    50% { background-color: #C00; color:#fff; box-shadow: 0px 0px 10px #fff; transform: translateX(0px) rotate(1deg);  }
+    100% { background-color: #400; color:#f00; box-shadow: 0px 0px 0px #000; transform: translateX(0px) rotate(-1deg); }
+}
+
+@keyframes glow-green {
+    0% { background-color: #040; color:#0f0; box-shadow: 0px 0px 0px #000; transform: translateX(0px) scale(1); }
+    50% { background-color: #0C0; color:#fff; box-shadow: 0px 0px 10px #fff; transform: translateX(0px) scale(1.1);  }
+    100% { background-color: #040; color:#0f0; box-shadow: 0px 0px 0px #000; transform: translateX(0px) scale(1); }
+}
+
+
+BODY {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: ibmvga8;
+    font-size: 16px;
+    line-height: 16px;
+    touch-action: none;
+    width: 100%;
+    height: 100%;
+}
+
+BODY * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rollingcursor:after, .reverserollingcursor:after {
+    background-color: #f00;
+    color: #fff;
+    animation-name: rolling-cursor;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end; 
+    content:''
+}
+
+.fake .rollingcursor, .fake .reverserollingcursor {
+    display: none;
+}
+
+.reverserollingcursor:after {
+    animation-direction: reverse;
+}
+
+.screen {
+    transform-origin:0 0;
+    position:absolute;
+}
+
+.itemcontainer {
+    padding:20px 5px 0px 5px;
+    margin:0 -15px 0 0;
+    display: inline-block;
+    cursor: pointer;    
+    position: relative;
+    transition: all 0.2s;
+}
+
+.item {
+    transition: all 0.2s;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+.item.bounce {
+    animation-name: bounce;
+}
+
+.item.card {
+    position: relative;
+    width: 63px;
+    height: 88px;
+}
+
+.item.card .inner {
+    position: absolute;
+    left:0;
+    top:0;
+    background-color: #fff;
+    width: 59px;
+    height: 84px;
+    border:2px solid #000;
+    border-radius: 5px;
+    box-shadow: 0px -2px 4px #000;
+}
+
+.item .counter {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    font-size:20px;
+    color:#000;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.dock {
+    transition: all 0.2s;
+    position:absolute;
+    z-index:10;
+    text-align:center;
+    white-space:nowrap;
+    overflow-x:auto;
+    scrollbar-color:#fff #000;
+    scrollbar-width:thin;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    padding:30px 10px 20px 10px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.dock.fake {
+    font-family: seshat;
+}
+
+.dock.hidden {
+    transform: translate(0,200px);
+}
+
+.shade {
+    position: absolute;
+}
+
+.shade.left {
+    background-repeat:repeat-y;
+    background-image:url('images/left-shade.png');
+    width:20px;
+    top:0px;
+    bottom:0px;
+}
+
+.shade.right {
+    background-repeat:repeat-y;
+    background-image:url('images/right-shade.png');
+    width:20px;
+    top:0px;
+    bottom:0px;
+}
+
+.shade.top {
+    background-repeat:repeat-x;
+    background-image:url('images/top-shade.png');
+    height:20px;
+    left:0px;
+    right:0px;
+}
+
+.shade.bottom {
+    background-repeat:repeat-x;
+    background-image:url('images/bottom-shade.png');
+    height:20px;
+    left:0px;
+    right:0px;
+}
+
+.slideprojector {
+    position: absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0; 
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    animation-name: fadein;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slideprojector.hide {
+    animation-name: fadeout;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.slide {
+    position: absolute;
+    left:1vw;
+    right:1vw;
+    top:5vh;
+    height:75vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.slide.hide {
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.dialogue {
+    transition: all 0.2s;
+    position:absolute;
+    z-index:10;
+    left:20%;
+    right:20%;
+    bottom:20px;
+    border:2px solid #000;
+    background-color: #fff;
+    padding:20px;
+    font-size:20px;
+    line-height: 24px;
+    max-height: 80%;
+    overflow:auto;
+    scrollbar-color:#000 #fff;
+    scrollbar-width:thin;
+    box-shadow: 0px 0px 4px #000;
+    cursor: pointer;
+}
+
+.dialogue.fake {
+    font-family: seshat;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #fff;
+}
+
+.dialogue.hidden {
+    transform: translate(0,200px);
+}
+
+.dialogue .cursor {
+    background-color: #000;
+    color: #fff;
+}
+
+.dialogue.fake .cursor {
+    display: none;
+}
+
+.dialogue .next {
+    color: #f00;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end; 
+}
+
+.dialogue .header {
+    background-color: #f00;
+    color: #fff;
+}
+
+.dialogue.fake .header {
+    background-color: #000;
+    padding:5 10px;
+    border-radius: 5px;
+}
+
+.dialogue .options {
+    margin-top:10px;
+    text-align: center;
+}
+
+.dialogue .options .option {
+    display: inline-block;
+    padding:10px;
+    background-color: #f00;
+    color:#fff;
+    margin:5px 10px;
+}
+
+.dialogue.fake .option {
+    border-radius: 10px;
+    background-color: #00c;
+    border-color: #00f;
+}
+
+.topbutton {
+    transition: all 0.2s;
+    color: #000;
+    z-index: 10;
+    position: absolute;
+    top:20px;
+    background-color: #fff;
+    border:2px solid #000;
+    box-shadow: 0px 0px 4px #000;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.topbutton.map {
+    right:20px;
+}
+
+.topbutton.pause {
+    left:20px;
+    padding:20px;
+}
+
+.map .content {
+    padding:20px;
+}
+
+.map.full {
+    bottom:20px;
+    left:20px;
+    scrollbar-color:#000 #fff;
+    scrollbar-width:thin;
+    overflow: auto;
+    text-align: center;
+}
+
+.map.full .outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.map.full .middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.map.full .content {
+    padding:10px;
+    margin: auto;
+}
+
+.map.full.hidden {
+    transform: translate(-200%,0) rotate(-10deg);
+}
+
+.map.mini.hidden {
+    transform: translate(200px,0);
+}
+
+.pause.hidden {
+    transform: translate(-200px,0);
+}
+
+.map .player {
+    color:#f00;
+}
+
+.logo {
+    position: relative;
+    margin: auto;
+}
+
+.logo .thetombofthe, .logo .architects, .logo .maze, .logo .software {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 5;
+}
+
+.logo .software {
+    opacity: 0;
+    background-image: url('../images/logo/software.svg');
+    top:50%;
+    bottom:50%;
+    z-index: 10;
+    left: 0px;
+    right: 0px;
+}
+
+.logo .thetombofthe {
+    background-image: url('../images/logo/thetombofthe.svg');
+    z-index: 10;
+}
+
+.logo .architects {
+    background-image: url('../images/logo/architects.svg');
+    z-index: 10;
+}
+
+.logo .maze {
+    background-image: url('../images/logo/maze.svg');
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo .thetombofthe {
+    top:26%;
+    bottom: 56%;
+    left: 10%;
+    right: 10%;
+}
+
+.logo .architects {
+    top:48%;
+    bottom: 22%;
+    left: 0px;
+    right: 0px;
+}
+
+.logo.animated .thetombofthe {
+    animation-name: logo-upper;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.logo.animated .architects {
+    animation-name: logo-lower;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.logo.animated .software {
+    opacity: 0;
+    animation-name: logo-center;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.menu .fake {
+    font-family: seshat;
+    font-size: 20px;
+    margin:0 10px;
+}
+
+.menu {
+    position: absolute;
+    left:0;
+    top:0;
+    color:#fff;
+    width:100%;
+    height: 100%;
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .logo {
+    width:40vw;
+    display: flex;
+    aspect-ratio: 2/1;
+    margin-bottom: 2vh;
+}
+
+.menu .container {
+    width: 100%;
+}
+
+.menu .container.rankingscontainer, .menu .container.htmlcontainer {
+    flex: 1;
+    position: relative;
+}
+
+.menu .option, .menu .optionbutton {
+    margin: 20px auto;
+    text-align: center;
+    border:1px solid #fff;
+    width:40%;
+    cursor: pointer;
+    background-color: #000;
+    min-width: 20px;
+}
+
+.menu .option {
+    padding:16px;
+}
+
+.menu .option.starting {
+    animation-name: option-starting;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu .fake .option, .menu .fake .optionbutton {
+    border-radius: 10px;
+    background-color: #00c;
+    border-color: #00f;
+    box-shadow: 0px 0px 4px #000;
+}
+
+.menu .optionbutton {
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    vertical-align: baseline;
+}
+
+.menu .optiontext {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu .progress {
+    color:#ccc;
+}
+
+.menu .fake .progress {
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 5px;
+}
+
+.menu .pusher {
+    height:16vh;
+}
+
+.menu .title {
+    font-size: 28px;
+    line-height:30px;
+    padding:20px;
+    text-align: center;
+    white-space: nowrap;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.menu .fake .title {
+    text-shadow: 0px 0px 3px #f00;
+}
+
+.menu .cover.id-0 {
+    padding:10px;
+    margin:10px;
+    text-align: center;
+    color:#ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu .cover.id-1 {
+    font-size: 40px;
+    line-height:44px;
+    padding:10px;
+    text-align: center;
+}
+
+.menu .label {
+    padding:10px 40px;
+    text-align: center;
+}
+
+.menu .rankings, .menu .html {
+    position: absolute;
+    bottom:0;
+    top:0;
+    padding:20px;
+    overflow:auto;
+}
+
+.menu .rankings {
+    left:25%;
+    right:25%;
+    border:2px solid #000;
+    background-color: #fff;
+    scrollbar-color:#000 #fff;
+    scrollbar-width:thin;
+    color: #000;
+    font-size:20px;
+    line-height: 21px;
+}
+
+.menu .html {
+    left:2%;
+    right:2%;
+    scrollbar-color:#fff #000;
+    scrollbar-width:thin;
+    color: #fff;
+}
+
+.menu .htmlshade {
+    position: absolute;
+    left:2%;
+    right:2%;
+    height:30px;
+}
+
+.menu .htmlshade.top {
+    top:0px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.menu .htmlshade.bottom {
+    bottom:0px;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.menu .rankings .section {
+    margin:10px 0;
+    color:#f00;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.menu .rankings .button {
+    display: inline-block;
+    background-color: #000;
+    padding: 0 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    color:#fff;
+    cursor: pointer;
+    border:1px solid #fff;
+}
+
+.menu .rankings .subsummary {
+    padding:5px;
+    margin: 5px 0px 5px 20px;
+    background-color: #ccc;
+}
+
+.menu .html .section {
+    margin:20px auto;
+    width:50%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding:5px 0;
+    text-align: center;
+}
+
+.menu .html .person, .menu .html .musictitle, .menu .html .subsection {
+    margin-top:10px;
+    color: #f00;
+    text-align: center;
+}
+
+.menu .html .musicby {
+    text-align: center;
+}
+
+.menu .html .entry {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.menu .html .entry.license {
+    color:#ccc;
+}
+
+.menu .html .spacer {
+    height:30vh;   
+}
+
+.menu .html .subtitle, .menu .html .url {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.menu .html A {
+    color: #f00;
+}
+
+.menu .html .banner {
+    background-image: url("../images/logo/full.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin:10px 0;
+    height:20vh;
+}
+
+.menu .html .optionrow {
+    margin: auto;
+    width: 50%;
+    border-bottom: 1px solid #333;
+    display: flex;
+    padding:10px 0;
+}
+
+.menu .html .optionrow .optionlabel {
+    white-space: nowrap;
+    display: inline-block;
+    flex-grow: 1;
+    line-height: 29px;
+}
+
+.menu .html.fake .optionrow .optionlabel { /* TODO */
+    height:35px;
+    line-height: 35px;
+}
+
+.menu .html .optionrow .optionvalue {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.menu.leave {
+    animation-name: menu-leave;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu {
+    animation-name: menu-enter;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu .warning {
+    background-image: url("../images/warning.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin:20px 0;
+    height:40px
+}
+
+.transitionmodules {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+.transition {
+    background-color: #000;
+    position: absolute;
+    z-index: 20;
+    height:51%;
+    transform: translateY(0);
+}
+
+.transition.upper {
+    top:0;
+}
+
+.transition.lower {
+    bottom:0;
+}
+
+.gameover {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gameover .message {
+    transform: translateX(-100vw);
+    animation-name: gameover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    background-color: #000;
+    width:100%;
+    font-size: 8vh;
+    line-height: 8vh;
+    color:#f00;
+    padding:20px 0;
+    margin: 30px auto;
+}
+
+.gameover .message.top {
+    text-shadow: -2px -2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000, 2px 2px 2px #000;
+}
+
+.gameover .message.failure {
+    color:#f00;
+}
+
+.gameover .message .cursor {
+    background-color: #fff;
+    color: #000;
+}
+
+.gameover .message.failure.top {
+    animation-name: glow-red;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.gameover .message.success {
+    color:#0F0;
+}
+
+.gameover .message.success.top {
+    animation-name: glow-green;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+.gameover .summary {
+    visibility: hidden;
+    transition: all 0.5s;
+    height:0;
+    width:50%;
+    border:2px solid #000;
+    background-color: #fff;
+    padding:20px;
+    font-size:20px;
+    line-height: 21px;
+    overflow:auto;
+    scrollbar-color:#000 #fff;
+    scrollbar-width:thin;
+    box-shadow: 0px 0px 4px #000;
+}
+
+.gameover .summary.show {
+    visibility: visible;
+    height: 100%;
+}
+
+.gameover .summary .line, .menu .rankings .line {
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+}
+
+.gameover .summary .space {
+    height: 20px;
+}
+
+.gameover .summary .text {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.gameover .summary .stamp {
+    color:#f00;
+    text-align: center;
+    padding:5px;
+    border:2px solid #f00;
+    margin-top:15px;
+    border-radius: 3px;
+    transform: rotate(-0.5deg);
+}
+ 
+.gameover .summary .row, .menu .rankings .row {
+    display: flex;
+}
+
+.gameover .summary .row .left, .menu .rankings .row .left {
+    flex: 1;
+    display: flex;
+}
+  
+.gameover .summary .row .left::after, .menu .rankings .row .left::after {
+    content: '';
+    border-bottom: 1px dotted;
+    flex: 1;
+    margin: 0 .5em;
+}
+
+.gameover .button {
+    transition: transform 0.5s;
+    transform: translateY(100vh);
+    cursor: pointer;
+    margin: 30px auto;
+    text-align: center;
+    padding:16px;
+    border:1px solid #fff;
+    background-color: #000;
+    color:#fff;
+    width:30%;
+    box-shadow: 0px 0px 4px #000;
+}
+
+.gameover .button.show {
+    transform: translateY(0);
+}
+
+/* Browser hacks */
+
+.screen * {
+    image-rendering: pixelated;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+}
+
+.chrome.android .screen DIV {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* Different display sizes */
+
+@media (hover: hover) {
+
+    .map.mini.show:hover {
+        transform: scale(1.1);
+    }
+
+    .pause.show:hover {
+        transform: scale(1.1);
+    }
+
+    .itemcontainer:hover {
+        transform: translate(0,-20px) scale(1.2) rotate(-3deg);
+        z-index: 10;
+    }
+
+    .dialogue .options .option:hover {
+        background-color: #00f;
+    }
+
+    .menu .option:hover, .gameover .button:hover, .menu .option:hover, .menu .optionbutton:hover {
+        background-color: #f00;
+    }
+
+    .menu .fake .option:hover, .gameover .fake .button:hover, .menu .fake .option:hover, .menu .fake .optionbutton:hover {
+        background-color: #003;
+        box-shadow: 0px 0px 4px #fff;
+    }
+
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+
+    .menu .logo {
+        height:30vh;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: portrait) {
+    .menu .logo {
+        width:100vw;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .gameover .summary {
+	    width:90%;
+        padding:10px;
+    }
+
+    .dialogue {
+        padding:10px;
+        left:20px;
+        right:20px;
+    }
+    
+    .menu .rankings, .menu .html {
+        padding:5px;
+        left:20px;
+        right:20px;
+    }
+    
+    .menu .html .section {
+        width:80%;
+    }
+
+    .menu .html .optionrow {
+        width: 100%;
+    }
+
+    .menu .html .entry {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .menu .rankings .subsummary {
+        padding:5px 2px;
+        margin: 5px 0;
+    }
+
+    .menu .logo {
+        display: flex;
+        aspect-ratio: 2/1;
+    }
+
+    .menu .pusher {
+        height: 0;
+    }
+    
+
+}

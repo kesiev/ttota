@@ -1,0 +1,152 @@
+Afghanistan|#000|#090|#bd6b00|#bf0000|#fff
+Albania|#000|#e41e20
+Algeria|#006233|#d21034|#fff
+Andorra|#0018a8|#0065bd|#703d29|#c7b37f|#d0103a|#d52b1e|#fcd900|#fedf00|#fff
+Angola|#000|#ce1126|#f9d616
+Argentina|#74acdf|#843511|#85340a|#f6b40e|#fff
+Armenia|#0033a0|#d90012|#f2a800
+Australia|#00008b|#f00|#fff
+Azerbaijan|#00b9e4|#3f9c35|#ed2939|#fff
+Bahamas|#000|#00abc9|#fae042
+Bangladesh|#006a4e|#f42a41
+Barbados|#000|#00267f|#ffc726
+Belarus|#4aa657|#c8313e|#fff
+Belgium|#ed2939|#fae042
+Benin|#008751|#e8112d|#fcd116
+Bhutan|#000|#e23d28|#efb22d|#fff
+Bolivia|#007934|#d52b1e|#f9e300
+Botswana|#75aadb|#fff
+Brazil|#002776|#009b3a|#fedf00|#fff
+Brunei|#000|#cf1126|#f7e017|#fff
+Bulgaria|#00966e|#d62612|#fff
+Burkina Faso|#009e49|#ef2b2d|#fcd116
+Burundi|#1eb53a|#ce1126|#fff
+Cabo Verde|#003893|#cf2027|#f7d116|#fff
+Cambodia|#000|#032ea1|#e00025|#fff
+Chad|#002664|#c60c30|#fecb00
+China|#de2910|#ffde00
+Colombia|#003893|#ce1126|#fcd116
+Comoros|#3a75c4|#3d8e33|#ce1126|#ffc61e|#fff
+Costa Rica|#000|#002b7f|#034418|#078930|#0f47af|#509164|#704d25|#825123|#89c5e3|#ce1126|#cea849|#dca842|#fcdd09|#fff
+Croatia|#000|#0093dd|#171796|#f00|#f7db17|#fff
+Cuba|#002a8f|#cf142b|#fff
+Cyprus|#435125|#d47600|#fff
+C&#244;te d'Ivoire|#009e60|#f77f00|#fff
+Denmark|#c60c30|#fff
+Djibouti|#12ad2b|#6ab2e7|#d7141a|#fff
+Dominica|#000|#006b3f|#9461c9|#9c4a00|#d41c30|#fcd116|#fff
+Egypt|#000|#c09300|#ce1126|#fff
+Eritrea|#12ad2b|#4189dd|#ea0437|#ffc726
+Estonia|#000|#4891d9|#fff
+Ethiopia|#078930|#0f47af|#da121a|#fcdd09
+Fiji|#000|#002868|#00a651|#68bfe5|#964b36|#ce1126|#d21034|#ffd100|#fff|#fff200
+Finland|#003580|#fff
+France|#002395|#ed2939|#fff
+Gabon|#009e60|#3a75c4|#fcd116
+Gambia|#0c1c8c|#3a7728|#ce1126|#fff
+Germany|#000|#d00|#ffce00
+Ghana|#000|#006b3f|#ce1126|#fcd116
+Greece|#0d5eaf|#fff
+Guinea|#009460|#ce1126|#fcd116
+Guinea-Bissau|#000|#009e49|#ce1126|#fcd116
+Haiti|#000|#00209f|#016a16|#0a328c|#503200|#d20014|#d21034|#f1b517|#fff
+Honduras|#0073cf|#fff
+Hungary|#436f4d|#cd2a3e|#fff
+Iceland|#003897|#d72828|#fff
+India|#008|#128807|#f93|#fff
+Iran|#239f40|#da0000|#fff
+Iraq|#000000|#007a3d|#020202|#119b4a|#ce1126|#cf2029|#ffffff
+Ireland|#169b62|#ff883e|#ffffff
+Israel|#0038b8|#fff
+Italy|#009246|#ce2b37|#fff
+Jamaica|#009b3a|#fed100
+Japan|#bc002d|#fff
+Kazakhstan|#00afca|#fec50c
+Kenya|#006600|#bb0000|#fff
+Kiribati|#003f87|#bd9c08|#ce1126|#fcd116|#fff
+Kyrgyzstan|#e8112d|#ffef00
+Laos|#002868|#ce1126|#fff
+Latvia|#9e3039|#fff
+Lebanon|#00a651|#ed1c24|#fff
+Lesotho|#000|#00209f|#009543|#fff
+Liberia|#002868|#bf0a30|#fff
+Libya|#000|#239e46|#e70013|#fff
+Liechtenstein|#000|#002b7f|#ce1126|#ffd83d
+Lithuania|#006a44|#c1272d|#fdb913
+Luxembourg|#00a1de|#ed2939|#fff
+Madagascar|#007e3a|#fc3d32|#fff
+Malawi|#339e35|#ce1126
+Malaysia|#010066|#cc0001|#fc0|#fff
+Maldives|#007e3a|#d21034|#fff
+Mali|#14b53a|#ce1126|#fcd116
+Malta|#000|#96877d|#ccc|#cf142b|#d0d0d0|#e60d2e|#fff
+Mauritania|#006233|#ffc400
+Mauritius|#00a551|#1a206d|#ea2839|#ffd500
+Moldova|#000|#0046ae|#097754|#0b45bb|#b07f55|#cc092f|#d10429|#f5d402|#ffd200
+Mongolia|#015197|#c4272f|#f9cf02
+Montenegro|#1d5e91|#6d8c3e|#b96b29|#c40308|#c52126|#d3ae3b|#d4af3a
+Morocco|#006233|#c1272d
+Mozambique|#000|#007168|#d21034|#fce100|#fff
+Myanmar|#34b233|#ea2839|#fecb00|#fff
+Namibia|#003580|#009543|#d21034|#ffce00|#fff
+Nauru|#002b7f|#ffc61e|#fff
+Nepal|#003893|#dc143c|#fff
+Netherlands|#21468b|#ae1c28|#fff
+New Zealand|#00247d|#cc142b|#ffffff
+Niger|#0db02b|#e05206|#fff
+Nigeria|#008751|#fff
+North Korea|#024fa2|#ed1c27|#fff
+Norway|#002868|#ef2b2d|#fff
+Oman|#008000|#db161b|#fff
+Pakistan|#01411c|#fff
+Palau|#4aadd6|#ffde00
+Panama|#005293|#d21034|#fff
+Paraguay|#000|#0038a8|#009b3a|#d52b1e|#fedf00|#fff
+Peru|#d91023|#fff
+Philippines|#0038a8|#ce1126|#fcd116|#fff
+Poland|#dc143c|#fff
+Portugal|#000|#039|#060|#f00|#ff0|#fff
+Qatar|#8d1b3d|#fff
+Romania|#002b7f|#ce1126|#fcd116
+Rwanda|#00a1de|#20603d|#e5be01|#fad201
+Saint Lucia|#6cf|#fcd116|#fff
+Samoa|#002b7f|#ce1126|#fff
+San Marino|#000|#466343|#4c819a|#5eb6e4|#658d5c|#94bb79|#a0cfeb|#a48253|#bdbfc1|#d99f31|#f1bf31|#f1f1f2|#fff
+Saudi Arabia|#006c35|#fff
+Senegal|#00853f|#e31b23|#fdef42
+Serbia|#0c4076|#21231e|#c6363c|#edb92e|#fff
+Seychelles|#003f87|#007a3d|#d62828|#fcd856|#fff
+Sierra Leone|#0072c6|#1eb53a|#fff
+Slovakia|#0b4ea2|#ee1c25|#fff
+Slovenia|#005da4|#ed1c24|#fd0|#fff
+Somalia|#4189dd|#fff
+South Africa|#002395|#007a4d|#de3831|#ffb612|#fff
+South Korea|#000|#003478|#c60c30|#fff
+South Sudan|#078930|#0f47af|#da121a|#fcdd09|#fff
+Spain|#000|#0039f0|#005bbf|#058e6e|#ad1519|#c60b1e|#c8b100|#ccc|#db4446|#ed72aa|#ffc400|#ffd691|#fff
+Sri Lanka|#000|#005641|#8d2029|#ff5b00|#ffb700
+Sudan|#007229|#d21034|#fff
+Suriname|#377e3f|#b40a2d|#ecc81d|#fff
+Swaziland|#000|#3d5da7|#3e5eb9|#a70000|#b10c0c|#ffd900|#fff
+Sweden|#006aa7|#fecc00
+Switzerland|#f00|#fff
+Tajikistan|#060|#c00|#f8c300|#fff
+Tanzania|#000|#00a3dd|#1eb53a|#fcd116
+Thailand|#241d4f|#ed1c24|#fff
+Timor-Leste|#dc241f|#ffc726|#fff
+Togo|#006a4e|#d21034|#ffce00|#fff
+Tonga|#c10000|#fff
+Tunisia|#e70013|#fff
+Turkey|#e30a17|#ffffff
+Turkmenistan|#28ae66|#383739|#ca3745|#faae29|#fff
+Tuvalu|#00247d|#5b97b1|#cf142b|#ffce00|#fff
+Uganda|#000|#9ca69c|#d90000|#fcdc04|#fff
+Ukraine|#005bbb|#ffd500
+United States|#3c3b6e|#b22234|#fff
+Uruguay|#000|#0038a8|#fcd116|#fff
+Uzbekistan|#0099b5|#1eb53a|#ce1126|#fff
+Vanuatu|#000|#009543|#d21034|#fdce12
+Vatican City|#000|#ccc|#ce9d09|#fa0204|#ffe000|#fff
+Vietnam|#da251d|#ff0
+Zambia|#000|#198a00|#de2010|#ef7d00
+Zimbabwe|#000|#319208|#de2010|#ffc618|#ffd200|#fff

@@ -1,0 +1,810 @@
+<html>
+<head>
+    <title>The Tomb Of The Architects</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="../../../js/tools.js"></script>
+    <script src="../../../js/const.js"></script>
+    <script src="../../../js/core.js"></script>
+    <script src="../../../js/tombs.js"></script>
+    <script src="../../../js/progress.js"></script>
+    <script src="../../../js/random.js"></script>
+    <script src="../../../js/dungeon.js"></script>
+    <script src="../../../js/loader.js"></script>
+    <script src="../../../js/audioplayer.js"></script>
+    <script src="../../../js/elements.js"></script>
+    <script src="../../../js/npc.js"></script>
+    <script src="../../../js/movement.js"></script>
+    <script src="../../../js/viewport.js"></script>
+    <script src="../../../js/bits.js"></script>
+    <script src="../../../js/player.js"></script>
+    <script src="../../../js/events.js"></script>
+    <script src="../../../js/inventory.js"></script>
+    <script src="../../../js/items.js"></script>
+    <script src="../../../js/locks.js"></script>
+    <script src="../../../architects/architects.js"></script>
+</head>
+<body onload="onl()"></body>
+<script>
+
+const
+    MAP_TESTS = 2000,
+    SEED_SIZE = 999999999,
+    MOVEMENT = [
+        {
+            up:{ direction:0, x:0, y:-1 },
+            down:{ direction:0, x:0, y:1 },
+            left:{ direction:3, x:0, y:0 },
+            right:{ direction:1, x:0, y:0 }
+        },{
+            up:{ direction:1, x:1, y:0 },
+            down:{ direction:1, x:-1, y:0 },
+            left:{ direction:0, x:0, y:0 },
+            right:{ direction:2, x:0, y:0 }
+        },{
+            up:{ direction:2, x:0, y:1 },
+            down:{ direction:2, x:0, y:-1 },
+            left:{ direction:1, x:0, y:0 },
+            right:{ direction:3, x:0, y:0 }
+        },{
+            up:{ direction:3, x:-1, y:0 },
+            down:{ direction:3, x:1, y:0 },
+            left:{ direction:2, x:0, y:0 },
+            right:{ direction:0, x:0, y:0 }
+        }
+    ];
+
+function Dialogue() { return new Proxy({}, {get:()=>{ return function(){} }}) };
+function UI() { return new Proxy({}, {get:()=>{ return function(){} }}) };
+
+function generateTomb(seed, cb) {
+
+    let
+        audio = new AudioPlayer({
+            resourcesPrefix:"../../../",
+            enabled:false
+        });
+
+    LOADER.setPrefix("../../../");
+    PROGRESS.initialize(true);
+    PROGRESS.save.progressStory = 5;
+    CONST.DEBUG.seed = seed;
+
+    CORE.debugGenerate(
+        { setCoverData:()=>{} },
+        audio,
+        ()=>{},
+        cb,
+        PROGRESS,
+        LOADER
+    );
+}
+
+function getTombCell(game, dx, dy) {
+    let
+        found;
+    game.dungeon.rooms.forEach(placedRoom=>{
+        let
+            room = placedRoom.room;
+
+        if (!(
+            (dx<room.x) || (dx>=room.x+room.width) ||
+            (dy<room.y) || (dy>=room.y+room.height)
+        )) {
+            found = room;
+        }
+    })
+    return found ? found.tomb.id : 0;
+}
+
+function generateTombs(amt,stats,seeds) {
+    if (!stats)
+        stats = { amt:amt, tombIds:{}, tombIdsAvg:{}, badHints:{} };
+    if (!seeds) {
+        console.log("Starting",amt,"tests...");
+        seeds = {};
+    }
+    if (amt) {
+        let
+            seed;
+            
+        do {
+            seed = Math.floor(Math.random()*SEED_SIZE);
+        } while (seeds[seed]);
+
+        seeds[seed] = 1;
+
+        amt--;
+        if (amt % 100 == 0)
+            console.log(amt,"left...");
+        generateTomb(seed,(game)=>{
+            let
+                mustBeWalkable = [],
+                metaMap = [];
+            for (let k in game.hints)
+                if (game.hints[k].types.sentences) 
+                    game.hints[k].types.sentences.forEach(sentences=>{
+                        let
+                            roomId = game.dungeon.rooms[k].room.tomb.id;
+                        sentences.forEach(sentence=>{
+                            if ((sentence.indexOf("[")!=-1)||(sentence.indexOf("undefined")!=-1)) {
+                                if (!stats.badHints[roomId])
+                                    stats.badHints[roomId] = [];
+                                stats.badHints[roomId].push(sentence);
+                            }
+                        })
+                    });
+            game.dungeon.roomsByTomb.forEach(tombset=>{
+                let
+                    tombId = tombset[0].tomb.id;
+                if (!stats.tombIds[tombId])
+                    stats.tombIds[tombId] = 0;
+                stats.tombIds[tombId]++;
+            });
+            game.dungeon.map.forEach((row,y)=>{
+                metaMap[y]=[];
+                row.forEach((cell,x)=>{
+                    let
+                        metadata = { x:x, y:y };
+
+                    if (game.map[y][x]) {
+                        if (game.map[y][x].isDoor)
+                            metadata.isDoor = true;
+                        if (game.map[y][x].isWall)
+                            metadata.isWall = true;
+                    } else {
+                        metadata.isWall = true;
+                    }
+
+                    metaMap[y][x]=metadata;
+                })
+            })
+            game.items.forEach(row=>{
+                row.forEach(cell=>{
+                    cell.list.forEach(item=>{
+                        if (item && item._events) {
+                            if (item._events.onInteract) {
+                                if (!item.isPellet && !item.isHealingPotion && !item.isPoisonPotion) {
+                                    metaMap[item.y][item.x].isInteract = true;
+                                    mustBeWalkable.push({ type:"item", tomb:getTombCell(game, item.x, item.y), for:item, oneOf:[ { x:item.x+1, y:item.y }, { x:item.x-1, y:item.y }, { x:item.x, y:item.y+1 }, { x:item.x, y:item.y-1 } ]})
+                                }
+                            }
+                        }
+                    })
+                })
+            });
+            game.map.forEach(row=>{
+                row.forEach(cell=>{
+                    if (cell && cell._events) {
+                        if (cell._events.wall && cell._events.wall.onBump)   
+                            for (let side in cell._events.wall.onBump) {
+                                let
+                                    destCell = { x:cell.x+MOVEMENT[side].up.x, y:cell.y+MOVEMENT[side].up.y };
+                                mustBeWalkable.push({ type:"wall", tomb:getTombCell(game, destCell.x, destCell.y), for:cell, oneOf:[ destCell ]})
+                            }
+                    }
+                })
+            });
+            mustBeWalkable.forEach(test=>{
+                let
+                    tested = [];
+                    isValid = false;
+                test.oneOf.forEach(cell=>{
+                    if (metaMap[cell.y] && metaMap[cell.y][cell.x]) {
+                        let
+                            testedCell = metaMap[cell.y][cell.x];
+                        if (testedCell.isDoor || (!testedCell.isWall && !testedCell.isInteract))
+                            isValid = true;
+                        tested.push(testedCell);
+                    }
+                });
+                if (!isValid) {
+                    console.warn("Unreachable interaction for tomb", test.tomb,":",tested,">",test);
+                    debugger;
+                }
+            });
+            setTimeout(()=>{
+                generateTombs(amt, stats,seeds);
+            },1);
+        });
+    } else {
+        console.log("--- DONE ---");
+        for (let k in stats.tombIds)
+            stats.tombIdsAvg[k]=stats.tombIds[k]/stats.amt;
+        for (let k in stats.badHints)
+            console.warn("Bad hints:",k,":",stats.badHints[k]);
+        console.log(stats);
+    }
+}
+
+function loadTombs(list,done) {
+    if (list.length) {
+        let
+            resource = list.pop(),
+            js = document.createElement("script");
+
+        js.setAttribute("src", "../../../"+resource.file);
+        js.addEventListener("load", ()=>{loadTombs(list, done)});
+        document.head.appendChild(js);
+    } else
+        done();
+}
+
+function downloadFiles(list,onl,out) {
+    if (!out)
+        out = {};
+    if (list.length) {
+        let
+            resource = list.pop(),
+            xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                out[resource.id] = this.responseText;
+                if (resource.isBundle) {
+
+                    this.responseText.replace(/"(.*)\.js"/g,(m,m1)=>{
+                        list.push({ id: "bundled-"+resource.id+"-"+m1, file:"../../../"+m1+".js" });
+                    });
+
+                    let
+                        script = document.createElement("script");
+                    script.src=resource.file;
+                    script.onload=()=>{
+                        downloadFiles(list,onl,out);
+                    }
+                    document.getElementsByTagName("head")[0].appendChild(script);
+                } else {
+                    downloadFiles(list,onl,out);
+                }
+            }
+        };
+        xhttp.open("GET", resource.file, true);
+        xhttp.send();   
+    } else
+        onl(out);
+}
+
+function onl() {
+
+    const
+        EVENT_ONLY=[
+            // --- Event-specific getter
+            "as",
+            "times",
+            "asContext",
+            // --- Event-specific debugging
+            "debugger",
+            "log",
+            // --- Event-specific sub-getters
+            "ofAttempts",
+            "ofScore",
+            "toValue",
+            "byValue",
+            // --- Event-specific conditions
+            "if",
+            // --- Event-specific code execution
+            "run",
+            "subScript",
+            "wait",
+            // --- Event-specific execution flow
+            "endScript",
+            "endSubScript",
+            // --- Attributes manipulation helpers (done by = in normal code)
+            "setAttribute",
+            "sumAttribute",
+            "subtractAttribute",
+            // --- Internal events
+            "runNextStory",
+            "progressStory",
+            "startGameBreak",
+            "fixDialogueBox",
+            "fixTitle",
+            "resetFixedGame",
+            "goToCredits",
+            "goBackToIntro",
+            "endRun"
+        ],
+        TOOLS_ONLY=[
+            // --- Constants
+            "SOLID",
+            "CHECKERBOARD",
+            // --- Event setters (built-in in element/item construction events)
+            "onBumpWall",
+            "onEnter",
+            "onInteract",
+            "onGiveItem",
+            "onUse",
+            "onLeave",
+            "onMove",
+            "onFrame",
+            // --- Room initialization (not needed in events)
+            "addPlaques",
+            "hintAddSentences",
+            "hintAddDecoration",
+            "hintAddSequence",
+            "hintAddKeyValue",
+            "hintAddCoordinates",
+            "setProtected",
+            "setElementPaintable",
+            "setWallPaintable",
+            "setEdgesPaintable",
+            "setFloorPaintable",
+            "setCeilingPaintable",
+            // --- Architect initialization helpers (not needed in events)
+            "subscriptArchitectFreeQuote",
+            "scriptArchitectPaidQuote",
+            // --- Added in event IF conditions
+            "playerCanPay",
+            // --- Getters are often not needed in events, which just perform scripted actions
+            "getCheckpoint",
+            "getDecorableWalls",
+            "getElementsAt",
+            "getInventoryItem",
+            "getInventoryItemsFromRoom",
+            "getRoomFacingPosition",
+            "getRoomPosition",
+            "getWalkableCells",
+            "getWalkableWalls"
+        ],
+        TARGETS = {
+            tombsPerTag:8,
+            tombsByTag:{
+                story:3
+            },
+            plaquesPerArchitect:2,
+            sentencesPerArchitect:3
+        },
+        RESOURCESINDEX = [
+            { label:"&#x1F58C;&#xFE0F;", id:"image", isImage:true },
+            { label:"&#x1F3B4;", id:"texture", isTexture:true },
+            { label:"&#x1F6E0;&#xFE0F;", id:"item", isItem:true },
+            { label:"&#x1F4BE;", id:"data" },
+            { label:"&#x1F50A;", id:"audio" },
+            { label:"&#x1F39E;&#xFE0F;", id:"onFrame", isFlag:true, title:"It has room animations" },
+            { label:"&#x2699;&#xFE0F;", id:"isComplex", isFlag:true, title:"It has a lot of code" },
+            { label:"&#x1F9D1;", id:"hasGuest", isFlag:true, title:"It has a guest Architect" },
+            { label:"&#x1F3E0;", id:"minRooms", isNumber:true },
+        ];
+
+    downloadFiles([
+        { id:"events", file:"../../../js/events.js" },
+        { id:"tools", file:"../../../js/tools.js" },
+        { id:"bundle-default", file:"../../../tombs/default/index.js", isBundle:true },
+        { id:"bundle-kesiev", file:"../../../tombs/kesiev/index.js", isBundle:true },
+    ],(files)=>{
+
+        let
+            tombsTargetCount = 0,
+            stats = {},
+            list = [],
+            resourcesIndex = {},
+            bundlesIndex = {},
+            architects = {},
+            tagsCount = 0,
+            tombsCount = 0,
+            targetCount = 0,
+            tombsMissingData = [];
+        
+        TOMBS.addTombFileResources(list)
+        loadTombs(list,()=>{
+            TOMBS.initialize();
+
+            for (let k in files) {
+                if (k.substr(0,8)=="bundled-") {
+                    let
+                        tombId = 0,
+                        textures = {},
+                        items = {},
+                        onFrame = false,
+                        hasGuest = false,
+                        lines = files[k].split("\n");
+
+                    lines.forEach(line=>{
+                        line.replace(/TOMB_ID = "([^"]+)"/,(m,m1)=>{
+                            tombId = m1;
+                        })
+                        line.replace(/image:[ ]*"([^"]+)"[ ,]*imageX:[ ]*([0-9]+)[, ]*imageY:[ ]*([0-9]+)/,(m,m1,m2,m3)=>{
+                            if (m1.match(/\/texture.png/))
+                                textures[m1+"|"+m2+"|"+m3] = 1;
+                            if (m1.match(/\/items.png/))
+                                items[m1+"|"+m2+"|"+m3] = 1;
+                        })
+                        line.replace(/room\.onFrame/,(m)=>{
+                            onFrame = true;
+                        })
+                        line.replace(/ARCHITECTS\.list/,(m)=>{
+                            hasGuest = true;
+                        })
+                    })
+
+                    if (tombId)
+                        bundlesIndex[tombId] = {
+                            textures:textures,
+                            items:items,
+                            onFrame:onFrame,
+                            hasGuest:hasGuest,
+                            isComplex:lines.length > 450
+                        };
+                    else
+                        console.log("Can't find TOMB_ID for "+k);
+                }
+            }
+
+            for (let k in TOMBS.METADATA) {
+                let
+                    tomb = TOMBS.METADATA[k],
+                    foundMissingData;
+                tomb.tags.forEach(tag=>{
+                    if (ARCHITECTS.MISSING_DATA[tag])
+                        foundMissingData = true;
+                    if (TOMBS.TAGS[tag].isKey) {
+                        tombsCount++;
+                        if (!stats[tag]) {
+                            stats[tag]=[];
+                            tagsCount++;
+                            tombsTargetCount += TARGETS.tombsByTag[tag] || TARGETS.tombsPerTag;
+                        }
+                        stats[tag].push(tomb);
+                    }
+                })
+                if (!foundMissingData)
+                    tombsMissingData.push(tomb);
+                tomb.resourcesIndex = {};
+                if (tomb.resources)
+                    tomb.resources.forEach(resource=>{
+                        if (resource.file) {
+                            let
+                                id = resource.file;
+                            if (!resourcesIndex[id])
+                                resourcesIndex[id] = { count:0 };
+                            resourcesIndex[id].count++;
+                        }
+                        if (resource.type) {
+                            if (!tomb.resourcesIndex[resource.type])
+                                tomb.resourcesIndex[resource.type] = [];
+                            if (resource.noise) {
+                                let
+                                    id = "noise: ",
+                                    attrs = [];
+
+                                for (let k in resource.noise)
+                                    attrs.push({ k:k, v:resource.noise[k]});
+
+                                attrs.sort((a,b)=>{
+                                    if (a.k> b.k) return 1;
+                                    else if (a.k<b.k) return -1;
+                                    else return 0;
+                                });
+
+                                attrs.forEach(attr=>{
+                                    id+=attr.k+":"+attr.v+", ";
+                                })
+
+                                if (!resourcesIndex[id])
+                                    resourcesIndex[id] = { count:0 };
+                                resourcesIndex[id].count++;
+
+                                tomb.resourcesIndex[resource.type].push({ type:resource.type, file:id });
+                            } else if (resource.mod) {
+                                let
+                                    id = "mod: "+resource.mod,
+                                    attrs = [];
+
+                                if (!resourcesIndex[id])
+                                    resourcesIndex[id] = { count:0 };
+                                resourcesIndex[id].count++;
+
+                                tomb.resourcesIndex[resource.type].push({ type:resource.type, file:id });
+                            } else
+                                tomb.resourcesIndex[resource.type].push(resource);
+                        }
+                    });
+                tomb.resourcesIndex.minRooms = tomb.minRooms;
+                if (bundlesIndex[k]) {
+                    [
+                        [ "textures", "texture" ],
+                        [ "items", "item" ]
+                    ].forEach(set=>{
+                        if (bundlesIndex[k][set[0]])
+                            for (let j in bundlesIndex[k][set[0]]) {
+                                if (!resourcesIndex[j])
+                                    resourcesIndex[j] = { count:0 };
+                                resourcesIndex[j].count++;
+                                if (!tomb.resourcesIndex[set[1]])
+                                    tomb.resourcesIndex[set[1]] = [];
+                                tomb.resourcesIndex[set[1]].push({ file:j });
+                            }
+                    });
+                    if (bundlesIndex[k].onFrame)
+                        tomb.resourcesIndex.onFrame = true;
+                    if (bundlesIndex[k].isComplex)
+                        tomb.resourcesIndex.isComplex = true;
+                    if (bundlesIndex[k].hasGuest)
+                        tomb.resourcesIndex.hasGuest = true;
+                }
+            }
+
+            ARCHITECTS.list.forEach(architect=>{
+                if (architect.at)
+                    architect.at.forEach(tomb=>{
+                        if (!architects[tomb])
+                            architects[tomb] = [];
+                        architects[tomb].push(architect.layout.name);
+                    })
+            })
+
+            // --- Summary
+
+            let
+                uid = 0,
+                summary = [],
+                sections = [];
+
+            // --- Report: Missing data
+
+            tombsMissingData.forEach(tomb=>{
+                summary.push("<div style='text-align:center;color:#fff;background-color:red;margin:1px;padding:1px'>Missing missing data for tomb "+tomb.id+" ("+tomb.tags.join(", ")+")</div>");    
+            })
+            
+            // --- Report: debug flags
+
+            for (let k in CONST.DEBUG)
+                if (CONST.DEBUG[k])
+                    summary.push("<div style='text-align:center;color:#fff;background-color:red;margin:1px;padding:1px'>DEBUG KEY "+k+" IS ON! TURN IT OFF!</div>")
+
+            // --- Report: Tombs
+
+            let
+                tombsToGo = 0,
+                section="<h2>Tombs ("+tombsCount+"/"+tombsTargetCount+")</h2><table><tr style='background-color:#ccc'>"+RESOURCESINDEX.map(column=>"<td></td>").join("")+"<td></td><td>ID</td><td>Description</td><td>Architect</td></tr>";
+
+            for (let k in stats) {
+                let
+                    maxCount = TARGETS.tombsByTag[k] || TARGETS.tombsPerTag,
+                    notEnough = stats[k].length<maxCount,
+                    overMax = stats[k].length>maxCount;
+
+                section+="<tr><td colspan=20 style='font-weight:bold;border-bottom:1px solid #000;";
+
+                if (notEnough || overMax)
+                    section+="color:red";
+                
+                section+="'>";
+                    
+                if (overMax)
+                    section+="&#x1F449; ";
+
+                section+=k+" ("+stats[k].length+"/"+maxCount+")";
+
+                if (overMax)
+                    section+= ": "+(stats[k].length - maxCount)+" over the "+maxCount+" tombs-per-tag limit";
+                
+                if (notEnough)
+                    section+= ": "+(maxCount - stats[k].length)+" tombs to go";
+                
+                section+="</td></tr>";
+
+                tombsToGo += maxCount - stats[k].length;
+
+                stats[k].forEach(tomb=>{
+                    let
+                        okResources = 0,
+                        architectsList = [];
+                        
+                    section+="<tr>";
+
+                    RESOURCESINDEX.forEach(column=>{
+                        if (column.isFlag) {
+                            section+="<td title='"+column.title+"' style='white-space:nowrap;text-align:center;"+(tomb.resourcesIndex[column.id] ? "background-color:#0f0;" : "")+"'>"+(tomb.resourcesIndex[column.id] ? column.label : "")+"</td>";
+                            if (tomb.resourcesIndex[column.id])
+                                okResources++;
+                        } else if (column.isNumber) {
+                            if (tomb.resourcesIndex[column.id] > 1) {
+                                section+="<td style='white-space:nowrap;text-align:center;background-color:#0f0'>"+tomb.resourcesIndex[column.id]+column.label+"</td>";
+                                okResources++;
+                            } else
+                                section+="<td></td>";
+                        } else {
+                                
+                            let
+                                extra="",
+                                extraId,
+                                min = 0,
+                                minId;
+                            if (tomb.resourcesIndex[column.id])
+                                tomb.resourcesIndex[column.id].forEach(resource=>{
+                                    if (resourcesIndex[resource.file])
+                                        if (!min || (resourcesIndex[resource.file].count < min)) {
+                                            min = resourcesIndex[resource.file].count;
+                                            minId = resource.file;
+                                        }
+                                })
+                            if (column.isTexture && minId) {
+                                uid++;
+                                let
+                                    parts = minId.split("|");
+                                extraId="extra-"+uid;
+                                extra="<div id='"+extraId+"' style=\"display:none;background-color:#ccc;width:100;height:100;background-image:url('../../../"+parts[0]+"');background-position:"+(-parts[1]*101)+"px "+(-parts[2]*101)+"px\"></div>";
+                            }
+                             if (column.isItem && minId) {
+                                uid++;
+                                let
+                                    parts = minId.split("|");
+                                extraId="extra-"+uid;
+                                extra="<div id='"+extraId+"' style=\"display:none;background-color:#ccc;width:59;height:84;background-image:url('../../../"+parts[0]+"');background-position:"+(-parts[1]*60)+"px "+(-parts[2]*85)+"px\"></div>";
+                            }
+                            if (column.isImage && minId) {
+                                uid++;
+                                extraId="extra-"+uid;
+                                extra="<img id='"+extraId+"' style=\"display:none;background-color:#ccc\" src=\"../../../"+minId+"\">";
+                            }
+                            section+="<td ";
+                            if (extra)
+                                section+="onclick=\"document.getElementById('"+extraId+"').style.display=document.getElementById('"+extraId+"').style.display == 'none' ? 'block' : 'none'\"";
+                            section+="title='"+(minId ? minId : "N/A")+"' style='white-space:nowrap;text-align:center;"+(min == 1 ? "background-color:#0f0;" : "")+(extra ? "cursor:pointer" : "")+"'>"+(min ? min+column.label : "")+extra+"</td>";
+                            if (min == 1)
+                                okResources++;
+                        }
+                    })
+                    section+="<td style='white-space:nowrap;text-align:center;"+(okResources ? "" : "background-color:#f00;")+"'>"+okResources+"&#x2728;</td>";
+                    section+="<td style='white-space:nowrap'><a target=_blank href='../../../index.html#DEV:tombId="+tomb.id+"'>"+tomb.id+"</a></td><td>"+tomb.description+"</td><td>";
+                    if (architects[tomb.id])
+                        section+=architects[tomb.id].join(", ");
+                    else
+                        section+="<i>-</i>";
+                    section+="</td></tr>";
+                })
+            
+            }
+
+            section+="</table>";
+
+            sections.push(section);
+
+            if (tombsToGo)
+                summary.push("<b>Tombs to go:</b> "+tombsToGo);
+
+            // --- Report: Architects
+            
+            placesToGo = 0;
+            gfxToGo = 0;
+            voicesToGo = 0;
+            plaquesToGo = 0;
+            sentencesToGo = 0;
+            section = "<h2>Architects</h2><table><tr style='background-color:#ccc'><td>Name</td><td>Place</td><td>GFX</td><td>Audio</td><td>Plaques</td><td>Sentences</td></tr>";
+
+            ARCHITECTS.list.forEach(architect=>{
+
+                let
+                    count,
+                    isBad = false;
+                
+                section+="<tr><td style='{{ isBad }}'>"+architect.layout.name+"</td>";
+
+                // --- GFX
+                if (architect.at.length == 0) {
+                    isBad = true;
+                    placesToGo++;
+                    section+="<td style='font-weight:bold;color:red'>Missing</td>";
+                } else
+                    section+="<td>OK</td>";
+
+                // --- GFX
+                if (architect.layout.head == "nobody") {
+                    isBad = true;
+                    gfxToGo++;
+                    section+="<td style='font-weight:bold;color:red'>Missing</td>";
+                } else
+                    section+="<td>OK</td>";
+                    
+                // --- Audio
+                if (!architect.voiceAudio || (architect.voiceAudio.indexOf("beep1")!=-1)) {
+                    isBad = true;
+                    voicesToGo++;
+                    section+="<td style='font-weight:bold;color:red'>Missing</td>";
+                } else
+                    section+="<td>OK</td>";
+
+                // --- Plaques
+                count = architect.plaques.indexOf("\"Get ready!\"") != -1 ? 0 : architect.plaques.length;
+                if (count < TARGETS.plaquesPerArchitect) {
+                    isBad = true;
+                    plaquesToGo += TARGETS.plaquesPerArchitect - count;
+                    section+="<td style='font-weight:bold;color:red'>";
+                } else
+                    section+="<td>";
+                section+=count+"/"+TARGETS.plaquesPerArchitect+"</td>";
+
+                // --- Sentences
+                count = architect.sentences ? architect.sentences.length : 0;
+                if (count < TARGETS.sentencesPerArchitect) {
+                    isBad = true;
+                    sentencesToGo += TARGETS.sentencesPerArchitect - count;
+                    section+="<td style='font-weight:bold;color:red'>";
+                } else
+                    section+="<td>";
+                section+=count+"/"+TARGETS.sentencesPerArchitect+"</td>";
+
+                // --- Resolve isBad
+                section = section.replace("{{ isBad }}", isBad ? "color:red;font-weight:bold" : "");
+
+                section+="</tr>";
+            })
+
+            sections.push(section+"</table>");
+
+            sections.push("<input type='button' value='Test generator' onclick='generateTombs("+MAP_TESTS+")'>");
+
+            if (placesToGo)
+                summary.push("<b>Architect places to go:</b> "+placesToGo);
+
+            if (gfxToGo)
+                summary.push("<b>Architect graphics to go:</b> "+gfxToGo);
+
+            if (voicesToGo)
+                summary.push("<b>Architect voices to go:</b> "+voicesToGo);
+
+            if (plaquesToGo)
+                summary.push("<b>Architect plaques to go:</b> "+plaquesToGo);
+
+            if (sentencesToGo)
+                summary.push("<b>Architect sentences to go:</b> "+sentencesToGo);
+
+            // --- Check files
+
+            let
+                eventList = {},
+                toolsList = {};
+
+            files.events.split("\n").forEach(line=>{
+                line.replace(/line\.([a-zA-Z]+)/g,(m,m1)=>{
+                    eventList[m1] = true;
+                })
+            });
+
+            files.tools.split("\n").forEach(line=>{
+                line.replace(/this\.([a-zA-Z]+)[ ]?=/g,(m,m1)=>{
+                    toolsList[m1] = true;
+                })
+            });
+            
+            EVENT_ONLY.forEach(k=>{
+                if (!eventList[k])
+                    summary.push("<b>Missing event-only method:</b> "+k);
+            })
+
+            TOOLS_ONLY.forEach(k=>{
+                if (!toolsList[k])
+                    summary.push("<b>Missing tool-only method:</b> "+k);
+            })
+
+            for (let k in toolsList)
+                if (TOOLS_ONLY.indexOf(k) == -1) {
+                    if (EVENT_ONLY.indexOf(k) != -1)
+                        summary.push("<b>Tool implementing event-only method:</b> "+k);
+                    else if (eventList[k])
+                        delete eventList[k];
+                    else
+                        summary.push("<span style='color:#ccc'><b>Missing tool in events:</b> "+k+"</span>");
+                }
+
+            for (let k in eventList) {
+                if (TOOLS_ONLY.indexOf(k) != -1)
+                    summary.push("<b>Event found in tools only:</b> "+k);
+                if (EVENT_ONLY.indexOf(k) == -1)
+                    summary.push("<b>Missing event in tool:</b> "+k);
+            }
+
+            // --- Print
+
+            if (summary.length)
+                document.write("<div style='border:2px solid #f00;padding:10px;margin-bottom:20px'>"+summary.join("<br>")+"</div>");
+
+            document.write(sections.join("<hr>"));
+
+            console.log("Done.");
+        })
+    })
+    
+}
+</script>
+</html>
