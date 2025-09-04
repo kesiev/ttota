@@ -11,6 +11,9 @@ function Menu(root, audio, triggers) {
         PAUSE_MENU = "pause",
         COVER_MENU = "cover",
         LOGO_MENU = "logo",
+        RESTARTGAME_MENU = "restartgame",
+        IMPORTERROR_MENU = "importerror",
+        IMPORTCONFIRM_MENU = "importconfirm",
         ELEMENT_TYPES = {
             LOGO: 1,
             OPTIONS: 2,
@@ -126,6 +129,46 @@ function Menu(root, audio, triggers) {
                         type:ELEMENT_TYPES.OPTIONS,
                         options:[
                             { label:"Back", gotoMenu:"title", soundEffect:"sheet1" }
+                        ]
+                    }
+                ]
+            },
+            restartgame:{
+                elements:[
+                    {
+                        type:ELEMENT_TYPES.LABEL,
+                        label:"Please restart the game for the changes to take effect."
+                    },{
+                        type:ELEMENT_TYPES.OPTIONS,
+                        options:[
+                            { label:"Restart game", restartGame:true }
+                        ]
+                    }
+                ]
+            },
+            importerror:{
+                elements:[
+                    {
+                        type:ELEMENT_TYPES.LABEL,
+                        label:"It looks like this save file is corrupt, invalid, or unreadable.<br><br>Please, try with another one!"
+                    },{
+                        type:ELEMENT_TYPES.OPTIONS,
+                        options:[
+                            { label:"Back", gotoMenu:"settings" }
+                        ]
+                    }
+                ]
+            },
+            importconfirm:{
+                elements:[
+                    {
+                        type:ELEMENT_TYPES.LABEL,
+                        label:0
+                    },{
+                        type:ELEMENT_TYPES.OPTIONS,
+                        options:[
+                            { label:"Import anyway" },
+                            { label:"Cancel", gotoMenu:"settings" }
                         ]
                     }
                 ]
@@ -703,6 +746,40 @@ function Menu(root, audio, triggers) {
 
                         })
 
+                        addOption(div, "Export save data", (option)=>{
+
+                            let
+                                exportButton = makeDiv("optionbutton", option.value);
+
+                            exportButton.innerHTML = "Save";
+
+                            exportButton.addEventListener("click",()=>{
+                                PROGRESS.exportSave();
+                            })
+
+                        })
+
+                        addOption(div, "Import save data", (option)=>{
+
+                            let
+                                exportButton = makeDiv("optionbutton", option.value);
+
+                            exportButton.innerHTML = "Load";
+
+                            exportButton.addEventListener("click",()=>{
+                                PROGRESS.importSave(
+                                    ()=>{ gotoMenu(RESTARTGAME_MENU); },
+                                    ()=>{ gotoMenu(IMPORTERROR_MENU); },
+                                    (saveVersion, gameVersion, onOk)=>{
+                                        MENUS[IMPORTCONFIRM_MENU].elements[0].label = "The save file you're importing is for version "+saveVersion+" of the game while you're playing version "+gameVersion+".<br><br>If imported, the game may not function properly.<br><br>Do you want to continue?";
+                                        MENUS[IMPORTCONFIRM_MENU].elements[1].options[0].run = onOk;
+                                        gotoMenu(IMPORTCONFIRM_MENU);
+                                    }
+                                );
+                            })
+
+                        })
+
                         break;
                     }
                     case ELEMENT_TYPES.DEVICE_WARNINGS:{
@@ -728,7 +805,11 @@ function Menu(root, audio, triggers) {
                                         node.isReady = false;
                                         if (option.saveSettings)
                                             PROGRESS.storeData();
-                                        if (option.initialize) {
+                                        if (option.run)
+                                            option.run();
+                                        else if (option.restartGame)
+                                            location.reload();
+                                        else if (option.initialize) {
                                             if (PROGRESS.save.fullScreenOnStartOption)
                                                 setFullScreen();
                                             setIdleAnimation();

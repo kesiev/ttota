@@ -1313,6 +1313,15 @@ let Tools=function(game){
 
 };
 
+Tools.leftPad = (value, len, padding)=>{
+    let
+        ret = value ? value.toString() : "0";
+    if (!padding)
+        padding = "0";
+    while (ret.length<len)
+        ret = padding+ret;
+    return ret;
+}
 
 Tools.capitalize=(str)=>{
     return str[0].toUpperCase()+str.substr(1);

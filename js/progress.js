@@ -3,6 +3,8 @@ let PROGRESS=(function(){
     const
         SEED_SIZE = 999999999,
         STORAGE_ID = "TOMBARCH",
+        SAVEDATA_PREFIX = STORAGE_ID+"-",
+        SAVEDATA_EXTENSION = "sav",
         STORAGE_MODE = {
             FULL:1,
             SINGLESTAT:2
@@ -282,6 +284,22 @@ let PROGRESS=(function(){
         if (!isDebug)
             localStorage[STORAGE_ID] = JSON.stringify(PROGRESS.save);
     }
+
+    function cyrb53(str, seed = 0) {
+        let
+            h1 = 0xdeadbeef ^ seed,
+            h2 = 0x41c6ce57 ^ seed;
+        for(let i = 0, ch; i < str.length; i++) {
+            ch = str.charCodeAt(i);
+            h1 = Math.imul(h1 ^ ch, 2654435761);
+            h2 = Math.imul(h2 ^ ch, 1597334677);
+        }
+        h1  = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+        h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+        h2  = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+        h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+        return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+    };
 
     return {
 
@@ -608,6 +626,123 @@ let PROGRESS=(function(){
                 }
             }
             PROGRESS.save.checkpoints = checkpoints;
+        },
+
+        exportSave:()=>{
+            let
+                now = new Date(),
+                data = JSON.stringify({v:CONST.VERSION,d:PROGRESS.save}),
+                checksum = cyrb53(data),
+                serialized = btoa(checksum+"|"+data),
+                a = document.createElement("a"),
+                blob = new Blob([serialized], { type: "text/plain" }),
+                url = window.URL.createObjectURL(blob);
+
+            document.body.appendChild(a);
+            a.style.display = "none";
+            a.href = url;
+            a.download =
+                SAVEDATA_PREFIX+
+                CONST.VERSION.replace(/\./g,"_")+
+                "-"+
+                Tools.leftPad(now.getFullYear(),4)+
+                Tools.leftPad(now.getMonth(),2)+
+                Tools.leftPad(now.getDay(),2)+
+                "-"+
+                Tools.leftPad(now.getHours(),2)+
+                "_"+
+                Tools.leftPad(now.getMinutes(),2)+
+                "."+SAVEDATA_EXTENSION;
+            a.click();
+            document.body.removeChild(a);
+        },
+
+        importSave:(onloaded,onerror,onwarning)=>{
+            let
+                input = document.createElement("input");
+            input.setAttribute("type","file");                                
+            input.setAttribute("accept","."+SAVEDATA_EXTENSION);
+            input.onchange=(e)=>{
+                let
+                    data = input.files[0];
+
+                if (data instanceof File) {
+
+                    let
+                        reader = new FileReader();
+                    
+                    reader.onloadend = (e)=>{
+                        if (e.target && e.target.result) {
+                            let
+                                isOk,
+                                isWarning,
+                                dataObject,
+                                unserialized;
+
+                            try {
+                                unserialized = atob(e.target.result);
+                            } catch (e) {
+                                console.warn(e);
+                                unserialized = 0;
+                            }
+
+                            if (unserialized) {
+                                let
+                                    splitterPos = unserialized.indexOf("|");
+                                if (splitterPos != 1) {
+                                    let
+                                        dataChecksum = parseInt(unserialized.substr(0,splitterPos)),
+                                        data = unserialized.substr(splitterPos+1),
+                                        checksum = cyrb53(data);
+
+                                    if (dataChecksum == checksum) {
+                                        try {
+                                            dataObject = JSON.parse(data);
+                                        } catch(e) {
+                                            console.warn(e);
+                                            dataObject = 0;
+                                        }
+                                        if (dataObject && dataObject.v && dataObject.d) {
+                                            isOk = true;
+                                            if (dataObject.v != CONST.VERSION)
+                                                isWarning = true;
+                                        }
+                                    }   
+                                }
+                            }
+
+                            if (isOk) {
+                                if (isWarning)
+                                    onwarning(
+                                        dataObject.v, CONST.VERSION,
+                                        ()=>{
+                                            PROGRESS.save = dataObject.d;
+                                            storeData();
+                                            onloaded();
+                                        }
+                                    );
+                                else {
+                                    PROGRESS.save = dataObject.d;
+                                    storeData();
+                                    onloaded();
+                                }
+                            } else
+                                onerror();
+                        } else
+                            onerror();
+                    }
+
+                    reader.readAsText(data);
+
+                } else
+                    onerror();
+                document.body.removeChild(input);
+            }
+            input.oncancel=()=>{
+                document.body.removeChild(input);
+            }
+            document.body.appendChild(input);
+            input.click();
         },
 
         initialize:(debug)=>{
