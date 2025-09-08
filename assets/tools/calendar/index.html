@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>The Tomb Of The Architects</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="../../../js/tools.js"></script>
+    <script src="../../../js/const.js"></script>
+    <script src="../../../js/core.js"></script>
+    <script src="../../../js/tombs.js"></script>
+    <script src="../../../js/progress.js"></script>
+    <script src="../../../js/random.js"></script>
+    <script src="../../../js/dungeon.js"></script>
+    <script src="../../../js/loader.js"></script>
+    <script src="../../../js/audioplayer.js"></script>
+    <script src="../../../js/elements.js"></script>
+    <script src="../../../js/npc.js"></script>
+    <script src="../../../js/movement.js"></script>
+    <script src="../../../js/viewport.js"></script>
+    <script src="../../../js/bits.js"></script>
+    <script src="../../../js/player.js"></script>
+    <script src="../../../js/events.js"></script>
+    <script src="../../../js/inventory.js"></script>
+    <script src="../../../js/items.js"></script>
+    <script src="../../../js/locks.js"></script>
+    <script src="../../../architects/architects.js"></script>
+    <script src="../../../tombs/default/index.js"></script>
+    <script src="../../../tombs/kesiev/index.js"></script>
+</head>
+<body onload="onl()"></body>
+<script>
+
+const
+    DAYS = 30,
+    KEY_NAMES = [
+        0,
+        "Circle",
+        "Cross",
+        "Triangle",
+        "Square",
+        "Pentagon",
+        "Hexagon"
+    ];
+
+function Dialogue() { return new Proxy({}, {get:()=>{ return function(){} }}) };
+function UI() { return new Proxy({}, {get:()=>{ return function(){} }}) };
+
+function generateTomb(seedDelta, cb) {
+
+    let
+        header,
+        audio = new AudioPlayer({
+            resourcesPrefix:"../../../",
+            enabled:false
+        });
+
+    LOADER.setPrefix("../../../");
+    PROGRESS.initialize(true);
+    PROGRESS.save.progressStory = 5;
+    CONST.DEBUG.showLogs = true;
+    CONST.DEBUG.seedDelta = seedDelta;
+
+    CORE.debugGenerate(
+        { setCoverData:(h)=>{ header = h } },
+        audio,
+        ()=>{},
+        (game)=>cb(game, header),
+        PROGRESS,
+        LOADER
+    );
+}
+
+function loadTombs(list,done) {
+    if (list.length) {
+        let
+            resource = list.shift(),
+            js = document.createElement("script");
+
+        js.setAttribute("src", "../../../"+resource.file);
+        js.addEventListener("load", ()=>{loadTombs(list, done)});
+        document.head.appendChild(js);
+    } else
+        done();
+}
+
+function makeCalendar(day, days, html) {
+    if (!html)
+        html = "";
+
+    if (day<days) {
+        generateTomb(day,(game, header)=>{
+            let
+                date = new Date();
+                stats = { header:header,tombIds:{} };
+
+            date.setDate(date.getDate() + day);
+
+            html+="<h2><span style='color:"+(day < 0 ? "#ccc" : day == 0 ? "#f00" : "#000")+"'>"+(day == 0 ? "<span style='padding:0px 5px;border-radius:5px;color:#fff;background-color:#f00'>TODAY</span> ":"")+Tools.leftPad(date.getFullYear(),4)+"-"+Tools.leftPad(date.getMonth(),2)+"-"+Tools.leftPad(date.getDate(),2)+": "+header[1]+"</span> <span style='color:#ccc'>("+header[0]+")</span><h2>";
+            html+="<table border=1><tr><th>Difficulty</th><th>ID</th><th>Gold</th><th>Architect</th><th>Needs</th><th>Unlocks</th></tr>";
+
+            game.dungeon.rooms.forEach(room=>{
+                room = room.room;
+                let
+                    architects = [],
+                    isDefault = room.tomb.id.startsWith("default-"),
+                    description = [];
+                console.log(room);
+
+                ARCHITECTS.list.forEach(architect=>{
+                    if (architect.at && (architect.at.indexOf(room.tomb.id)!=-1))
+                        architects.push(architect.layout.name);
+                });
+
+                if (room.tomb.description)
+                    description.push(room.tomb.description);
+
+                if (room.calendarMetadata)
+                    for (let k in room.calendarMetadata)
+                        description.push("<b>"+k+"</b>: "+room.calendarMetadata[k]);
+
+                html+="<tr>";
+                html+="<td>"+room.difficulty.toFixed(2)+"</td>";
+                html+="<td><span style='color:"+(isDefault ? "#ccc" : "#000;font-weight:bold")+"'>"+(room.name || "-")+"</span> <span style='color:#ccc'>("+room.tomb.id+")</span>"+(description.length?"<br><div style='margin-top:4px;font-size:12px;'>"+description.join("<br>")+"</div>":"")+"</td>";
+                html+="<td>"+(room.goldBudget || "&nbsp;") +"</td>";
+                html+="<td>"+(architects.length ? architects.join(", ") : "") +"</td>";
+                html+="<td>"+(room.needsKey ? KEY_NAMES[room.needsKey]+" key" : "&nbsp;") +"</td>";
+                html+="<td>"+(room.unlock ? KEY_NAMES[room.unlock.key]+" key"+(room.unlock.partOf ? " part <span style='font-size:12px'>(1/"+room.unlock.partOf+")</span>" : "") : "&nbsp;") +"</td>";
+                html+="</tr>";
+
+            });
+
+            html+="</table>";
+
+            makeCalendar(day+1,days,html);
+
+            console.log(game);
+            console.log(stats);
+        })
+    } else
+        document.write(html);
+}
+
+function onl() {
+    let
+        list = [];
+
+    TOMBS.addTombFileResources(list);
+
+    loadTombs(list,()=>{
+        TOMBS.initialize();
+        makeCalendar(-2,DAYS);
+    });
+}
+</script>
+</html>
