@@ -647,7 +647,7 @@ let PROGRESS=(function(){
                 "-"+
                 Tools.leftPad(now.getFullYear(),4)+
                 Tools.leftPad(now.getMonth(),2)+
-                Tools.leftPad(now.getDay(),2)+
+                Tools.leftPad(now.getDate(),2)+
                 "-"+
                 Tools.leftPad(now.getHours(),2)+
                 "_"+
