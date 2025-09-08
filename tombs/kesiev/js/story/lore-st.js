@@ -731,7 +731,7 @@
 
         id:TOMB_ID,
         tags:TOMB_TAGS,
-        name:"The &#x263B;&#x263A; Room",
+        name:"The Story Room",
         description:"Continue The Tomb Of The Architects story.",
         byArchitect:ARCHITECT.layout.name,
         
