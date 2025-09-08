@@ -219,7 +219,7 @@ function generateTombs(amt,stats,seeds) {
 function loadTombs(list,done) {
     if (list.length) {
         let
-            resource = list.pop(),
+            resource = list.shift(),
             js = document.createElement("script");
 
         js.setAttribute("src", "../../../"+resource.file);
