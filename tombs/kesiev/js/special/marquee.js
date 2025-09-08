@@ -78,6 +78,8 @@
                 let
                     test = room.random.bagPick(bag);
 
+                room.calendarMetadata = test;
+
                 // --- Add entrance plaques
                 
                 room.quote = room.random.element(ARCHITECT.plaques);
