@@ -86,7 +86,7 @@
 
         id:TOMB_ID,
         tags:TOMB_TAGS,
-        name:"The Blooming Corridor",
+        name:"The Blooming Room",
         description:"Remember what you've to do to keep the flowers from game to game.",
         byArchitect:ARCHITECT.layout.name,
         
