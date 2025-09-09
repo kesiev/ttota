@@ -84,7 +84,7 @@ function Inventory(game) {
             inner = document.createElement("div"),
             counter = document.createElement("div");
         
-        container.className = "itemcontainer";
+        container._baseClassName = container.className = "itemcontainer";
 
         div._cancelDrag = true;
         div._baseClassName = div.className = "item "+ (className || "card");
@@ -109,7 +109,7 @@ function Inventory(game) {
         div.appendChild(inner);
         div.appendChild(counter);
         container.addEventListener("click",()=>{
-            if (isVisible && isUnlocked && game.player.isAlive && !game.movement.isLocked)
+            if (isVisible && isUnlocked && game.player.isAlive && !container.isLocked && !game.movement.isLocked)
                 game.movement.onUseItem(data);
         });
 
@@ -120,10 +120,30 @@ function Inventory(game) {
 
         return data;
     }
+    
+    let setNodeAnimation=(node,fromClass,toClass)=>{
+        if (node._timeout)
+            clearTimeout(node._timeout);
+        node.className = fromClass;
+        node._timeout = setTimeout(()=>{
+            node._timeout = 0;
+            node.className = toClass;
+        },10);
+    }
 
-    let addItemToInventory = (item)=>{
+    let setAnimation = function(item, animation) {
+        setNodeAnimation(item.nodes.div, item.nodes.div._baseClassName, item.nodes.div._baseClassName+" "+animation);
+    }
+
+    let addItemToInventory = (item, skipAnimation)=>{
         let
             append = true;
+
+        item.nodes.container.isLocked = false;
+        if (item.nodes.container.removeTimeout) {
+            clearTimeout(item.nodes.container.removeTimeout);
+            item.nodes.container.removeTimeout = 0;
+        }
 
         for (let i=0;i<items.length;i++) {
             if (items[i].group > item.group) {
@@ -138,6 +158,9 @@ function Inventory(game) {
             dock.appendChild(item.nodes.container);
             items.push(item);
         }
+
+        if (!skipAnimation)
+            setNodeAnimation(item.nodes.div, item.nodes.div._baseClassName+" beforespawning", item.nodes.div._baseClassName+" spawning");
 
         refreshScroll();
 
@@ -179,19 +202,13 @@ function Inventory(game) {
     }
 
     this.setAnimation=(item, animation)=>{
-        if (item.nodes.timeout)
-            clearTimeout(item.nodes.timeout);
-        item.nodes.div.className = item.nodes.div._baseClassName;
-        item.nodes.timeout = setTimeout(()=>{
-            item.nodes.timeout = 0;
-            item.nodes.div.className = item.nodes.div._baseClassName+" "+animation;
-        },10);
+        setAnimation(item, animation);
     }
 
-    this.addItem=(fromRoom, data, className)=>{
+    this.addItem=(fromRoom, data, className, skipAnimation)=>{
         let
             item = newItem(fromRoom, data, className);
-        addItemToInventory(item);
+        addItemToInventory(item, skipAnimation);
         return item;
     }
 
@@ -207,24 +224,37 @@ function Inventory(game) {
         })
     }
 
-    this.removeItem=(itemToRemove)=>{
+    let removeAnimation=(item, skipAnimation)=>{
+        item.nodes.container.isLocked = true;
+        if (skipAnimation || !isVisible)
+            item.nodes.container.parentNode.removeChild(item.nodes.container);
+        else {
+            setAnimation(item, "leave");
+            item.nodes.container.removeTimeout = setTimeout(()=>{
+                if (item.nodes.container.parentNode)
+                    item.nodes.container.parentNode.removeChild(item.nodes.container);
+            },260);
+        }
+    }
+
+    this.removeItem=(itemToRemove, skipAnimation)=>{
         let
             pos = items.indexOf(itemToRemove);
         
         if (pos != -1) {
             let
                 item = items[pos];
-            item.nodes.container.parentNode.removeChild(item.nodes.container);
+            removeAnimation(item, skipAnimation);
             items.splice(pos,1);
         }
 
         refreshScroll();
     }
 
-    this.removeItemsFromRoom=(fromRoom)=>{
+    this.removeItemsFromRoom=(fromRoom, skipAnimation)=>{
         items = items.filter(item=>{
             if (item.fromRoom === fromRoom.id) {
-                item.nodes.container.parentNode.removeChild(item.nodes.container);
+                removeAnimation(item, skipAnimation);
                 return false;
             }
             return true;
@@ -238,7 +268,7 @@ function Inventory(game) {
             stored = [];
         items = items.filter(item=>{
             if (item.fromRoom === fromRoom.id) {
-                item.nodes.container.parentNode.removeChild(item.nodes.container);
+                removeAnimation(item);
                 stored.push(item);
                 return false;
             }

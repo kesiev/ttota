@@ -67,12 +67,12 @@
 
             game.tools.getInventoryItemsFromRoom(room).forEach(item=>{
                 if (item.isSelected) {
-                    game.tools.removeInventoryItem(item);
+                    game.tools.removeInventoryItem(item, true);
                     game.tools.addInventoryItem(room,{
                         isEmpty:true,
                         group:CONST.GROUP.ROOMITEM+1,
                         color:CONST.COLORS.GRAY
-                    });
+                    }, null, true);
                 }
             });
 
@@ -261,7 +261,7 @@
                                                 // Reroll empty slots
                                                 rerolls = emptySlots.length;
                                                 emptySlots.forEach(die=>{
-                                                    game.tools.removeInventoryItem(die);
+                                                    game.tools.removeInventoryItem(die, true);
                                                 });
 
                                             } else {
@@ -270,7 +270,7 @@
                                                 filledSlots.forEach(die=>{
                                                     if (die.isSelected)
                                                         match.selectedTotal-=die.diceValue;
-                                                    game.tools.removeInventoryItem(die);
+                                                    game.tools.removeInventoryItem(die, true);
                                                 });
                                             }
 

@@ -76,12 +76,6 @@
     100% { transfor:translate(0,0); background:#000; color:#fff; }
 }
 
-@keyframes bounce {
-    0% { transform: scale(1) translate(0,0) }
-    50% { transform: scale(0.9,1.1) translate(0,-10px) }
-    100% { transform: scale(1) translate(0,0) }
-}
-
 @keyframes glow-red {
     0% { background-color: #400; color:#f00; box-shadow: 0px 0px 0px #000; transform: translateX(0px) rotate(-1deg); }
     50% { background-color: #C00; color:#fff; box-shadow: 0px 0px 10px #fff; transform: translateX(0px) rotate(1deg);  }
@@ -94,6 +88,23 @@
     100% { background-color: #040; color:#0f0; box-shadow: 0px 0px 0px #000; transform: translateX(0px) scale(1); }
 }
 
+@keyframes card-bounce {
+    0% { transform: scale(1) translate(0,0) }
+    50% { transform: scale(0.9,1.1) translate(0,-10px) }
+    100% { transform: scale(1) translate(0,0) }
+}
+
+@keyframes card-spawn {
+    0% { transform: translate(0,150px) scaleX(0); filter: contrast(1) brightness(100%); }
+    40% {  transform: translate(0,-20px) scaleX(1); filter: contrast(1) brightness(100%); }
+    50% {  transform: translate(0,-20px); filter: contrast(0.2) brightness(200%); }
+    100% { transform: translate(0,0); filter: contrast(1) brightness(100%); }
+}
+
+@keyframes card-leave {
+    0% { transform: translate(0,0px) scaleX(1); }
+    100% { transform: translate(0,150px) scaleX(0); }
+}
 
 BODY {
     padding: 0;
@@ -150,12 +161,26 @@ BODY * {
 
 .item {
     transition: all 0.2s;
-    animation-duration: 0.25s;
     animation-fill-mode: forwards;
 }
 
+.item.beforespawning {
+    transform: translate(0,150px);
+}
+
+.item.spawning {
+    animation-name: card-spawn;
+    animation-duration: 1s;
+}
+
+.item.leave {
+    animation-name: card-leave;
+    animation-duration: 0.25s;
+}
+
 .item.bounce {
-    animation-name: bounce;
+    animation-name: card-bounce;
+    animation-duration: 0.25s;
 }
 
 .item.card {
@@ -192,6 +217,7 @@ BODY * {
     text-align:center;
     white-space:nowrap;
     overflow-x:auto;
+    overflow-y: hidden;
     scrollbar-color:#fff #000;
     scrollbar-width:thin;
     left:0px;

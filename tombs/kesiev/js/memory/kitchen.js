@@ -313,7 +313,6 @@
                                                         ]
                                                     }]);
 
-                                                    game.tools.setInventoryItemAnimation(item, "bounce");
                                                     added = true;
                                                 }
                                             })

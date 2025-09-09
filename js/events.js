@@ -206,7 +206,7 @@ let Events=function Events(game) {
                         for (let k in line.addInventoryItem.data)
                             data[k] = line.addInventoryItem.data[k];
                             
-                        item = game.tools.addInventoryItem(as, data, line.addInventoryItem.className);
+                        item = game.tools.addInventoryItem(as, data, line.addInventoryItem.className, line.skipAnimation);
                         if (line.addInventoryItem.events) {
                             if (line.addInventoryItem.events.onUse)
                                 game.tools.onUse(item,line.addInventoryItem.events.onUse);
@@ -214,9 +214,9 @@ let Events=function Events(game) {
 
                         game.tools.playAudio("equip1");
                     } else if (line.removeInventoryItem)
-                        game.tools.removeInventoryItem(as);
+                        game.tools.removeInventoryItem(as, line.skipAnimation);
                     else if (line.removeInventoryItemsFromRoom)
-                        game.tools.removeInventoryItemsFromRoom(as);
+                        game.tools.removeInventoryItemsFromRoom(as, line.skipAnimation);
                     else if (line.storeInventoryItemsFromRoom)
                         game.tools.storeInventoryItemsFromRoom(as);
                     else if (line.restoreInventoryItemsFromRoom) {

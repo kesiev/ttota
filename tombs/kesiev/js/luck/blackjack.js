@@ -365,7 +365,6 @@
 
                                             newCard = room.deck.pop();
                                             game.tools.addInventoryItem(room, newCard);
-                                            game.tools.setInventoryItemAnimation(newCard, "bounce");
                                             allCards = game.tools.getInventoryItemsFromRoom(room).filter(card=>card.isCard);
                                             hand = allCards.map(card=>card.code);
                                             score = evalueateHand(hand);                                            

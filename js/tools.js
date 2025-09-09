@@ -919,12 +919,12 @@ let Tools=function(game){
         return game.inventory.getItemsFromRoom(room);
     }
 
-    this.removeInventoryItem=(item)=>{
-        return game.inventory.removeItem(item);
+    this.removeInventoryItem=(item, skipAnimation)=>{
+        return game.inventory.removeItem(item, skipAnimation);
     }
 
-    this.addInventoryItem=(fromroom, item)=>{
-        return game.inventory.addItem(fromroom, item);
+    this.addInventoryItem=(fromroom, item, className, skipAnimation)=>{
+        return game.inventory.addItem(fromroom, item, className, skipAnimation);
     }
 
     this.setInventoryItemCounter=(item, counter)=>{
@@ -939,12 +939,12 @@ let Tools=function(game){
         return game.inventory.setColor(item, color);
     }
 
-    this.setInventoryItemAnimation=(item, animation)=>{
-        return game.inventory.setAnimation(item, animation);
+    this.setInventoryItemAnimation=(item, skipAnimation)=>{
+        return game.inventory.setAnimation(item, skipAnimation);
     }
 
-    this.removeInventoryItemsFromRoom=(room)=>{
-        return game.inventory.removeItemsFromRoom(room);
+    this.removeInventoryItemsFromRoom=(room, skipAnimation)=>{
+        return game.inventory.removeItemsFromRoom(room, skipAnimation);
     }
 
     this.storeInventoryItemsFromRoom=(room)=>{

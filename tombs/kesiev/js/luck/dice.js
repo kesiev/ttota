@@ -348,7 +348,7 @@
 
                                                     game.tools.getInventoryItemsFromRoom(room).forEach(item=>{
                                                         if (item.isDice) {
-                                                            game.tools.removeInventoryItem(item);
+                                                            game.tools.removeInventoryItem(item, true);
                                                             if (!item.isSelected)
                                                                 toReroll++;
                                                         }

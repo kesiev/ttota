@@ -187,7 +187,7 @@
                     },{
                         if:{ and:true },
                         run:(game, context, done)=>{
-                            game.tools.removeInventoryItemsFromRoom(room);
+                            game.tools.removeInventoryItemsFromRoom(room, true);
 
                             room.deck = mintDeck(room.random);
                             room.gameState = 1;

@@ -313,10 +313,8 @@
 
                     player.hand.push(card);
 
-                    if (player.isHuman) {
+                    if (player.isHuman)
                         game.tools.addInventoryItem(room, card);
-                        game.tools.setInventoryItemAnimation(card, "bounce");
-                    }
 
                     player.hand.forEach(card=>{
                         if (card.isRegularCard) {
