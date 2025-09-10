@@ -121,8 +121,8 @@ let CONST=(function(){
             ANONYMOUS:"(Anonymous)",
             BY:"KesieV",
             BYURL:"https://www.kesiev.com",
-            URL:"www.kesiev.com/architects",
-            SOURCES:"github.com/kesiev/architects",
+            URL:"www.kesiev.com/ttota",
+            SOURCES:"github.com/kesiev/ttota",
             LIBRARIES:[
                 { person: "JSXM", line:[ { line:"by a1k0n" } ], url:"https://github.com/a1k0n/jsxm" }
             ],
