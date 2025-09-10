@@ -337,9 +337,17 @@
                                                     position = game.tools.getRoomPosition(room);
                                                 if (position && position.cell.isStart) {
                                                     if (game.position.direction == 0) {
-                                                        racerCard = game.tools.getInventoryItem("kesiev-race-card");
-                                                        game.tools.setInventoryItemCounter(racerCard, laps);
-                                                        game.tools.setInventoryItemCounterOf(racerCard, LAPS_COUNT);
+                                                        game.tools.removeInventoryItem(context.as);
+                                                        racerCard = game.tools.addInventoryItem(room, {
+                                                            group:CONST.GROUP.ROOMITEM,
+                                                            color:CONST.ITEMCOLOR.ROOMITEM,                                
+                                                            model:"default",
+                                                            counter:laps,
+                                                            counterOf:LAPS_COUNT,
+                                                            sprite:[
+                                                                { image:"tombs/kesiev/images/items.png", imageX:2, imageY:2 },
+                                                            ]
+                                                        });
                                                         game.tools.playMusic("kesiev-avalanche1");
                                                         game.tools.dialogueSay(ARCHITECT.layout, [
                                                             {

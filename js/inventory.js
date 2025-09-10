@@ -118,6 +118,9 @@ function Inventory(game) {
         if (data.counter !== undefined)
             this.setCounter(data, data.counter);
 
+        if (data.counterOf !== undefined)
+            this.setCounterOf(data, data.counterOf);
+
         return data;
     }
     
