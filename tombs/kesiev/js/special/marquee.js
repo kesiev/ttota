@@ -7,34 +7,34 @@
         TESTS = [
             {
                 text:"Hey, check this out! *** Today you have to aim to the STARS!",
-                answer:"*"
+                answer:["*"]
             },{
                 text:"Move along, nothing to see here",
-                answer:" "
+                answer:[" "]
             },{
                 text:"The pirate Draxon Black was looking for the treasure",
-                answer:"x"
+                answer:["x"]
             },{
                 text:"Be careful! FIRE IN THE HOLE!",
-                answer:"O"
+                answer:["O"]
             },{
                 text:"Don't be a dromedary. Be a camel!",
-                answer:"B"
+                answer:["B"]
             },{
                 text:"We are two little tips, squashed like sardines!",
-                answer:"W"
+                answer:["W","w"]
             },{
-                text:"Hit no one: 11l111l1111l11111l",
-                answer:"l"
+                text:"Hit no one: 11l.111.l11.11l.111.11l",
+                answer:["l"]
             },{
                 text:"You have to get why!",
-                answer:"Y"
+                answer:["Y","y"]
             },{
                 text:"It's between me & you",
-                answer:"&"
+                answer:["&"]
             },{
                 text:"Get the ball! Ready?.............O",
-                answer:"O"
+                answer:["O"]
             }
         ];
 
@@ -140,7 +140,7 @@
                                         run:(game, context, done)=>{
                                             let
                                                 cell = game.map[game.position.y][game.position.x],
-                                                success = cell.mapSymbol == test.answer;
+                                                success = test.answer.indexOf(cell.mapSymbol) != -1;
                                             room.isSolved = success;
                                             done(success);
                                         }  
@@ -158,7 +158,7 @@
                                         removeInventoryItemsFromRoom:true
                                     },{
                                         if:{ else:true },
-                                        hitPlayer:2+Math.floor(room.difficulty*3)
+                                        hitPlayer:1+Math.floor(room.difficulty*3)
                                     },{
                                         if:{ else:true },
                                         asContext:"room",
