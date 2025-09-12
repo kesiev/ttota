@@ -93,7 +93,7 @@ function makeCalendar(day, days, html) {
 
             date.setDate(date.getDate() + day);
 
-            html+="<h2><span style='color:"+(day < 0 ? "#ccc" : day == 0 ? "#f00" : "#000")+"'>"+(day == 0 ? "<span style='padding:0px 5px;border-radius:5px;color:#fff;background-color:#f00'>TODAY</span> ":"")+Tools.leftPad(date.getFullYear(),4)+"-"+Tools.leftPad(date.getMonth(),2)+"-"+Tools.leftPad(date.getDate(),2)+": "+header[1]+"</span> <span style='color:#ccc'>("+header[0]+")</span><h2>";
+            html+="<h2><span style='color:"+(day < 0 ? "#ccc" : day == 0 ? "#f00" : "#000")+"'>"+(day == 0 ? "<span style='padding:0px 5px;border-radius:5px;color:#fff;background-color:#f00'>TODAY</span> ":"")+Tools.leftPad(date.getFullYear(),4)+"-"+Tools.leftPad(date.getMonth()+1,2)+"-"+Tools.leftPad(date.getDate(),2)+": "+header[1]+"</span> <span style='color:#ccc'>("+header[0]+")</span><h2>";
             html+="<table border=1><tr><th>Difficulty</th><th>ID</th><th>Gold</th><th>Architect</th><th>Needs</th><th>Unlocks</th></tr>";
 
             game.dungeon.rooms.forEach(room=>{
