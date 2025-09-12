@@ -312,11 +312,11 @@ let ARCHITECTS=(function(){
                 cantPaySentence:CANTPAYSENTENCE_DEFAULT,
                 plaques:[
                     // Mi annoiano le feste di qualsiasi genere.
-                    "I'm bored by parties of any kind.",
+                    "\"I'm bored by parties of any kind.\"",
                     // Il lavoro di analista programmatore mi soddisfaceva molto.
-                    "I was very satisfied with my work as a programmer analyst.",
+                    "\"I was very satisfied with my work as a programmer analyst.\"",
                     // Ho grande commozione davanti al bello sino a lacrimare.
-                    "I am so moved by beauty that I shed tears."                    
+                    "\"I am so moved by beauty that I shed tears.\""                    
                 ],
                 sentences:[
                     // Desidero il benessere e la buona salute dei miei figli e nipoti.
