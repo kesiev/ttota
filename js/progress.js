@@ -607,24 +607,7 @@ let PROGRESS=(function(){
             return newCheckpoints;
         },
 
-        setCheckpoints:(checkpoints, dataonly)=>{
-            PROGRESS.save.checkpoints = checkpoints;
-        },
-
-        saveCheckPoints:(seed,checkpoints)=>{
-            for (let k in checkpoints) {
-                if (checkpoints[k].save) {
-                    if (checkpoints[k].s != seed) {
-                        let
-                            swap;
-                        checkpoints[k].s = seed;
-                        swap = checkpoints[k].v;
-                        checkpoints[k].v = checkpoints[k].p;
-                        checkpoints[k].p = swap;
-                    }
-                    delete checkpoints[k].save;
-                }
-            }
+        setCheckpoints:(checkpoints)=>{
             PROGRESS.save.checkpoints = checkpoints;
         },
 
@@ -646,7 +629,7 @@ let PROGRESS=(function(){
                 CONST.VERSION.replace(/\./g,"_")+
                 "-"+
                 Tools.leftPad(now.getFullYear(),4)+
-                Tools.leftPad(now.getMonth(),2)+
+                Tools.leftPad(now.getMonth()+1,2)+
                 Tools.leftPad(now.getDate(),2)+
                 "-"+
                 Tools.leftPad(now.getHours(),2)+
