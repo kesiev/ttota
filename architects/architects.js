@@ -310,7 +310,28 @@ let ARCHITECTS=(function(){
                 },
                 paySentence:PAYSENTENCE_DEFAULT,
                 cantPaySentence:CANTPAYSENTENCE_DEFAULT,
-                plaques:PLAQUES_NONE,
+                plaques:[
+                    // Mi annoiano le feste di qualsiasi genere.
+                    "I'm bored by parties of any kind.",
+                    // Il lavoro di analista programmatore mi soddisfaceva molto.
+                    "I was very satisfied with my work as a programmer analyst.",
+                    // Ho grande commozione davanti al bello sino a lacrimare.
+                    "I am so moved by beauty that I shed tears."                    
+                ],
+                sentences:[
+                    // Desidero il benessere e la buona salute dei miei figli e nipoti.
+                    "I wish for the well-being and good health of my children and grandchildren.",
+                    // Adoro la figura dei miei genitori e ne sento la mancanza.
+                    "\"I love my parents and I miss them.\"",
+                    // I miei sport preferiti erano la pallavolo, la pesca subaquea, il biliardo e il ballo - in particolare il tango argentino.
+                    "My favorite sports were volleyball, spearfishing, billiards, and dancing – especially Argentine tango.",
+                    // Mi fa stare male l'avere debiti e non riuscire a risolvere i problemi che la vita ci da da affrontare.
+                    "It makes me feel bad to have debt and not be able to solve the problems that life throws at us.",
+                    // Ho scoperto che è bello vivere da solo, essere indipendente e in salute se non sei amato veramente da qualcuno.
+                    "I've discovered that it's good to live alone, to be independent and healthy if you're not truly loved by someone.",
+                    // Mi fa stare male non avere sufficienti soldi in tasca.
+                    "It makes me feel bad not having enough money in my pocket."
+                ]
             },
             MARIADL:{
                 at:[ "kesiev-kitchen" ],
