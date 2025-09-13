@@ -5,6 +5,7 @@
         TOMB_TAGS = [ "tomb", "luck" ],
         ARCHITECT = ARCHITECTS.getAt(TOMB_ID, TOMB_TAGS),
         LIFE_TEXTURE = CONST.TEXTURES.FONT["&#x2665;"],
+        FAILURES = 4,
         ORDER = [ 
             {
                 character:"2",
@@ -223,13 +224,19 @@
                     else
                         victory = card.value == room.ui.cards[0].value;
 
+                    victory = false;
+
                     if (victory) {
                         game.tools.playerGainGold(room, room.ficheValue * room.ui.payOut * room.ui.prevBet);
                         game.tools.healPlayer(Math.ceil(room.ui.prevBet/2));
                         if (room.unlock)
                             result = 2;
-                    } else
+                    } else {
+                        room.failed++;
                         game.tools.hitPlayer(Math.ceil(room.ui.prevBet/2));
+                        if ((room.failed==FAILURES) && room.unlock)
+                            result = 2;
+                    }
 
                     if (room.goldBudget <= 0)
                         room.isSolved = true;
@@ -275,6 +282,7 @@
                     width:5,
                     height:5,
                     gameState:0,
+                    failed:0,
                     isSolved:false,
                     ui:{}
                 }
@@ -472,7 +480,7 @@
                                         if:{ else:true },
                                         dialogueSay:[
                                             {
-                                                text:"This item seems to be of no use..."
+                                                text:"Nothing happens..."
                                             }
                                         ]
                                     }
