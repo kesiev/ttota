@@ -112,7 +112,22 @@ function Menu(root, audio, triggers) {
                         type:ELEMENT_TYPES.OPTIONS,
                         options:[
                             { label:"Back", unpause:true },
+                            { hideOnFake:true, label:"Escape", gotoMenu:"escape" },
                             { label:"Main menu", quitGame:true },
+                        ]
+                    }
+                ]
+            },
+            escape:{
+                elements:[
+                    {
+                        type:ELEMENT_TYPES.LABEL,
+                        label:"Do you really want to escape?<br><br>This run will end, and I'll judge your play so far a little less harshly than I will when you die."
+                    },{
+                        type:ELEMENT_TYPES.OPTIONS,
+                        options:[
+                            { label:"Let me escape!", escape:true },
+                            { label:"I want to try harder!", gotoMenu:"pause" },
                         ]
                     }
                 ]
@@ -830,6 +845,9 @@ function Menu(root, audio, triggers) {
                                             quit();
                                         } else if (option.unpause) {
                                             playClick();
+                                            unpause();
+                                        } else if (option.escape) {
+                                            currentGame.movement.gameOver(CONST.GAMEOVER.ESCAPE);
                                             unpause();
                                         }
                                     }

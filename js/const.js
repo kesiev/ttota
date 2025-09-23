@@ -207,6 +207,11 @@ let CONST=(function(){
         BRIGHTNESS:{
             LAMP:30
         },
+        GAMEOVER:{
+            FAIL:0,
+            ESCAPE:1,
+            SUCCESS:2
+        },
         MOVEMENT:[
             {
                 up:{ direction:0, x:0, y:-1 },

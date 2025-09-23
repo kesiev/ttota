@@ -361,7 +361,7 @@ let Events=function Events(game) {
                         break;
                     }
                     else if (line.endRun)
-                        game.movement.gameOver(true);
+                        game.movement.gameOver(CONST.GAMEOVER.SUCCESS);
                     else
                         console.warn("Can't run line",line);
                     

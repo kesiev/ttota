@@ -22,6 +22,15 @@ let PROGRESS=(function(){
             { isDaily:true, name:"Healing Addiction", id:"healthGained", storageMode:STORAGE_MODE.SINGLESTAT, stat:"healthGained", sortBy:"percentage", orderDesc:false, count:5 },
             { isDaily:true, name:"Special Chart", id:"lostGain", storageMode:STORAGE_MODE.SINGLESTAT, stat:"lostGain", sortBy:"percentage", orderDesc:true, count:5 },
         ],
+        RATIOMAP = {
+            gold:         [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
+            spentGold:    [ { mul:0.8, malus:0.0 }, { mul:0.8, malus:0.0  }, { mul:0.8, malus:0.0 } ],
+            steps:        [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:1.0 } ],
+            health:       [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
+            healthLost:   [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:1.0 } ],
+            healthGained: [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.55 }, { mul:1.0, malus:0.6 } ],
+            lostGain:     [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
+        },
         INTRO_SCRIPTS = [
             [
                 {
@@ -92,7 +101,10 @@ let PROGRESS=(function(){
             
         if (!bonus) bonus = 0;
 
-        percentage = (value+bonus) / total;
+        if (total)
+            percentage = (value+bonus) / total;
+        else
+            percentage = 0;
 
         if (scale[0].percentage === undefined) {
             if (percentage<0) percentage=0;
@@ -308,13 +320,13 @@ let PROGRESS=(function(){
                 total = 0,
                 max = 0,
                 ranks = {
-                    gold:rank(game.player.gainedGold, game.dungeon.allGoldBudget, CONST.SCORES.GOLD),
-                    spentGold:rank(game.player.spentGold, game.player.gainedGold*0.8, CONST.SCORES.SPENTGOLD),
-                    steps:rank(game.position.steps, game.dungeon.walkableCells, CONST.SCORES.STEPS, success ? 0 : game.dungeon.walkableCells),
-                    health:rank(game.player.health, game.player.maxHealth, CONST.SCORES.HEALTH),
-                    healthLost:rank(game.player.lostHealth, game.player.maxHealth, CONST.SCORES.HEALTHLOST, success ? 0 : game.player.maxHealth),
-                    healthGained:rank(game.player.gainedHealth, game.player.maxHealth, CONST.SCORES.HEALTHGAINED, success ? 0 : game.player.maxHealth*0.6),
-                    lostGain:rank(game.player.lostGain, 8, CONST.SCORES.EXTRAS),
+                    gold:         rank(game.player.gainedGold,   game.dungeon.allGoldBudget * RATIOMAP.gold[success].mul,    CONST.SCORES.GOLD,         game.dungeon.allGoldBudget * RATIOMAP.gold[success].malus),
+                    spentGold:    rank(game.player.spentGold,    game.player.gainedGold * RATIOMAP.spentGold[success].mul,   CONST.SCORES.SPENTGOLD,    game.player.gainedGold * RATIOMAP.spentGold[success].malus),
+                    steps:        rank(game.position.steps,      game.dungeon.walkableCells * RATIOMAP.steps[success].mul,   CONST.SCORES.STEPS,        game.dungeon.walkableCells * RATIOMAP.steps[success].malus),
+                    health:       rank(game.player.health,       game.player.maxHealth * RATIOMAP.health[success].mul,       CONST.SCORES.HEALTH,       game.player.maxHealth * RATIOMAP.health[success].malus),
+                    healthLost:   rank(game.player.lostHealth,   game.player.maxHealth * RATIOMAP.healthLost[success].mul,   CONST.SCORES.HEALTHLOST,   game.player.maxHealth * RATIOMAP.healthLost[success].malus),
+                    healthGained: rank(game.player.gainedHealth, game.player.maxHealth * RATIOMAP.healthGained[success].mul, CONST.SCORES.HEALTHGAINED, game.player.maxHealth * RATIOMAP.healthGained[success].malus),
+                    lostGain:     rank(game.player.lostGain,     8 * RATIOMAP.lostGain[success].mul,                         CONST.SCORES.EXTRAS,       8 * RATIOMAP.lostGain[success].malus),
                 };
     
             for (let k in ranks) {

@@ -20,7 +20,7 @@ function Player(game) {
                 game.inventory.setCounter(this.healthItem, 0);
                 game.movement.playCameraAnimation(game.movement.CAMERA_ANIMATION.DEAD, 1500);
                 game.audio.playAudio(game.audio.audio.death1);
-                game.movement.gameOver(false);
+                game.movement.gameOver(CONST.GAMEOVER.FAIL);
             } else {
                 this.lostHealth += damage;
                 this.health -= damage;

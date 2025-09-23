@@ -71,7 +71,24 @@ function Movement(game) {
                     [ "@TODO ADD A CONFETTI", "ANIMATION HERE" ],
                     [ "YOU DESERVED", "THE GREEN TEXT" ],
                 ]
-            }
+            },
+            escape:{
+                messages:[
+                    "ESCAPED",
+                    "GOODBYE",
+                    "BYE BYE",
+                    "TAKE CARE",
+                    "SEE YA",
+                    "FLEE"
+                ],
+                comments:[
+                    [ "*** YOU GAVE UP ***", "*** WHAT A SURPRISE ***" ],
+                    [ "AT LEAST", "YOU TRIED" ],
+                    [ "THE EMERGENCY EXITS ARE", "HERE, HERE, AND HERE" ],
+                    [ "WE'RE SENDING SOMEONE", "TO GET YOU" ],
+                    [ "DO NOT MAKE SUDDEN MOVEMENTS", "AND BREATHE DEEPLY" ],
+                ]
+            },
         }
 
     let
@@ -102,7 +119,7 @@ function Movement(game) {
         isUnlocked = true,
         unlockedTimeout = 0,
         isGameEnded = false,
-        isSuccess,
+        gameOverMode,
         canGoBack = false,
         animationFrame = 0,
         animationFrameNextAt = 0,
@@ -1004,7 +1021,7 @@ function Movement(game) {
         
     }
 
-    let gameOver = (success)=>{
+    let gameOver = (mode)=>{
         if (!isGameEnded) {
 
             let
@@ -1016,17 +1033,29 @@ function Movement(game) {
             game.inventory.hide();
     
             isGameEnded = true;
-            isSuccess = success;
+            gameOverMode = mode;
 
-            if (success) {
-                gameOverMessage.className = "message success";
-                set = MESSAGES.success;
-                PROGRESS.setCheckpoints(game.checkpoints);
-                game.audio.mixerPlayMusic(game.audio.audio.success1);
-            } else {
-                gameOverMessage.className = "message failure";
-                set = MESSAGES.failure;
-                game.audio.mixerStopMusic();
+            switch (mode) {
+                case 1:{
+                    // Escape
+                    gameOverMessage.className = "message escape";
+                    set = MESSAGES.escape;
+                    game.audio.mixerStopMusic();
+                    break;
+                }
+                case 2:{ // Floor cleared
+                    gameOverMessage.className = "message success";
+                    set = MESSAGES.success;
+                    PROGRESS.setCheckpoints(game.checkpoints);
+                    game.audio.mixerPlayMusic(game.audio.audio.success1);
+                    break;
+                }
+                default:{ // Dead
+                    gameOverMessage.className = "message failure";
+                    set = MESSAGES.failure;
+                    game.audio.mixerStopMusic();
+                    break;
+                }
             }
 
             gameOverMessageText = randomElement(set.messages);
@@ -1038,8 +1067,11 @@ function Movement(game) {
 
             document.body.appendChild(gameOverContainer);
             
-            game.ranks = PROGRESS.rankGame(game, success);
+            game.ranks = PROGRESS.rankGame(game, mode);
             isNewRun = PROGRESS.saveRanks(game.ranks);
+
+            if (CONST.DEBUG.showLogs)
+                console.log("RANKS", game.ranks);
 
             PROGRESS.ranksToSummary(game.ranks, summary);
 
@@ -1185,8 +1217,8 @@ function Movement(game) {
                 minimap.className = "topbutton map mini show";
                 pause.className = "topbutton pause show";
                 fullmap.className = "topbutton map full hidden";
-                if ((isSuccess !== undefined) && !isGameEnded)
-                    gameOver(isSuccess);
+                if ((gameOverMode !== undefined) && !isGameEnded)
+                    gameOver(gameOverMode);
                 else if (this.isUnlockDelayed) {
                     this.isUnlockDelayed = false;
                     lockFor(UNLOCK_TIMER);
@@ -1195,11 +1227,11 @@ function Movement(game) {
         }
     }
 
-    this.gameOver=(success)=>{
+    this.gameOver=(mode)=>{
         if (!this.isLocked && !isGameEnded)
-            gameOver(success);
+            gameOver(mode);
         else
-            isSuccess = success;
+            gameOverMode = mode;
     }
 
     this.showFullMap=()=>{
