@@ -816,13 +816,20 @@ BODY * {
     animation-fill-mode: forwards;
 }
 
-.menu .warning {
-    background-image: url("../images/warning.svg");
+.menu .warning, .menu .exit {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     margin:20px 0;
     height:40px
+}
+
+.menu .warning {
+    background-image: url("../images/warning.svg");
+}
+
+.menu .exit {
+    background-image: url("../images/exit.svg");
 }
 
 .transitionmodules {

@@ -23,7 +23,8 @@ function Menu(root, audio, triggers) {
             COVER: 6,
             PUSHER: 7,
             DEVICE_WARNINGS: 8,
-            SETTINGS: 9
+            SETTINGS: 9,
+            SYMBOL: 10
         },
         TRANSITIONS={
             OPEN:1,
@@ -121,6 +122,9 @@ function Menu(root, audio, triggers) {
             escape:{
                 elements:[
                     {
+                        type:ELEMENT_TYPES.SYMBOL,
+                        symbol:"exit"
+                    },{
                         type:ELEMENT_TYPES.LABEL,
                         label:"Do you really want to escape?<br><br>This run will end, and I'll judge your play so far a little less harshly than I will when you die."
                     },{
@@ -177,6 +181,9 @@ function Menu(root, audio, triggers) {
             importconfirm:{
                 elements:[
                     {
+                        type:ELEMENT_TYPES.SYMBOL,
+                        symbol:"warning"
+                    },{
                         type:ELEMENT_TYPES.LABEL,
                         label:0
                     },{
@@ -786,8 +793,8 @@ function Menu(root, audio, triggers) {
                                     ()=>{ gotoMenu(RESTARTGAME_MENU); },
                                     ()=>{ gotoMenu(IMPORTERROR_MENU); },
                                     (saveVersion, gameVersion, onOk)=>{
-                                        MENUS[IMPORTCONFIRM_MENU].elements[0].label = "The save file you're importing is for version "+saveVersion+" of the game while you're playing version "+gameVersion+".<br><br>If imported, the game may not function properly.<br><br>Do you want to continue?";
-                                        MENUS[IMPORTCONFIRM_MENU].elements[1].options[0].run = onOk;
+                                        MENUS[IMPORTCONFIRM_MENU].elements[1].label = "The save file you're importing is for version "+saveVersion+" of the game while you're playing version "+gameVersion+".<br><br>If imported, the game may not function properly.<br><br>Do you want to continue?";
+                                        MENUS[IMPORTCONFIRM_MENU].elements[2].options[0].run = onOk;
                                         gotoMenu(IMPORTCONFIRM_MENU);
                                     }
                                 );
@@ -795,6 +802,10 @@ function Menu(root, audio, triggers) {
 
                         })
 
+                        break;
+                    }
+                    case ELEMENT_TYPES.SYMBOL:{
+                        makeDiv(element.symbol, container);
                         break;
                     }
                     case ELEMENT_TYPES.DEVICE_WARNINGS:{
