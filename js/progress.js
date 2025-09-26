@@ -25,10 +25,10 @@ let PROGRESS=(function(){
         RATIOMAP = {
             gold:         [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
             spentGold:    [ { mul:0.8, malus:0.0 }, { mul:0.8, malus:0.0  }, { mul:0.8, malus:0.0 } ],
-            steps:        [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:1.0 } ],
+            steps:        [ { mul:1.0, malus:1.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:0.0 } ],
             health:       [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
-            healthLost:   [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:1.0 } ],
-            healthGained: [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.55 }, { mul:1.0, malus:0.6 } ],
+            healthLost:   [ { mul:1.0, malus:1.0 }, { mul:1.0, malus:0.9  }, { mul:1.0, malus:0.0 } ],
+            healthGained: [ { mul:1.0, malus:0.6 }, { mul:1.0, malus:0.55 }, { mul:1.0, malus:0.0 } ],
             lostGain:     [ { mul:1.0, malus:0.0 }, { mul:1.0, malus:0.0  }, { mul:1.0, malus:0.0 } ],
         },
         INTRO_SCRIPTS = [
@@ -316,6 +316,7 @@ let PROGRESS=(function(){
     return {
 
         rankGame:(game,success)=>{
+            debugger;
             let
                 total = 0,
                 max = 0,
