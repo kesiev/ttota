@@ -316,7 +316,6 @@ let PROGRESS=(function(){
     return {
 
         rankGame:(game,success)=>{
-            debugger;
             let
                 total = 0,
                 max = 0,
