@@ -77,6 +77,11 @@ function Inventory(game) {
 
     }
 
+    let selectItem = (container,data)=>{
+        if (isVisible && isUnlocked && game.player.isAlive && !container.isLocked && !game.movement.isLocked)
+            game.movement.onUseItem(data);
+    }
+
     let newItem = (fromRoom, data, className)=>{
         let
             container = document.createElement("div"),
@@ -108,9 +113,15 @@ function Inventory(game) {
         container.appendChild(div);
         div.appendChild(inner);
         div.appendChild(counter);
-        container.addEventListener("click",()=>{
-            if (isVisible && isUnlocked && game.player.isAlive && !container.isLocked && !game.movement.isLocked)
-                game.movement.onUseItem(data);
+        
+        container.addEventListener("pointerdown",(e)=>{
+            if (!dock._cancelDrag)
+                selectItem(container,data);
+        });
+
+        container.addEventListener("click",(e)=>{
+            if (dock._cancelDrag)
+                selectItem(container,data);
         });
 
         updateItem(data);
@@ -229,13 +240,15 @@ function Inventory(game) {
 
     let removeAnimation=(item, skipAnimation)=>{
         item.nodes.container.isLocked = true;
-        if (skipAnimation || !isVisible)
+        if (skipAnimation || !isVisible) {
             item.nodes.container.parentNode.removeChild(item.nodes.container);
-        else {
+            refreshScroll();
+        } else {
             setAnimation(item, "leave");
             item.nodes.container.removeTimeout = setTimeout(()=>{
                 if (item.nodes.container.parentNode)
                     item.nodes.container.parentNode.removeChild(item.nodes.container);
+                refreshScroll();
             },260);
         }
     }
@@ -250,8 +263,6 @@ function Inventory(game) {
             removeAnimation(item, skipAnimation);
             items.splice(pos,1);
         }
-
-        refreshScroll();
     }
 
     this.removeItemsFromRoom=(fromRoom, skipAnimation)=>{
@@ -262,8 +273,6 @@ function Inventory(game) {
             }
             return true;
         })
-
-        refreshScroll();
     }
 
     this.storeItemsFromRoom=(fromRoom)=>{
@@ -278,7 +287,6 @@ function Inventory(game) {
             return true;
         })
         fromRoom._storedItems = stored;
-        refreshScroll();
     }
 
     this.restoreItemsFromRoom=(fromRoom)=>{
