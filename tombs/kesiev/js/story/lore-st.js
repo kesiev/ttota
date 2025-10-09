@@ -403,7 +403,7 @@
                     }
                 }
             ],
-            // --- Darkitect reveal its plan, Architect attempt another task
+            // --- Darkitect (may) reveal its plan, Architect attempt another task
             [
                 {
                     music:0,
@@ -419,6 +419,10 @@
                             { text:"He wants to bury us all. He wants us to be forgotten!" },
                             { changeNpc:{ eyes:"thinking"}, text:"He just wants to kill us all. We have to do something!" }
                         ]
+                    },
+                    onEnter:{
+                        ifItem:true,
+                        unlockRoom:true
                     }
                 },{
                     music:0,
@@ -821,8 +825,21 @@
                         })
 
                     if (events.length)
-                        game.tools.onEnter(room,events);
-                    
+                        if (currentRoomScene.onEnter.ifItem)
+                            game.tools.onEnter(room,[
+                                {
+                                    run:(game, context, done)=>{
+                                        let
+                                            item = game.tools.getInventoryItem(ITEM_ID);
+                                        done(!!item);
+                                    }
+                                },{
+                                    if:{ and:true },
+                                    subScript:events
+                                }
+                            ]);
+                        else
+                            game.tools.onEnter(room,events);
                 }
 
                 if (currentRoomScene.character)
