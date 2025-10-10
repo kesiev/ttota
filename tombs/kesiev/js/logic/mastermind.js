@@ -104,6 +104,8 @@
                 for (let i=0;i<CODE_LENGTH;i++)
                     correctAnswer.push(room.random.elementIndex(PALETTE));
 
+                room.calendarMetadata= { "Answer":correctAnswer.map(i=>PALETTE[i]).join(", ") };
+
                 // --- Add hint
 
                 for (let i=0;i<CODE_LENGTH-1;i++)

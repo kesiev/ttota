@@ -85,6 +85,7 @@
 
                 // --- Create the case
                 let
+                    calendarMetadata = {},
                     stage = { x:room.x+1, y:room.y+1, width:room.width-2, height:1 },
                     sentenceBags = {},
                     accusesBag = { elements:ACCUSES },
@@ -132,13 +133,15 @@
                     architectsById[i] = room.random.removeElement(architects);
                     hintSequence.push(architectsById[i].layout.name);
                     sentences.push(row);
+                    calendarMetadata["Sequence "+i] = row.type+" "+row.who;
                 }
+
+                room.calendarMetadata = calendarMetadata;
 
                 game.tools.hintAddSequence(room, hintSequence);
 
                 room.random.shuffle(sentences);
 
-                
                 // --- Add entrance plaques
 
                 room.quote = room.random.element(ARCHITECT.plaques);

@@ -90,6 +90,7 @@
             rooms.forEach(room=>{
 
                 let
+                    calendarMetadata = {},
                     hintSequence = [],
                     phase = 0,
                     flagsBag = { elements: database },
@@ -145,6 +146,8 @@
                                 label:answer.name
                             }
                         ];
+                    
+                    calendarMetadata["Flag "+i] = answer.name;
 
                     if (i<hintsCount)
                         hintSequence.push(answer.name);
@@ -241,6 +244,8 @@
                     });
 
                 }
+
+                room.calendarMetadata = calendarMetadata;
 
                 game.tools.hintAddSequence(room, hintSequence);
 

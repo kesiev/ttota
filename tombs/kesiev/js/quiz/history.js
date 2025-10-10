@@ -48,6 +48,9 @@
 
             rooms.forEach(room=>{
 
+                let
+                    calendarMetadata = {};
+
                 // --- Add entrance plaques
                 
                 room.quote = room.random.element(ARCHITECT.plaques);
@@ -269,6 +272,8 @@
 
                     game.tools.hintAddKeyValue(room, event[2], year);
 
+                    calendarMetadata["Event "+i] = event[2]+" ("+year+")";
+
                     cards.push({
                         if:{
                             asContext:"room",
@@ -348,6 +353,8 @@
                         }
                     });
                 }
+
+                room.calendarMetadata = calendarMetadata;
 
                 game.tools.onEnter(room,cards);
 

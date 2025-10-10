@@ -112,6 +112,9 @@
 
             rooms.forEach(room=>{
 
+                let
+                    calendarMetadata = {};
+
                 // --- Add entrance plaques
                 
                 room.quote = room.random.element(ARCHITECT.plaques);
@@ -195,7 +198,7 @@
                 });
 
                 for (let i=0;i<QUIZ_TOPIC_QUESTIONS;i++) {
-                    topics.forEach(topic=>{
+                    topics.forEach((topic,tid)=>{
                         let
                             question = room.random.bagPick(questionBags[topic.id][Math.floor(difficulty)]),
                             options = [
@@ -205,6 +208,9 @@
                                     label:question.answer
                                 }
                             ];
+
+                        calendarMetadata["Topic "+tid+" Question "+i] = question.question;
+                        calendarMetadata["Topic "+tid+" Answer "+i] = question.answer;
 
                         difficulty+=QUIZ_DIFFICULTY_QUESTION;
                         if (difficulty > MAX_DIFFICULTY)
@@ -289,6 +295,8 @@
                 });
 
                 script.push({ movePlayerBack:true });
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Add the architect
 

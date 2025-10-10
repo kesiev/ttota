@@ -252,6 +252,7 @@
             rooms.forEach((room,id)=>{
 
                 let
+                    calendarMetadata = {},
                     valid = false,
                     blanks = 5+Math.ceil(5*room.difficulty),
                     hintSequence = [],
@@ -311,8 +312,14 @@
                 for (let i=0;i<81;i++) {
                     let
                         value = sudoku[i],
-                        cell = game.map[room.y+Math.floor(i/9)][room.x+(i%9)],
+                        cx = (i%9),
+                        cy = Math.floor(i/9),
+                        cell = game.map[room.y+cy][room.x+cx],
                         colors = PALETTE[(Math.floor(i/27)+Math.floor((i%9)/3)) % 2];
+
+                    if (!calendarMetadata[cy])
+                        calendarMetadata[cy]=".........";
+                    calendarMetadata[cy]=calendarMetadata[cy].substr(0,cx)+validSudoku[i]+calendarMetadata[cy].substr(cx+1);
 
                     if (value) {
                         game.tools.paintFloor(0, cell, game.tools.SOLID, [
@@ -336,6 +343,8 @@
                     }
                     
                 }
+
+                room.calendarMetadata = calendarMetadata;
 
                 room.attempts -= Math.floor((1-room.difficulty)*3);
 

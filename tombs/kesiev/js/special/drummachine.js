@@ -105,6 +105,9 @@
 
             rooms.forEach(room=>{
 
+                let
+                    calendarMetadata = {};
+
                 // --- Add entrance plaques
                 
                 room.quote = room.random.element(ARCHITECT.plaques);
@@ -112,9 +115,14 @@
 
                 // --- Add hints
 
+                calendarMetadata["Title"] = room.answer.title;
+
                 room.answer.set.forEach((row,id)=>{
+                    calendarMetadata["Row "+id] = row.map(bit=>bit ? "#" : "_" ).join("");
                     game.tools.hintAddSequence(room, row.map(bit=>bit ? "&#x266A;" : "x" ));
                 });
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Prepare drum machine
 

@@ -158,6 +158,7 @@
             rooms.forEach(room=>{
 
                 let
+                    calendarMetadata = {},
                     questionsDone = [],
                     questionTypesBag = { elements:[ { question:"What genre is this work?", key:"genre" } ] },
                     paintingsBag = { elements:database.painting };
@@ -209,6 +210,8 @@
                     room.random.shuffle(options);
 
                     game.tools.hintAddKeyValue(room, (paintingPosition.x-room.x)+","+(paintingPosition.y-room.y), trueOption);
+
+                    calendarMetadata["Painting "+i] = (paintingPosition.x-room.x)+","+(paintingPosition.y-room.y)+": "+trueOption;
 
                     room.maxScore++;
                     room.questionsLeft++;
@@ -308,6 +311,8 @@
                         break;
 
                 }
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Add the architect
 

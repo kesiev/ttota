@@ -21,6 +21,7 @@
         LANGUAGES = [
             {
                 id:0,
+                label:"Italian",
                 question:[
                     "Hey, ciao! Come si traduce \"{word}\" in Italiano?",
                     "Scusami... ho una domanda. Come si tradice \"{word}\" in Italiano?",
@@ -43,6 +44,7 @@
                 ]
             },{
                 id:1,
+                label:"English",
                 question:[
                     "Hey, hi! How do you say \"{word}\" in English?",
                     "Excuse me... I have a question. How do you say \"{word}\" in English?",
@@ -65,6 +67,7 @@
                 ]
             },{
                 id:2,
+                label:"French",
                 question:[
                     "Salut! Comment dit-on \"{word}\" en Fran&#xE7;ais?",
                     "Excusez-moi... J'ai une question. Comment dit-on \"{word}\" en Fran&#xE7;ais?",
@@ -87,6 +90,7 @@
                 ]
             },{
                 id:3,
+                label:"German",
                 question:[
                     "Hallo! Wie sagt man \"{word}\" auf Deutsch?",
                     "Entschuldigung... Ich habe eine Frage. Wie sagt man \"{word}\" auf Deutsch?",
@@ -109,6 +113,7 @@
                 ]
             },{
                 id:4,
+                label:"Spanish",
                 question:[
                     "&#xA1;Hola! &#xBF;C&#xF3;mo se dice \"{word}\" en espa&#xF1;ol?",
                     "Disculpe... Tengo una pregunta. &#xBF;C&#xF3;mo se dice \"{word}\" en espa&#xF1;ol?",
@@ -171,6 +176,7 @@
         renderRooms:function(game, rooms) {
 
             let
+                calendarMetadata = {},
                 architects = ARCHITECTS.list.filter(architect=>(architect != ARCHITECT) && (architect.layout.head != "nobody")),
                 words = LOADER.DATA["kesiev-language-data"].split("\n").map(word=>word.trim().split("|"));
 
@@ -215,7 +221,7 @@
 
                 room.questionsLeft = QUESTIONS.length;
 
-                QUESTIONS.forEach(question=>{
+                QUESTIONS.forEach((question,id)=>{
                     let
                         languages = [],
                         word = room.random.bagPick(wordsBag),
@@ -235,6 +241,9 @@
 
                     wordToGuess = word[languages[1].id];
                     answer = word[languages[0].id];
+
+                    calendarMetadata["Question "+id] = "("+languages[1].label+") "+wordToGuess;
+                    calendarMetadata["Answer "+id] = "("+languages[0].label+") "+answer;
 
                     options.push({
                         id:"isRight",
@@ -389,6 +398,8 @@
                         },{ movePlayerBack:true }
                     ])
                 })
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Add entrance plaques
                 

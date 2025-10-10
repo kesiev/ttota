@@ -86,6 +86,7 @@
             rooms.forEach(room=>{
 
                 let
+                    calendarMetadata = {},
                     answers = [],
                     quizArea = { x:room.x+1, y:room.y+1, width:room.width-2, height:1 };
 
@@ -148,6 +149,7 @@
                     let
                         element,
                         questionText,
+                        questionAnswer,
                         questionOptions,
                         questionTeller,
                         endMessage,
@@ -166,7 +168,9 @@
                                 person = room.random.element(entry),
                                 name = room.random.element(person.line);
 
-                            questionOptions = [ person.person ];
+                            questionAnswer = person.person;
+
+                            questionOptions = [ questionAnswer ];
 
                             addWrongAnswers(room, questionOptions, persons, QUESTIONOPTIONS);
 
@@ -177,7 +181,7 @@
                                     label:name
                                 }
                             });
-
+                            
                             room.random.shuffle(questionOptions);
                             
                             element = game.tools.addElement(dx, dy,{
@@ -191,13 +195,16 @@
                             game.tools.hintAddKeyValue(room, name.line, person.person);
                             if (CONST.DEBUG.showLogs)
                                 console.log("?",questionText,person.person ,questionOptions);
+
                             break;
                         }
                         case "architect":{
                             let
                                 architect = room.random.element(ARCHITECTS.list.filter(architect=>architect.layout.head != "nobody"));
 
-                            questionOptions = [ architect.layout.name ];
+                            questionAnswer = architect.layout.name;
+
+                            questionOptions = [ questionAnswer ];
 
                             addWrongAnswers(room, questionOptions, architects, QUESTIONOPTIONS);
 
@@ -269,7 +276,12 @@
                         },{ movePlayerBack:true }
                     ]); 
 
+                    calendarMetadata["Question "+id] = questionText;
+                    calendarMetadata["Answer "+id] = questionAnswer;
+
                 })
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Place the confirmation lever
 

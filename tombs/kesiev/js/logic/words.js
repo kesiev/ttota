@@ -116,6 +116,7 @@
 
                 // --- Add hints
 
+                room.calendarMetadata= {"Word": correctAnswer };
                 game.tools.hintAddSentences(room, correctAnswer.split(""));
 
                 // --- Draw the board

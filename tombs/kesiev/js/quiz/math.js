@@ -68,7 +68,7 @@
 
         id:TOMB_ID,
         tags:TOMB_TAGS,
-        name:"The Show Room",
+        name:"The Digits Room",
         description:"Answer to some math quizzes.",
         byArchitect:ARCHITECT.layout.name,
         
@@ -104,6 +104,7 @@
             rooms.forEach(room=>{
 
                 let
+                    calendarMetadata = {},
                     areas = {
                         bar:{ x:room.x, y:room.y, width:room.width, height:1},
                         quiz:{ x:room.x, y:room.y+1, width:DIGITS+1, height:4},
@@ -162,12 +163,21 @@
                     answer = values[quizType.answer];
                     quizzes.push({ symbol:quizType.symbol, n1:values[quizType.n1], n2:values[quizType.n2], n3:values[quizType.n3], answer:answer, limits:limits });
 
+                    calendarMetadata["Quiz "+i] =
+                        ( values[quizType.n1] === undefined ? "?" : values[quizType.n1] ) +
+                        " "+quizType.symbol+" "+
+                        ( values[quizType.n2] === undefined ? "?" : values[quizType.n2] ) +
+                        " = "+( values[quizType.n3] === undefined ? "?" : values[quizType.n3] ) +
+                        " ("+answer+")";
+
                     if (hintSequence.length < hintsCount)
                         hintSequence.push(answer);
                 }
 
                 room.attempts = -DIGITS * quizCount;
                 room.attemptsLimit = Math.floor((1-room.difficulty)*RANGE_ATTEMPTS);
+
+                room.calendarMetadata = calendarMetadata;
 
                 game.tools.hintAddSequence(room, hintSequence);
 

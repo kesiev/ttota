@@ -113,8 +113,15 @@ function makeCalendar(day, days, html) {
                     description.push(room.tomb.description);
 
                 if (room.calendarMetadata)
-                    for (let k in room.calendarMetadata)
-                        description.push("<b>"+k+"</b>: "+room.calendarMetadata[k]);
+                    for (let k in room.calendarMetadata) {
+                        let
+                            line = "<b>"+k+"</b>: ";
+                        if (room.calendarMetadata[k].startsWith && room.calendarMetadata[k].startsWith("http"))
+                            line += "<a target=_blank href=\""+room.calendarMetadata[k]+"\">Link</a>";
+                        else
+                            line += room.calendarMetadata[k];
+                        description.push(line);
+                    }
 
                 html+="<tr>";
                 html+="<td>"+room.difficulty.toFixed(2)+"</td>";

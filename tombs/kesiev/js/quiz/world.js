@@ -80,6 +80,7 @@
                 // --- Prepare the question
 
                 let
+                    calendarMetadata = {};
                     placesSequence = [],
                     questionsCount = QUESTIONS+Math.floor(room.difficulty*QUESTIONS/2);
 
@@ -87,6 +88,10 @@
                     let
                         place = room.random.element(places).split("|"),
                         mapCoords = getMapCoords(place[1]*1, place[2]*1, MAP_WIDTH, MAP_HEIGHT );
+
+                    calendarMetadata["Place "+i+" Name"]=place[0];
+                    calendarMetadata["Place "+i+" URL"]="https://www.openstreetmap.org/?mlat="+place[1]+"&mlon="+place[2]+"#map=9/"+place[1]+"/"+place[2];
+                    calendarMetadata["Place "+i+" Coord"]=mapCoords.x+","+mapCoords.y;
 
                     game.tools.hintAddCoordinates(room, place[0], mapCoords.x, mapCoords.y);
 
@@ -100,6 +105,10 @@
                 }
 
                 game.tools.hintAddSequence(room, placesSequence);
+
+                // --- Add solutions to calendar
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Add entrance plaques
                 

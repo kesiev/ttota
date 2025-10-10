@@ -48,6 +48,7 @@
                 // --- Prepare the solution and the playfield
 
                 let
+                    calendarMetadata = {},
                     pieces = 0,
                     placements = 0,
                     hint = [],
@@ -129,11 +130,22 @@
 
                 // --- Add hint
 
-                for (let y=0;y<2;y++)
-                    for (let x=0;x<GRID_WIDTH;x++)
-                        hint.push(solution[y][x] ? "#" : "x");
+                for (let y=0;y<GRID_HEIGHT;y++) {
+                    let
+                        calendarMetadataRow = "";
+                    for (let x=0;x<GRID_WIDTH;x++) {
+                        if (y<2)
+                            hint.push(solution[y][x] ? "#" : "x");
+                        calendarMetadataRow += solution[y][x] ? "#" : "_";
+                    }
+                    calendarMetadata["Row "+y]=calendarMetadataRow;
+                }
 
                 game.tools.hintAddSequence(room, hint);
+                
+                // --- Add solutions to calendar
+
+                room.calendarMetadata = calendarMetadata;
 
                 // --- Add entrance plaques
                 
