@@ -482,10 +482,6 @@ let Tools=function(game){
         game.events.add(game.map[y][x], [ "wall", "onBump", side ], events);
     };
 
-    this.onEnter=(x,y,events)=>{
-        game.events.add(game.map[y][x], [ "cell", "onEnter" ], events);
-    };
-
     this.onInteract=(npc,events)=>{
         game.events.add(npc, [ "onInteract" ], events);
     };
@@ -844,8 +840,6 @@ let Tools=function(game){
             else {
                 position.x += front.x;
                 position.y += front.y;    
-                position.roomX += front.x;
-                position.roomY += front.y;
                 position.cell = game.map[position.y][position.x];
                 return position;
             }

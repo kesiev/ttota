@@ -166,7 +166,7 @@ function GenerateDungeon(random, size, entranceRoom, exitRoom, roomsList, number
             }
         }
 
-        if ((dg[dry][drx] != 5) && (dg[dry][dry] != 2))
+        if ((dg[dry][drx] != 5) && (dg[dry][drx] != 2))
             return {
                 fromRoom:roomIndex,
                 x:drx, 
